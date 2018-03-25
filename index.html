@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang='en' class='flex'>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href='/css/gd-home-inline.css' rel='stylesheet' type='text/css' media='all' />
+    <link href='/css/gd-footer.bundle.css' rel='stylesheet' type='text/css' media='all' />
+    <link href='/css/gd-home-bottom.css' rel='stylesheet' type='text/css' media='all' />
+    <link href='/css/styles.css' rel='stylesheet' type='text/css' media='all' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.2/react.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.6.2/react-dom.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js" defer></script>
+    <title>WeCarebill.org</title>
+    <link rel='shortcut icon' href='https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_64,w_64,q_auto/v1/45082/SINGLE_LOGO_oiwdo4.png'
+        type='image/vnd.microsoft.icon' />
+    <link href="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_64,w_64,q_auto/v1/45082/SINGLE_LOGO_oiwdo4.png"
+        rel="shortcut icon" type="image/x-icon">
+    <link href="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_60,w_60,f_auto,q_auto/v1/45082/LOGO_vk5m3e.png"
+        rel="apple-touch-icon" sizes="60x60">
+    <link href="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_76,w_76,f_auto,q_auto/v1/45082/LOGO_vk5m3e.png"
+        rel="apple-touch-icon" sizes="76x76">
+    <link href="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_120,w_120,f_auto,q_auto/v1/45082/LOGO_vk5m3e.png"
+        rel="apple-touch-icon" sizes="120x120">
+    <link href="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_152,w_152,f_auto,q_auto/v1/45082/LOGO_vk5m3e.png"
+        rel="apple-touch-icon" sizes="152x152">
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
+    <meta name="theme-color" content="#0caa41">
+
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+
+
+
+    <meta name="description" content="WecareBill" />
+
+    <meta http-equiv='Cache-Control' content='no-cache,must-revalidate' />
+    <meta http-equiv='Pragma' content='no-cache' />
+    <meta http-equiv="Expires" content="0" />
+
+</head>
+
+<body class='main flex flex-wide hero loggedOut lang-en en-GB gdGrid ' marginwidth='0' marginheight='0' style='margin:0;'
+    data-locale='en-GB'>
+    <div id='FlexTestFF'>
+        <div class='testMQ mqHH'></div>
+        <div class='testMQ mqTab'></div>
+        <div class='testMQ mqDT'></div>
+    </div>
+
+    <header id="TopNav" class=" transparent withCookie">
+        <div id='NoCookieSupportBanner' class='hidden hideMob'>
+            <div class='flex-grid'>
+                <div class='col span-1-6'></div>
+                <div class='col span-2-3 center'>
+                    <div class='ib'>
+                        <p class='margVertSm'>Glassdoor will not work properly unless browser cookie support is enabled.
+                            <a href="/about/cookies.htm">Learn how to enable cookies</a>.</p>
+                    </div>
+                </div>
+                <div class='col span-1-6'></div>
+            </div>
+        </div>
+        <nav>
+            <div class="container-logo">
+                <a href='/index.htm' target='_top'>
+                    <img width="130" src="/img/logo.png">
+                </a>
+            </div>
+            <div class="container-menu">
+                <ul class="menu-controls">
+                    <li>
+                        <a class='menu-primary'>
+                            <i class="icon-flag-GBR">
+                                <span>Flag</span>
+                            </i>
+                        </a>
+                        <div class="menu-secondary" id="CountryChooserContents">
+                            <ul class="menu-controls hideDesk">
+                                <li>
+                                    <span class="menu-back">Select Country</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href='https://www.glassdoor.com.au/index.htm' class='countryPickerClass' id="5" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-AUS"></i>
+                                        <span>Australia</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://nl.glassdoor.be/index.htm' class='countryPickerClass' id="14" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-BEL"></i>
+                                        <span>België (Nederlands)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://fr.glassdoor.be/index.htm' class='countryPickerClass' id="15" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-BEL"></i>
+                                        <span>Belgique (Français)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://www.glassdoor.ca/index.htm' class='countryPickerClass' id="3" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-CAN"></i>
+                                        <span>Canada (English)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://fr.glassdoor.ca/index.htm' class='countryPickerClass' id="19" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-CAN"></i>
+                                        <span>Canada (Français)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://www.glassdoor.de/index.htm' class='countryPickerClass' id="7" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-DEU"></i>
+                                        <span>Deutschland</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://www.glassdoor.fr/index.htm' class='countryPickerClass' id="6" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-FRA"></i>
+                                        <span>France</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://www.glassdoor.co.in/index.htm' class='countryPickerClass' id="4" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-IND"></i>
+                                        <span>India</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href='https://www.glassdoor.ie/index.htm' class='countryPickerClass' id="18" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-IRL"></i>
+                                        <span>Ireland</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://www.glassdoor.nl/index.htm' class='countryPickerClass' id="10" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-NLD"></i>
+                                        <span>Nederland</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://www.glassdoor.at/index.htm' class='countryPickerClass' id="11" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-AUT"></i>
+                                        <span>Österreich</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://de.glassdoor.ch/index.htm' class='countryPickerClass' id="16" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-CHE"></i>
+                                        <span>Schweiz (Deutsch)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://fr.glassdoor.ch/index.htm' class='countryPickerClass' id="17" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-CHE"></i>
+                                        <span>Suisse (Français)</span>
+                                    </a>
+                                </li>
+                                <li class=&#034;selected&#034;>
+                                    <a href='https://www.glassdoor.co.uk/index.htm' class='countryPickerClass' id="2" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-GBR"></i>
+                                        <span>United Kingdom</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='https://www.glassdoor.com/index.htm' class='countryPickerClass' id="1" dotComBaseUrl="www.glassdoor.com">
+                                        <i class="icon-flag-USA"></i>
+                                        <span>United States</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hideDesk">
+                        <span class="icon-close">
+                            <svg width="18px" height="18px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.542 1.458L1.458 16.542m0-15.084l15.084 15.084" stroke-width="2" stroke="#7f7f7f" fill="none" />
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+                <ul class="menu-nav">
+                    <li class='jobs active'>
+                        <a href='/index.htm' target='_top'>Surgery Cost Enquiry</a>
+                    </li>
+                    <li class='reviews'>
+                        <a href='/Reviews/company-reviews.htm' target='_top'>About us</a>
+                    </li>
+                    <li class='salaries'>
+                        <a href='/Salaries/company-salaries.htm' target='_top'>Terms</a>
+                    </li>
+
+                </ul>
+                <ul class="menu-user">
+                    <li class="post-sign-in offScreen">
+                        <a href="#" class="menu-primary">
+                            <span>Account Settings</span>
+                        </a>
+                        <div class="menu-secondary">
+                            <ul class="menu-controls hideDesk">
+                                <li>
+                                    <span class="menu-back">Account Settings</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sign-in">
+                        <a href="/profile/login_input.htm?userOriginHook=HEADER_SIGNIN_LINK" target="_top" class="sign-in">Sign In</a>
+                    </li>
+                    <div class="showNotificationsModal"></div>
+                </ul>
+                <ul class="menu-employer">
+                    <li class="employers">
+                        <a href="/employers/index.htm" data-track-source="gdemployermenu" data-track-type="source" data-track-cmpgn="Website - B2C | FEA2 | gdemployermenu"
+                            class="menu-primary track" target="_top">For Employers</a>
+                        <div class="menu-secondary">
+                            <ul class="menu-controls hideDesk">
+                                <li>
+                                    <span class="menu-back">For Employers</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="/employers/ec/index.htm" data-ga-lbl="get-free-emp-acct">Sign In to Employer Centre</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="/post-job" data-track-source="site-header-employers" data-track-type="src" data-track-cmpgn="home" class="track"
+                                        data-ga-lbl="post-a-job">Post a Job</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="https://www.glassdoor.com/employers/employer-branding.htm" data-ga-lbl="emp-branding-blog">Employer Branding</a>
+                                </li>
+                                <li>
+                                    <a href="/employers/products/job-advertising.htm" data-ga-lbl="job-advertising-blog">Job Advertising</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.glassdoor.co.uk/employers/blog/" data-ga-lbl="recruiting-blog">Employer Blog</a>
+                                </li>
+                                <li>
+                                    <a href="http://resources.glassdoor.com/contact-uk.html" data-track-source="gd-top-nav-drop-handraiser" data-track-type="channel"
+                                        class="track" data-ga-lbl="contact-sales">Talk to Sales</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="SrchHero" class="siteSrchBar banner">
+        <div class="static-hph static ">
+            <div class="static-hph-hero-srch">
+                <div class="context-tabs-mask">
+                    <h1>How much hospital treatment costed?</h1>
+                    <div class="search-bar minimized">
+                        <div class="container-form">
+                            <div class="context-choice-tabs-box">
+                                <ul class="row justify-content-space-evenly context-choice-tabs">
+                                    <li class="col-3 jobs" data-search-type="JOBS" data-search-url="/Job/jobs.htm" data-zipcodes-ok="true" data-placeholder="Job Title, Keywords or Company"
+                                        tabindex="1">
+                                        <span>Surgery</span>
+                                    </li>
+                                    <li class="col-3 reviews" data-search-type="EMPLOYER" data-search-url="/Reviews/company-reviews.htm" data-zipcodes-ok="false"
+                                        data-placeholder="Company Name" tabindex="2">
+                                        <span>Speciality</span>
+                                    </li>
+                                    <li class="col-3 salaries" data-search-type="SALARY" data-zipcodes-ok="false" data-search-url="/Salaries/company-salaries.htm"
+                                        data-placeholder="Job Title or Company" tabindex="3">
+                                        <span>Hospital</span>
+                                    </li>
+                                    <li class="col-3 interviews active-context" data-search-type="INTERVIEW" data-zipcodes-ok="false" data-search-url="/Interview/job-interview-questions.htm"
+                                        data-placeholder="Job Title or Company" tabindex="4">
+                                        <span>Doctor</span>
+                                    </li>
+                                </ul>
+                                <div class="arrow_box active-1">
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                            <form action="/Interview/job-interview-questions.htm" method="get" target="_top" class="" data-location-string-from-ip="Chennai"
+                                data-loc-ac-enabled="true" data-pick-best-match="true" data-zipcodes-ok="true">
+                                <input type="hidden" name="suggestCount" class="suggestCount" value="0">
+                                <input type="hidden" name="suggestChosen" class="suggestChosen" value="false">
+                                <input type="hidden" name="clickSource" value="searchBtn">
+                                <input type="hidden" name="typedKeyword" class="typedKey" value="">
+                                <label for="KeywordSearch" class="offScreen">Keyword</label>
+                                <!-- Do not show the keyword value in the input field if the flag is set to false Currently only used on JobView page based on a TLD feature flag -->
+                                <input name="sc.keyword" id="KeywordSearch" class="keyword" type="text" tabindex="0" value="" placeholder="Job Title or Company"
+                                    data-auto-complete="true" data-ac-version="New" autocomplete="off">
+                                <div class="context-picker inactive" tabindex="0">
+                                    <span class="context-choice"> Jobs</span>
+                                    <span class="icon-close"></span>
+                                    <ul class="context-choice-list">
+                                        <li class="jobs active-context" data-search-type="JOBS" data-search-url="/Job/jobs.htm" data-zipcodes-ok="true" data-placeholder="Job Title, Keywords or Company"
+                                            tabindex="0">
+                                            <span>Jobs</span>
+                                        </li>
+                                        <li class="reviews " data-search-type="EMPLOYER" data-search-url="/Reviews/company-reviews.htm" data-zipcodes-ok="false"
+                                            data-placeholder="Company Name" tabindex="0">
+                                            <span>Companies</span>
+                                        </li>
+                                        <li class="salaries " data-search-type="SALARY" data-zipcodes-ok="false" data-search-url="/Salaries/company-salaries.htm"
+                                            data-placeholder="Job Title or Company" tabindex="0">
+                                            <span>Salaries</span>
+                                        </li>
+                                        <li class="interviews " data-search-type="INTERVIEW" data-zipcodes-ok="false" data-search-url="/Interview/job-interview-questions.htm"
+                                            data-placeholder="Job Title or Company" tabindex="0">
+                                            <span>Interviews</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <label for="LocationSearch" class="offScreen">Location</label>
+                                <input id="LocationSearch" class="loc" type="text" tabindex="0" value="" data-srch-type="popular" placeholder="Location"
+                                    autocomplete="off">
+                                <input type="hidden" class="locType" name="locT" value="C">
+                                <input type="hidden" class="locId" name="locId" value="2833209">
+                                <input type="hidden" class="jobType" name="jobType" value="">
+                                <button class="gd-btn-mkt" id="HeroSearchButton" type="submit" tabindex="0">
+                                    <span>Search</span>
+                                </button>
+                            </form>
+                            <ul class="search-suggestion"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <a href="#" class="job-posting-link contribute-medical-bill track" style="text-decoration:none;" data-track-type="src" data-track-source="under-search-home"
+                        data-track-cmpgn="home" target="_top" data-ga-category="new nav" data-ga-action="below-searchbox-click"
+                        data-ga-lbl="post-a-job">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                            <g fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-linejoin="round" stroke-width="1.5">
+                                <path d="M2 15v5.01c0 .546.455.99.992.99h18.016a.996.996 0 0 0 .992-.99V15"></path>
+                                <path stroke-linecap="round" d="M23 5.995c0-.55-.44-.995-1.002-.995H2.002C1.45 5 1 5.456 1 5.995v8.01c0 .55.447.995 1.001.995H7.5l2 2h5l2-2h5.499c.553 0 1.001-.456 1.001-.995v-8.01zM10.5 13.75h3"></path>
+                                <path d="M17 5V3c0-1.105-.887-2-2-2H9c-1.105 0-2 .888-2 2v2"></path>
+                            </g>
+                        </svg>Contribute medical bill info annoymously</a>
+                    <a href="#" class="job-posting-link contribute-reset-bill track" style="text-decoration:none;" data-track-type="src" data-track-source="under-search-home"
+                        data-track-cmpgn="home" target="_top" data-ga-category="new nav" data-ga-action="below-searchbox-click"
+                        data-ga-lbl="post-a-job">
+                        Reset</a>
+                </div>
+            </div>
+            <div class="bkgnd sm" alt="homepage highlight image"></div>
+
+            <div class="bkgnd lazy lazy-loaded" data-original="https://img.youtube.com/vi/IYxxQUPkS6I/maxresdefault.jpg" alt="homepage highlight image">
+                <div class="cover">
+                    <div class="tv">
+                        <div class="screen mute" id="tv"></div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="bkgnd shadow"></div>
+        </div>
+    </div>
+    <div class="pageContentWrapper ">
+        <div id="PageContent">
+            <div id="PageBodyContents" class="meat">
+                <div class="pageInsideContent cf">
+                    <div id="Home">
+                        <div id="NonMemberHome">
+                            <article id="MainCol" class="mainCol">
+                                <section class="section wide">
+                                    <a class="oregano-module" href="https://www.glassdoor.co.uk/List/Best-Jobs-in-UK-LST_KQ0,15.htm" data-ga-category="homepage"
+                                        data-ga-lbl="oregano-click" data-ga-action="marketing-oregano-click">
+                                        <div class="oregano-module-inner">
+                                            <span class="oregano-module-alert">NEW!</span>
+                                            <span class="oregano-module-copy">
+                                                <span class="hideTab hideHH">What are the Best Jobs in the UK for 2018?
+                                                    <span class="linkColor">See jobs</span>
+                                                </span>
+                                                <span class="hideDesk">What are the Best Jobs in the UK for 2018?
+                                                    <span class="linkColor">See jobs</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </section>
+
+                                <section class="section">
+                                    <div class="row" style="padding:20px;text-align:center;">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                            <h3>Manual customer service</h3>
+                                            <h5 style="color:#e7463d">Check the total bill for over 60 common surgeries in nine private hospitals
+
+                                            </h5>
+                                            <p>Patients in Hong Kong currently do not have a plan for the price of medical services.
+                                                Patients can only know the cost of treatment when they are discharged. "Illustration
+                                                is not arc single" is a free manual customer service, to help patients understand
+                                                the cost of treatment before admission. We anonymously collected information
+                                                on hospital discharge bills from previous patients in private hospitals so
+                                                that other patients could budget for hospital admission and use their ability
+                                                to pay for doctors and medical services.</p>
+
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                            <h3>Private Hospital Charging Questionnaire</h3>
+                                            <h5 style="color:#e7463d">The last time you entered the private hospital's bill can help other patients!</h5>
+                                            <p>The last time you entered the private hospital's bill can help other patients!
+                                                After spending two minutes answering nine questions about hospital bills,
+                                                it is possible to help patients with the same disease to choose doctors and
+                                                hospital services according to their affordability. Early treatment as soon
+                                                as possible. All anonymous data will be trained in our manual customer service,
+                                                free and 24/7 answer to other patients on the hospital and doctor fees.</p>
+
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section wide gradient">
+                                        <div class="row" style="text-align:center;padding:25px 0px;margin:0px;">
+                                            <div class="col-md-6 col-xs-12">
+                                                <i class="fa fa-lightbulb-o fa-2x"></i>
+                                                <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+                                                <p class="count-text ">SomeText GoesHere</p>
+                                            </div>
+        
+                                            <div class="col-md-6 col-xs-12">
+                                                <i class="fa fa-bug fa-2x"></i>
+                                                <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+                                                <p class="count-text ">SomeText GoesHere</p>
+                                            </div>
+
+
+                                </section>
+                   
+                                
+                            </article>
+                        </div>
+                        <div id="UnderAgeLimitDialog" class="hidden">
+                            <div id="UnderAgeLimitMessage">
+                                <p> We're sorry...you are not eligible to have an account. The information you submitted does
+                                    not meet the requirements of our
+                                    <a href="/about/privacy.htm" target="_blank">Privacy Policy</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="AccountDeletedSuccessDialog" class="hidden">
+                            <div id="AccountDeletedSuccessMessage">
+                                <p class="padRtLg"> You have successfully deleted your account.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="PageBot" data-role="footer">
+        <div id="FooterModule" class="gdGrid" style="background:#000;">
+            <div data-reactroot="" id="footer" class="darkBg">
+               
+                <nav>
+                    <ul class="footer-menu row justify-content-center">
+                        <li class="col-12 order-12 col-md-4 order-md-1 center logo-stack">
+                            <span>
+                                <img src="/img/logo.png" class="img-responsive" width="200"/>
+                            </span>
+                        </li>
+                        <li class="col-6 col-sm-3 col-md-2 order-2">
+                            <p class="footerMenuHead">Glassdoor</p>
+                            <ul>
+                                <li class="margBotSm">
+                                    <a href="/about/index_input.htm" target="_top">About Us</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="/Trends/index.htm" target="_top">Awards &amp; Trends</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="https://www.glassdoor.co.uk/blog/" target="_top">Blog</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-6 col-sm-3 col-md-2 order-2">
+                            <p class="footerMenuHead">Employers</p>
+                            <ul>
+                                <li class="margBotSm">
+                                    <a href="/employers/index.htm?src=gdfoot" target="_top">Get a FREE Employer Account</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="/partners/index.htm" target="_top">Employer Centre</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="/post-job" target="_top">Post a Job</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-6 col-sm-3 col-md-2 order-2">
+                            <p class="footerMenuHead">Community</p>
+                            <ul>
+                                <li class="margBotSm">
+                                    <a href="http://help.glassdoor.com/GlassDoorHome/en_US" target="_blank">Help / Contact Us</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="http://help.glassdoor.com/article/Community-Guidelines/en_US" target="_blank">Guidelines</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="/about/terms.htm" target="_top">Terms of Use (New)</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="/about/privacy.htm" target="_top">Privacy &amp; Cookies</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-6 col-sm-3 col-md-2 order-2">
+                            <p class="footerMenuHead">Work With Us</p>
+                            <ul>
+                                <li class="margBotSm">
+                                    <a href="http://help.glassdoor.com/ContactUs/en_US?job_board=true" target="_blank">Job Boards</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="http://resources.glassdoor.com/advertising-on-glassdoor.html" target="_blank">Advertisers</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="/developer/index.htm" target="_top">Developers</a>
+                                </li>
+                                <li class="margBotSm">
+                                    <a href="http://jobs.glassdoor.com/home?id=GLASA001M" target="_top">Careers</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="row justify-content-center utilityLinks margBotLg">
+                        <li class="col-md-4 justify-content-center appStoreCTA">
+                            <span class="df">Download the App</span>
+                            <span class="df">
+                                <a href="https://play.google.com/store/apps/details?id=com.glassdoor.app&amp;referrer=utm_source%3Dglassdoor%26utm_medium%3Dcta%26utm_campaign%3Ddownloadappicon"
+                                    target="_blank" class="socialShareIcon">
+                                    <span class="android-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="147 0 25 29">
+                                            <g fill="none">
+                                                <g id="Group" fill="#fff">
+                                                    <path d="M148.77 9.06c-.98 0-1.77.77-1.77 1.72v7.24c0 .95.8 1.72 1.77 1.72.98 0 1.76-.78 1.76-1.72v-7.24c0-.95-.8-1.72-1.76-1.72zm14.27-6.5l1.24-2.2c.06-.12.02-.26-.1-.33-.1-.06-.27-.02-.33.1l-1.25 2.22c-1.05-.45-2.22-.7-3.47-.7-1.24 0-2.4.24-3.46.7L154.43.13c-.07-.12-.22-.16-.34-.1-.12.06-.17.2-.1.33l1.23 2.2c-2.43 1.22-4.07 3.55-4.07 6.22h15.94c0-2.67-1.63-5-4.06-6.22zm-7.54 3.4c-.36 0-.67-.3-.67-.65 0-.35.3-.64.67-.64.37 0 .67.3.67.65 0 .37-.3.66-.67.66zm7.27 0c-.37 0-.67-.3-.67-.65 0-.35.3-.64.67-.64.36 0 .66.3.66.65 0 .37-.3.66-.66.66zm-11.55 3.42V20.6c0 1.02.84 1.85 1.9 1.85h1.28v3.83c0 .94.8 1.72 1.76 1.72.98 0 1.77-.78 1.77-1.73v-3.83h2.4v3.83c0 .95.78 1.72 1.76 1.72.97 0 1.76-.78 1.76-1.73v-3.83h1.3c1.03 0 1.88-.82 1.88-1.85V9.37h-15.82zm20.05 1.4c0-.96-.8-1.72-1.77-1.72-.98 0-1.77.77-1.77 1.72v7.24c0 .95.8 1.72 1.77 1.72.98 0 1.77-.78 1.77-1.72v-7.24z"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="df">
+                                <a href="https://itunes.apple.com/us/app/glassdoor-job-search-salaries/id589698942?mt=8" target="_blank" class="socialShareIcon">
+                                    <span class="apple-svg">
+                                        <svg width="23px" height="28px" viewBox="0 0 23 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path d="M19.199 8.305c-.033-3.514 2.92-5.223 3.055-5.303C20.582.601 17.99.272 17.08.246 14.902.021 12.791 1.53 11.682 1.53 10.55 1.53 8.843.27 7.002.305 4.635.341 2.42 1.692 1.205 3.79-1.304 8.066.566 14.351 2.969 17.807c1.202 1.693 2.606 3.584 4.444 3.517 1.799-.073 2.47-1.13 4.64-1.13 2.151 0 2.782 1.13 4.657 1.088 1.93-.03 3.145-1.701 4.305-3.41 1.389-1.94 1.946-3.85 1.968-3.949-.045-.015-3.748-1.407-3.784-5.618z"
+                                                    id="a"></path>
+                                            </defs>
+                                            <g id="apple" fill="none" fill-rule="evenodd">
+                                                <path id="apple-leaf" d="M15.657 4.468c.967-1.191 1.63-2.812 1.445-4.457-1.4.06-3.15.954-4.158 2.119-.892 1.027-1.69 2.71-1.483 4.293 1.572.115 3.187-.782 4.196-1.955z"
+                                                    fill="#6CBF40"></path>
+                                                <g transform="translate(0 6.496)">
+                                                    <mask id="b" fill="#fff">
+                                                        <use xlink:href="#a"></use>
+                                                    </mask>
+                                                    <use fill="#FFF" xlink:href="#a"></use>
+                                                    <g id="path" mask="url(#b)">
+                                                        <rect fill="#F4BA2B" x="0" y="4.256" width="25.312" height="3.36"></rect>
+                                                        <rect fill="#D62B38" x="0" y="10.976" width="25.312" height="3.36"></rect>
+                                                        <rect fill="#3F9FDF" x="0" y="17.696" width="25.312" height="4.256"></rect>
+                                                        <rect fill="#EC8123" x="0" y="7.616" width="25.312" height="3.36"></rect>
+                                                        <rect fill="#903195" x="0" y="14.336" width="25.312" height="3.36"></rect>
+                                                        <rect fill="#6CBF40" x="0" y="0" width="25.312" height="4.256"></rect>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </span>
+                        </li>
+                        <li class="col-md-5 margTopLg social">
+                            <ul class="justify-content-center socialIconList">
+                                <li class="df">
+                                    <a href="/glassdoor" target="_top" class="socialShareIcon">
+                                        <span class="glassdoor-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40">
+                                                <g fill="none">
+                                                    <ellipse cx="20" cy="20" fill="#7F7F7F" rx="20" ry="20"></ellipse>
+                                                    <path fill="#fff" d="M23.9 27.22v-11.4c0-.06.03-.1.1-.1h2.57c.05 0 .1.04.1.1v11.4c0 1.54-1.25 2.78-2.78 2.78h-8.34c-1.54 0-2.78-1.24-2.78-2.78h11.1zm0-16.66c1.52 0 2.77 1.24 2.77 2.77h-11.1v11.4c0 .07-.06.1-.12.1h-2.57c-.06 0-.1-.03-.1-.1v-11.4c0-1.53 1.24-2.77 2.78-2.77h8.33z"></path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="df">
+                                    <a href="https://www.facebook.com/Glassdoor/" target="_blank" class="socialShareIcon">
+                                        <span class="facebook-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="52 0 41 40">
+                                                <g fill="none" transform="translate(52)">
+                                                    <ellipse cx="20" cy="20" fill="#7F7F7F" rx="20" ry="20"></ellipse>
+                                                    <path fill="#fff" d="M21.78 30.9v-9.8H25l.44-3.77h-3.77V14.9c0-1.12.33-1.9 1.9-1.9h2V9.56c-.35 0-1.57-.12-2.9-.12-2.9 0-4.9 1.78-4.9 5v2.78h-3.33V21h3.34v9.78h4v.1z"></path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="df">
+                                    <a href="https://twitter.com/Glassdooruk" target="_blank" class="socialShareIcon">
+                                        <span class="twitter-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="104 0 41 40">
+                                                <g fill="none" transform="translate(104)">
+                                                    <ellipse cx="20" cy="20" fill="#7F7F7F" rx="20" ry="20"></ellipse>
+                                                    <path fill="#fff" d="M30.56 14.2c-.76.34-1.57.56-2.42.66.87-.52 1.54-1.34 1.85-2.33-.82.48-1.73.83-2.7 1.02-.76-.82-1.85-1.33-3.07-1.33-2.33 0-4.2 1.9-4.2 4.22 0 .33.02.65.1.96-3.5-.18-6.62-1.85-8.7-4.4-.36.62-.57 1.34-.57 2.1 0 1.48.75 2.77 1.88 3.52-.7-.02-1.34-.2-1.9-.52 0 0 0 .03 0 .05 0 2.04 1.44 3.75 3.37 4.14-.34.08-.72.13-1.1.13-.27 0-.54-.02-.8-.07.54 1.67 2.1 2.9 3.95 2.93-1.45 1.12-3.27 1.8-5.24 1.8-.33 0-.67-.03-1-.07 1.87 1.2 4.1 1.9 6.47 1.9 7.75 0 12-6.43 12-12 0-.18 0-.37-.02-.55.83-.6 1.54-1.33 2.1-2.18"></path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="df">
+                                    <a href="https://www.youtube.com/Glassdoor" target="_blank" class="socialShareIcon">
+                                        <span class="youtube-svg">
+                                            <svg width="41px" height="40px" viewBox="156 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <ellipse id="path-1" cx="20" cy="20" rx="20" ry="20"></ellipse>
+                                                </defs>
+                                                <g id="social-icon-youtube" fill="none" fill-rule="evenodd" transform="translate(156)">
+                                                    <mask id="mask-2" fill="#fff">
+                                                        <use xlink:href="#path-1"></use>
+                                                    </mask>
+                                                    <use id="Oval" fill="#7F7F7F" xlink:href="#path-1"></use>
+                                                    <g id="Group" mask="url(#mask-2)">
+                                                        <g id="Shape">
+                                                            <path fill-opacity=".25" fill="#000" d="M8.798 4.645l5.213 3.443.684-.39z" transform="translate(8.889 12.222)"></path>
+                                                            <path d="M21.968 12.272s-.216 1.534-.88 2.21c-.843.886-1.787.89-2.22.942-3.101.225-7.757.232-7.757.232s-5.76-.052-7.533-.223c-.493-.093-1.6-.065-2.443-.952-.665-.675-.88-2.21-.88-2.21s-.223-1.8-.223-3.602V6.981c0-1.802.222-3.603.222-3.603s.216-1.534.88-2.21c.843-.886 1.788-.89 2.22-.942C6.456 0 11.107 0 11.107 0h.01s4.651 0 7.752.225c.433.052 1.377.056 2.22.943.664.675.88 2.209.88 2.209s.222 1.801.222 3.603v1.688a33.75 33.75 0 0 1-.222 3.603zM8.798 4.645v6.27l5.88-3.201-5.88-3.069z"
+                                                                fill="#fff" transform="translate(8.889 12.222)"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="df">
+                                    <a href="https://www.instagram.com/glassdoor/" target="_blank" class="socialShareIcon">
+                                        <span class="instagram-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+                                                <g fill="none">
+                                                    <circle cx="20" cy="20" r="20" fill="#7F7F7F"></circle>
+                                                    <g fill="#fff">
+                                                        <path d="M20 9c-3 0-3.36.02-4.54.07-1.17.06-1.97.24-2.67.5-.73.3-1.34.67-1.95 1.28-.62.6-1 1.23-1.27 1.95-.27.7-.46 1.5-.5 2.67C9 16.64 9 17.02 9 20c0 3 0 3.36.07 4.54.05 1.17.24 1.97.5 2.67.3.73.66 1.34 1.28 1.95.6.62 1.22 1 1.94 1.27.7.27 1.5.46 2.66.5C16.64 31 17 31 20 31c2.98 0 3.36 0 4.53-.07 1.17-.05 1.97-.24 2.67-.5.72-.3 1.34-.66 1.95-1.28.6-.6.98-1.22 1.27-1.94.27-.7.45-1.5.5-2.66C31 23.36 31 23 31 20c0-2.98-.02-3.36-.07-4.53-.06-1.17-.24-1.97-.5-2.67-.3-.72-.67-1.34-1.28-1.95-.6-.6-1.23-.98-1.95-1.27-.7-.27-1.5-.45-2.67-.5C23.36 9 22.98 9 20 9zm0 2c2.93 0 3.28 0 4.44.05 1.07.05 1.65.23 2.04.38.52.2.88.44 1.27.82.38.4.62.75.82 1.27.15.4.33.97.38 2.04.05 1.16.06 1.5.06 4.44 0 2.94 0 3.3-.05 4.45-.05 1.07-.23 1.65-.38 2.04-.2.5-.44.87-.82 1.25-.4.4-.75.63-1.27.83-.4.15-.97.33-2.04.37-1.16.06-1.5.07-4.44.07-2.94 0-3.3 0-4.45-.07-1.07-.04-1.65-.22-2.04-.37-.5-.2-.87-.44-1.25-.83-.4-.38-.63-.75-.83-1.26-.15-.4-.33-.98-.37-2.05-.06-1.16-.07-1.5-.07-4.45 0-2.93 0-3.28.07-4.44.04-1.07.22-1.65.37-2.04.2-.52.44-.88.83-1.27.38-.38.75-.62 1.26-.82.4-.15.98-.33 2.05-.38C16.7 11 17.05 11 20 11zM20 23.67c-2.03 0-3.67-1.64-3.67-3.67 0-2.02 1.64-3.66 3.67-3.66 2.02 0 3.66 1.64 3.66 3.66 0 2.03-1.64 3.67-3.66 3.67zm0-9.3c-3.12 0-5.65 2.5-5.65 5.63 0 3.12 2.53 5.65 5.65 5.65 3.12 0 5.64-2.53 5.64-5.65 0-3.12-2.52-5.64-5.64-5.64zm7.2-.24c0 .73-.6 1.32-1.33 1.32-.73 0-1.32-.6-1.32-1.32 0-.73.6-1.32 1.32-1.32.73 0 1.32.6 1.32 1.33"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-9 col-sm-5 col-md-3 margTopLg tldSelector"></li>
+                    </ul>
+                </nav>
+                <hr>
+                <div class="browseLinks center margTopLg padBotLg">
+                    <span class="padRtSm">Browse by: </span>
+                    <span class="sepafter">
+                        <a href="/sitedirectory/company-jobs.htm" target="_top">Companies</a>
+                    </span>
+                    <span class="sepafter">
+                        <a href="/sitedirectory/title-jobs.htm" target="_top">Jobs</a>
+                    </span>
+                    <span class="sepafter">
+                        <a href="/sitedirectory/city-jobs.htm" target="_top">locations</a>
+                    </span>
+                </div>
+                <hr>
+                <div class="copyright center margTopLg padBotLg">
+                    <p>
+                        <!-- react-text: 88 -->Copyright
+                        <!-- /react-text -->
+                        <!-- react-text: 89 -->©
+                        <!-- /react-text -->
+                        <!-- react-text: 90 -->2008-2018, WeCarebill, Inc. "WeCarebill" and logo are proprietary trademarks of WeCarebill, Inc.
+                        <!-- /react-text -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
