@@ -5088,7 +5088,7 @@ ul li {
 
 .mainCol {
     color: #404040;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px
@@ -7546,7 +7546,7 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 
 .testimonial-callout .quote-big {
     color: #0caa41;
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway',Arial, sans-serif;
     font-weight: normal;
     position: relative;
     display: inline-block;
@@ -9282,7 +9282,7 @@ select[disabled='disabled'] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 15px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
