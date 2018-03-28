@@ -2888,7 +2888,10 @@ i.fileIcon {
     background-size: 26px 37px;
     vertical-align: middle
 }
-
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
 i.phoneIcon {
     background-image: url("http://www.glassdoor.com/app/static/img/core/sprites/ei.png?v=9539fe3qb");
     background-position: -94px -42px;
@@ -6498,7 +6501,7 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 .featured-employers {
-    padding: 65px 25px;
+    padding:9px 25px;
     padding-bottom: 32.5px
 }
 
@@ -6510,6 +6513,7 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 @media only screen and (max-width: 767px) {
+
     .featured-employers {
         padding: 40px 0 20px
     }

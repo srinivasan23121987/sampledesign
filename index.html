@@ -4,8 +4,9 @@
 <head>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap.css" />
     <link href='/css/gd-home-inline.css' rel='stylesheet' type='text/css' media='all' />
     <link href='/css/gd-footer.bundle.css' rel='stylesheet' type='text/css' media='all' />
     <link href='/css/gd-home-bottom.css' rel='stylesheet' type='text/css' media='all' />
@@ -19,6 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js" defer></script>
     <title>WeCarebill.org</title>
+
     <link rel='shortcut icon' href='https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_64,w_64,q_auto/v1/45082/SINGLE_LOGO_oiwdo4.png'
         type='image/vnd.microsoft.icon' />
     <link href="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_64,w_64,q_auto/v1/45082/SINGLE_LOGO_oiwdo4.png"
@@ -31,6 +33,7 @@
         rel="apple-touch-icon" sizes="120x120">
     <link href="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_152,w_152,f_auto,q_auto/v1/45082/LOGO_vk5m3e.png"
         rel="apple-touch-icon" sizes="152x152">
+
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
     <meta name="theme-color" content="#0caa41">
 
@@ -174,28 +177,7 @@
                                 <label for="KeywordSearch" class="offScreen">Keyword</label>
                                 <!-- Do not show the keyword value in the input field if the flag is set to false Currently only used on JobView page based on a TLD feature flag -->
 
-                                <div class="context-picker inactive" tabindex="0">
-                                    <span class="context-choice"> Jobs</span>
-                                    <span class="icon-close"></span>
-                                    <ul class="context-choice-list">
-                                        <li class="jobs active-context" data-search-type="JOBS" data-search-url="/Job/jobs.htm" data-zipcodes-ok="true" data-placeholder="Job Title, Keywords or Company"
-                                            tabindex="0">
-                                            <span>Jobs</span>
-                                        </li>
-                                        <li class="reviews " data-search-type="EMPLOYER" data-search-url="/Reviews/company-reviews.htm" data-zipcodes-ok="false"
-                                            data-placeholder="Company Name" tabindex="0">
-                                            <span>Companies</span>
-                                        </li>
-                                        <li class="salaries " data-search-type="SALARY" data-zipcodes-ok="false" data-search-url="/Salaries/company-salaries.htm"
-                                            data-placeholder="Job Title or Company" tabindex="0">
-                                            <span>Salaries</span>
-                                        </li>
-                                        <li class="interviews " data-search-type="INTERVIEW" data-zipcodes-ok="false" data-search-url="/Interview/job-interview-questions.htm"
-                                            data-placeholder="Job Title or Company" tabindex="0">
-                                            <span>Interviews</span>
-                                        </li>
-                                    </ul>
-                                </div>
+
                                 <label for="LocationSearch" class="offScreen">Location</label>
                                 <input id="LocationSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
                                     placeholder="Part of body, conditions, specialities or surgeries" autocomplete="off">
@@ -210,9 +192,9 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="col-md-12">
 
-                    <a href="#" class="job-posting-link contribute-medical-bill track" style="text-decoration:none;" data-track-type="src" data-track-source="under-search-home"
+                    <a href="#" class="job-posting-link  contribute-medical-bill track" style="text-decoration:none;" data-track-type="src" data-track-source="under-search-home"
                         data-track-cmpgn="home" target="_top" data-ga-category="new nav" data-ga-action="below-searchbox-click"
                         data-ga-lbl="post-a-job">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
@@ -248,378 +230,484 @@
                 <div class="pageInsideContent cf">
                     <div id="Home">
                         <div id="NonMemberHome">
-                            <article id="MainCol" class="mainCol">
-                                <section class="section wide">
-                                    <a class="oregano-module" href="https://www.glassdoor.co.uk/List/Best-Jobs-in-UK-LST_KQ0,15.htm" data-ga-category="homepage"
-                                        data-ga-lbl="oregano-click" data-ga-action="marketing-oregano-click">
-                                        <div class="oregano-module-inner">
-                                            <span class="oregano-module-alert">NEW!</span>
-                                            <span class="oregano-module-copy">
-                                                <span class="hideTab hideHH">What are the Best Jobs in the UK for 2018?
-                                                    <span class="linkColor">See jobs</span>
-                                                </span>
-                                                <span class="hideDesk">What are the Best Jobs in the UK for 2018?
-                                                    <span class="linkColor">See jobs</span>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </a>
-                                </section>
-                                <section class="homePageHighlight section gradient">
-                                    <div class="hphAdContainer">
-                                        <div id="div-AdSlot-jf9xezv9" style="width: 1px; height:1px;" class="adSlot " data-slot-name="HomepageHighlight-jobs_en-IN"
-                                            data-ff="" data-google-query-id="CIm_g8OBjdoCFRJGKwodXQUNZQ">
-                                            <div id="google_ads_iframe_/1060761/HomepageHighlight-jobs_en-IN_0__container__" style="border: 0pt none;">
-                                                <iframe id="google_ads_iframe_/1060761/HomepageHighlight-jobs_en-IN_0" title="3rd party ad content" name="google_ads_iframe_/1060761/HomepageHighlight-jobs_en-IN_0"
-                                                    width="1000" height="667" scrolling="no" marginwidth="0" marginheight="0"
-                                                    frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe>
-                                            </div>
-                                        </div>
+
+                            <div class="hphAdContainer">
+                                <div id="div-AdSlot-jf9xezv9" style="width: 1px; height:1px;" class="adSlot " data-slot-name="HomepageHighlight-jobs_en-IN"
+                                    data-ff="" data-google-query-id="CIm_g8OBjdoCFRJGKwodXQUNZQ">
+                                    <div id="google_ads_iframe_/1060761/HomepageHighlight-jobs_en-IN_0__container__" style="border: 0pt none;">
+                                        <iframe id="google_ads_iframe_/1060761/HomepageHighlight-jobs_en-IN_0" title="3rd party ad content" name="google_ads_iframe_/1060761/HomepageHighlight-jobs_en-IN_0"
+                                            width="1000" height="667" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"
+                                            srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe>
                                     </div>
-                                    <div class="hphSlider featured-employers">
-                                        <h2>What is WeCareBill </h2>
-                                        <div class="slide">
-                                          
-                                                    <div class="plain featured-employers-inner-image col-md-6"><img class="img-responsive" src="https://www.glassdoor.com/app/static/img/homepage-highlight/1.png" style="width:50%"/></div>
-                                                    <div class="featured-employers-inner-content col-md-6">
-                                                      
+                                </div>
+                            </div>
+                            <div class="hphSlider featured-employers">
+                                <h2>What is WeCareBill </h2>
+                                <div class="row" style="background:#FFF;">
 
-                                                            <span class="sqLogo tighten lgSqLogo defLogo logoOverlay">
-                                                                <span>
-                                                                    <i></i>
-                                                                </span>
-                                                            </span>
-                                                            <span class="sqLogo tighten medSqLogo defLogo logoOverlay">
-                                                                <span>
-                                                                    <i></i>
-                                                                </span>
-                                                            </span>
-                                                            <span class="sqLogo tighten smSqLogo defLogo logoOverlay">
-                                                                <span>
-                                                                    <i></i>
-                                                                </span>
-                                                            </span>
-                                                        
-                                                        
-                                                            <h3>WeCarebill</h3>
-                                                        
-                                                        <p class="featured-employers-inner-quote">
-                                                            <a href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuF3tiIlL8vothlPUOXhMdc8YLk62bG-ZBkud1pnMiCBohz_5Kz7whQ-nz3DV8EaHvaFJ_tBPxTTFoA6TXDJxW8gl9vMmKbdfPAjfx2ZdmoSKyCxpPYpQP__kPLWcKk6364deWftc9Gtz-VtVPhVwxio2Q5Cxh0z73SJLuzKkHeX1Qq2AmldkTFp-WGClVBJt9SWtZLUyg0Xr3hEa9LtR7CWgQvkBTU8OQjktotAaxhQ6tHt5GIFMIlkdXd4PQOdelyd3wRd69Hd9xn&amp;sig=Cg0ArKJSzFK_BvOoDjOn&amp;adurl=https://www.glassdoor.co.in/Reviews/Employee-Review-WaterAid-RVW13570074.htm"
-                                                                class="link" data-ga-category="homepage" data-ga-action="featured-companies-click"
-                                                                data-ga-lbl="review-title">
-                                                                Mission：patients' rights to know the medical costs when they chose doctors and medical services.
-                                                            </a>
-                                                        </p>
+                                    <div class="plain featured-employers-inner-image col-md-6 col-sm-6 col-xs-12" style="padding:0px;margin:0px;">
+                                        <img class="img-responsive" src="/img/Medical_Bill.png" />
+                                    </div>
+                                    <div class="featured-employers-inner-content col-md-6 col-sm-6 col-xs-12" style="padding-left:10px;">
+                                        <h3 class="hidden-xs" style="font-weight:600;">The Decoder of hospital bills</h3>
 
-                                                        <div class="featured-employers-buttons">
-                                                            <a class="btn gd-btn-mkt" href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuF3tiIlL8vothlPUOXhMdc8YLk62bG-ZBkud1pnMiCBohz_5Kz7whQ-nz3DV8EaHvaFJ_tBPxTTFoA6TXDJxW8gl9vMmKbdfPAjfx2ZdmoSKyCxpPYpQP__kPLWcKk6364deWftc9Gtz-VtVPhVwxio2Q5Cxh0z73SJLuzKkHeX1Qq2AmldkTFp-WGClVBJt9SWtZLUyg0Xr3hEa9LtR7CWgQvkBTU8OQjktotAaxhQ6tHt5GIFMIlkdXd4PQOdelyd3wRd69Hd9xn&amp;sig=Cg0ArKJSzFK_BvOoDjOn&amp;adurl=https://www.glassdoor.co.in/Jobs/WaterAid-Jobs-E582352.htm"
-                                                                data-ga-category="homepage" data-ga-action="featured-companies-click"
-                                                                data-ga-lbl="search-jobs">
-                                                                <span>Free Chatbot</span>
-                                                            </a>
+                                        <p>
 
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            Mission：patients' rights to know the medical costs when they chose doctors and medical services. Check total bills of 60+
+                                            surgeries for 10 private hospitals before admission.
+
+                                        </p>
+
+                                        <div class="featured-employers-buttons">
+                                            <a class="btn gd-btn-mkt" target="__blank" href="http://ec2-52-15-127-37.us-east-2.compute.amazonaws.com:7000"
+                                                data-ga-category="homepage" data-ga-action="featured-companies-click" data-ga-lbl="search-jobs">
+                                                <span>Free Chatbot</span>
                                             </a>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section class="section">
-                                    <div class="row" style="padding:20px;text-align:center;">
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                            <h3>AI Chatbot to check total bills</h3>
-                                            <h5 style="color:#e7463d">Check the total bill for over 60 common surgeries in nine private hospitals
-
-                                            </h5>
-                                            <p>Before, patients cannot estimate the total bills before they settle the hospital.bills.
-                                                WeCareBill collects anonymous information from patients, and share the information
-                                                with other patients to help them to budget and compare prices. We believe
-                                                it will give more choices to patients.
-
-                                            </p>
-
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                            <h3>anonymous survey of hospital bill                                            </h3>
-                                            <h5 style="color:#e7463d">The last time you entered the private hospital's bill can help other patients!</h5>
-                                            <p>WeCareBill invites patients to share anonymous information about the medical bills from private hospitals. We will use this information to help other patients to find doctors and medical services according to their budget.                                            </p>
 
                                         </div>
                                     </div>
-                                </section>
 
-                                <section class="section wide gradient">
-                                    <div class="row" style="text-align:center;padding:25px 0px;margin:0px;">
-                                        <div class="col-md-6 col-xs-12">
-                                            <i class="fa fa-lightbulb-o fa-2x"></i>
-                                            <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
-                                            <p class="count-text ">SomeText GoesHere</p>
-                                        </div>
-
-                                        <div class="col-md-6 col-xs-12">
-                                            <i class="fa fa-bug fa-2x"></i>
-                                            <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
-                                            <p class="count-text ">SomeText GoesHere</p>
-                                        </div>
-
-
-                                </section>
-
-
-                            </article>
+                                </div>
+                                </a>
                             </div>
-                            <div id="UnderAgeLimitDialog" class="hidden">
-                                <div id="UnderAgeLimitMessage">
-                                    <p> We're sorry...you are not eligible to have an account. The information you submitted
-                                        does not meet the requirements of our
-                                        <a href="/about/privacy.htm" target="_blank">Privacy Policy</a>
+                        </div>
+
+                        <section class="section">
+                            <div class="row" style="margin:0px;padding:20px;text-align:center;">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <img src="/img/download.png" width="150" />
+                                    <h2 style="font-weight:600;">AI Chatbot to check total bills</h2>
+                                    <h5 style="color:#e7463d">Check the total bill for over 60 common surgeries in nine private hospitals
+
+                                    </h5>
+                                    <p>Before, patients cannot estimate the total bills before they settle the hospital.bills.
+                                        WeCareBill collects anonymous information from patients, and share the information
+                                        with other patients to help them to budget and compare prices. We believe it will
+                                        give more choices to patients.
+
                                     </p>
+
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <img src="/img/bills.png" width="150" />
+                                    <h2 style="font-weight:600;">Anonymous survey of hospital bill </h2>
+                                    <h5 style="color:#e7463d">The last time you entered the private hospital's bill can help other patients!</h5>
+                                    <p>WeCareBill invites patients to share anonymous information about the medical bills from
+                                        private hospitals. We will use this information to help other patients to find doctors
+                                        and medical services according to their budget. </p>
+
                                 </div>
                             </div>
-                            <div id="AccountDeletedSuccessDialog" class="hidden">
-                                <div id="AccountDeletedSuccessMessage">
-                                    <p class="padRtLg"> You have successfully deleted your account.</p>
+                        </section>
+
+                        <section class="section wide gradient">
+                            <div class="row" style="text-align:center;padding:25px 0px;margin:0px;">
+                                <div class="col-md-6 col-xs-12">
+                                    <i class="glyphicon glyphicon-list-alt  gi-4x"></i>
+                                    <h1 class="timer count-title count-number" data-to="27697081" data-speed="1500"></h1>
+                                    <p class="count-text ">Total Entries of Data</p>
                                 </div>
+
+                                <div class="col-md-6 col-xs-12">
+                                    <i class="glyphicon glyphicon-search gi-4x"></i>
+                                    <h1 class="timer count-title count-number" data-to="13606289" data-speed="1500"></h1>
+                                    <p class="count-text ">Total no of Searches</p>
+                                </div>
+
+
+                        </section>
+
+
+
+                        </div>
+                        <div id="UnderAgeLimitDialog" class="hidden">
+                            <div id="UnderAgeLimitMessage">
+                                <p> We're sorry...you are not eligible to have an account. The information you submitted does
+                                    not meet the requirements of our
+                                    <a href="/about/privacy.htm" target="_blank">Privacy Policy</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="AccountDeletedSuccessDialog" class="hidden">
+                            <div id="AccountDeletedSuccessMessage">
+                                <p class="padRtLg"> You have successfully deleted your account.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer id="PageBot" data-role="footer">
-            <div id="FooterModule" class="gdGrid" style="background:#000;">
-                <div data-reactroot="" id="footer" class="darkBg">
+    <footer id="PageBot" data-role="footer">
+        <div id="FooterModule" class="gdGrid" style="border-top:1px solid #e0dfdf;background:#4a4949;color:#fff;">
+            <div data-reactroot="" id="footer" class="darkBg">
 
-                    <nav>
-                        <ul class="footer-menu row justify-content-center">
-                            <li class="col-12 order-12 col-md-4 order-md-1 center logo-stack">
-                                <span>
-                                    <img src="/img/logo.png" class="img-responsive" width="200" />
-                                </span>
-                            </li>
-                            <li class="col-6 col-sm-3 col-md-2 order-2">
-                                <p class="footerMenuHead">Glassdoor</p>
+                <section class="section wide gradient">
+                    <div class="prefooter-module">
+                        <div class="row prefooter-module-wrapper">
+                            <div class="prefooter-module-col col-12 col-sm-6 col-md-3" data-col-group="0">
+                                <h4>Popular Searches</h4>
                                 <ul>
-                                    <li class="margBotSm">
-                                        <a href="/about/index_input.htm" target="_top">About Us</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/web-developer-jobs-SRCH_KO0,13.htm">Web Developer Jobs</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="/Trends/index.htm" target="_top">Awards &amp; Trends</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/mechanical-engineer-jobs-SRCH_KO0,19.htm">Mechanical Engineer Jobs</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="https://www.glassdoor.co.uk/blog/" target="_top">Blog</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/project-manager-jobs-SRCH_KO0,15.htm">Project Manager Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/human-resources-jobs-SRCH_KO0,15.htm">Human Resources Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/consultant-jobs-SRCH_KO0,10.htm">Consultant Jobs</a>
+                                    </li>
+                                    <li class="link link-more">
+                                        <a class="link">More</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="col-6 col-sm-3 col-md-2 order-2">
-                                <p class="footerMenuHead">Employers</p>
+                                <ul class="more">
+                                    <li>
+                                        <a class="secLink" href="/Job/civil-engineer-jobs-SRCH_KO0,14.htm">Civil Engineer Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/call-center-jobs-SRCH_KO0,11.htm">Call Center Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/operations-manager-jobs-SRCH_KO0,18.htm">Operations Manager Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/accountant-jobs-SRCH_KO0,10.htm">Accountant Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/account-executive-jobs-SRCH_KO0,17.htm">Account Executive Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/systems-analyst-jobs-SRCH_KO0,15.htm">Systems Analyst Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/nurse-jobs-SRCH_KO0,5.htm">Nurse Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/it-manager-jobs-SRCH_KO0,10.htm">It Manager Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/electrician-jobs-SRCH_KO0,11.htm">Electrician Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/associate-jobs-SRCH_KO0,9.htm">Associate Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/railway-jobs-SRCH_KO0,7.htm">Railway Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/analyst-jobs-SRCH_KO0,7.htm">Analyst Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/finance-jobs-SRCH_KO0,7.htm">Finance Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/marketing-jobs-SRCH_KO0,9.htm">Marketing Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/software-developer-jobs-SRCH_KO0,18.htm">Software Developer Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/data-entry-jobs-SRCH_KO0,10.htm">Data Entry Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/programmer-analyst-jobs-SRCH_KO0,18.htm">Programmer Analyst Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/supply-chain-management-jobs-SRCH_KO0,23.htm">Supply Chain Management Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/sales-manager-jobs-SRCH_KO0,13.htm">Sales Manager Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/administrative-assistant-jobs-SRCH_KO0,24.htm">Administrative Assistant Jobs</a>
+                                    </li>
+                                    <li class="link link-less">
+                                        <a class="link">Less</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prefooter-module-col col-12 col-sm-6 col-md-3" data-col-group="0">
+                                <h4>Jobs</h4>
                                 <ul>
-                                    <li class="margBotSm">
-                                        <a href="/employers/index.htm?src=gdfoot" target="_top">Get a FREE Employer Account</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/administrative-jobs-SRCH_KO0,14.htm">Jobs in Administrative</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="/partners/index.htm" target="_top">Employer Centre</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/design-jobs-SRCH_KO0,6.htm">Jobs in Design</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="/post-job" target="_top">Post a Job</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/business-jobs-SRCH_KO0,8.htm">Jobs in Business</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/consulting-jobs-SRCH_KO0,10.htm">Jobs in Consulting</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/customer-support-services-jobs-SRCH_KO0,25.htm">Jobs in Customer Services &amp; Support</a>
+                                    </li>
+                                    <li class="link link-more">
+                                        <a class="link">More</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="col-6 col-sm-3 col-md-2 order-2">
-                                <p class="footerMenuHead">Community</p>
+                                <ul class="more">
+                                    <li>
+                                        <a class="secLink" href="/Job/education-jobs-SRCH_KE0,9.htm">Jobs in Education</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/engineering-jobs-SRCH_KO0,11.htm">Jobs in Engineering</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/finance-accounting-jobs-SRCH_KE0,18.htm">Jobs in Finance &amp; Accounting</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/healthcare-jobs-SRCH_KO0,10.htm">Jobs in Healthcare</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/human-resources-personnel-jobs-SRCH_KO0,25.htm">Jobs in Human Resources</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/information-technology-jobs-SRCH_KO0,22.htm">Jobs in Information Technology</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/legal-jobs-SRCH_KO0,5.htm">Jobs in Legal</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/marketing-jobs-SRCH_KE0,9.htm">Jobs in Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/media-communications-jobs-SRCH_KE0,20.htm">Jobs in Media &amp; Communications</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/protective-services-military-jobs-SRCH_KE0,28.htm">Jobs in Military &amp; Protective Services</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/operations-jobs-SRCH_KO0,10.htm">Jobs in Operations</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/other-jobs-SRCH_KE0,5.htm">Jobs in Other</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/product-project-management-jobs-SRCH_KO0,26.htm">Jobs in Product &amp; Project Management</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/research-science-jobs-SRCH_KO0,16.htm">Jobs in Research &amp; Science</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/retail-food-services-jobs-SRCH_KE0,20.htm">Jobs in Retail &amp; Food Services</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/sales-jobs-SRCH_KO0,5.htm">Jobs in Sales</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/labour-manufacturing-skilled-jobs-SRCH_KO0,28.htm">Jobs in Skilled Labour &amp; Manufacturing</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/transportation-jobs-SRCH_KE0,14.htm">Jobs in Transportation</a>
+                                    </li>
+                                    <li class="link link-less">
+                                        <a class="link">Less</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prefooter-module-col col-12 col-sm-6 col-md-3" data-col-group="1">
+                                <h4>Browse by City</h4>
                                 <ul>
-                                    <li class="margBotSm">
-                                        <a href="http://help.glassdoor.com/GlassDoorHome/en_US" target="_blank">Help / Contact Us</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/bangalore-jobs-SRCH_IL.0,9_IC2940587.htm">Jobs in Bangalore</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="http://help.glassdoor.com/article/Community-Guidelines/en_US" target="_blank">Guidelines</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/pune-jobs-SRCH_IL.0,4_IC2856202.htm">Jobs in Pune</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="/about/terms.htm" target="_top">Terms of Use (New)</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/mumbai-jobs-SRCH_IL.0,6_IC2851180.htm">Jobs in Mumbai</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="/about/privacy.htm" target="_top">Privacy &amp; Cookies</a>
+                                    <li>
+                                        <a class="secLink" href="/Job/chennai-jobs-SRCH_IL.0,7_IC2833209.htm">Jobs in Chennai</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/hyder%C4%81b%C4%81d-jobs-SRCH_IL.0,9_IC2865319.htm">Jobs in Hyderabad</a>
+                                    </li>
+                                    <li class="link link-more">
+                                        <a class="link">More</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="col-6 col-sm-3 col-md-2 order-2">
-                                <p class="footerMenuHead">Work With Us</p>
+                                <ul class="more">
+                                    <li>
+                                        <a class="secLink" href="/Job/gurgaon-jobs-SRCH_IL.0,7_IC2921225.htm">Jobs in Gurgaon</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/delhi-jobs-SRCH_IL.0,5_IC2891556.htm">Jobs in Delhi</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/noida-jobs-SRCH_IL.0,5_IC4477468.htm">Jobs in Noida</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/new-delhi-jobs-SRCH_IL.0,9_IC2891681.htm">Jobs in New Delhi</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/calcutta-jobs-SRCH_IL.0,8_IC2901633.htm">Jobs in Calcutta</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/jaipur-jobs-SRCH_IL.0,6_IC2942216.htm">Jobs in Jaipur</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/coimbatore-jobs-SRCH_IL.0,10_IC2836047.htm">Jobs in Coimbatore</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/chandigarh-jobs-SRCH_IL.0,10_IC2879615.htm">Jobs in Chandigarh</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/pimpri-chinchwad-jobs-SRCH_IL.0,16_IC4471268.htm">Jobs in Ahmadabad</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/pimpri-chinchwad-jobs-SRCH_IL.0,16_IC4471268.htm">Jobs in Pimpri-Chinchwad</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/greater-noida-jobs-SRCH_IL.0,13_IC4475367.htm">Jobs in Greater Noida</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/mohali-jobs-SRCH_IL.0,6_IC4469455.htm">Jobs in Mohali</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/vadodara-jobs-SRCH_IL.0,8_IC2930179.htm">Jobs in Vadodara</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/bommanahalli-hosur-road-jobs-SRCH_IL.0,23_IC4470558.htm">Jobs in Bommanahalli, Hosur Road</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/indore-jobs-SRCH_IL.0,6_IC2876676.htm">Jobs in Indore</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/cochin-jobs-SRCH_IL.0,6_IC2887994.htm">Jobs in Cochin</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/th%C4%81ne-jobs-SRCH_IL.0,5_IC2933225.htm">Jobs in Thane</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/guwahati-jobs-SRCH_IL.0,8_IC2851826.htm">Jobs in Guwahati</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/dombivli-jobs-SRCH_IL.0,8_IC4470242.htm">Jobs in Dombivli</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Job/bhubaneswar-jobs-SRCH_IL.0,11_IC2890478.htm">Jobs in Bhubaneswar</a>
+                                    </li>
+                                    <li class="link link-less">
+                                        <a class="link">Less</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prefooter-module-col col-12 col-sm-6 col-md-3" data-col-group="1">
+                                <h4>Salaries</h4>
                                 <ul>
-                                    <li class="margBotSm">
-                                        <a href="http://help.glassdoor.com/ContactUs/en_US?job_board=true" target="_blank">Job Boards</a>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/mechanical-engineer-salary-SRCH_KO0,19.htm">Mechanical Engineer Salaries</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="http://resources.glassdoor.com/advertising-on-glassdoor.html" target="_blank">Advertisers</a>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/assistant-professor-salary-SRCH_KO0,19.htm">Assistant Professor Salaries</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="/developer/index.htm" target="_top">Developers</a>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/data-scientist-salary-SRCH_KO0,14.htm">Data Scientist Salaries</a>
                                     </li>
-                                    <li class="margBotSm">
-                                        <a href="http://jobs.glassdoor.com/home?id=GLASA001M" target="_top">Careers</a>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/business-analyst-salary-SRCH_KO0,16.htm">Business Analyst Salaries</a>
                                     </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="row justify-content-center utilityLinks margBotLg">
-                            <li class="col-md-4 justify-content-center appStoreCTA">
-                                <span class="df">Download the App</span>
-                                <span class="df">
-                                    <a href="https://play.google.com/store/apps/details?id=com.glassdoor.app&amp;referrer=utm_source%3Dglassdoor%26utm_medium%3Dcta%26utm_campaign%3Ddownloadappicon"
-                                        target="_blank" class="socialShareIcon">
-                                        <span class="android-svg">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="147 0 25 29">
-                                                <g fill="none">
-                                                    <g id="Group" fill="#fff">
-                                                        <path d="M148.77 9.06c-.98 0-1.77.77-1.77 1.72v7.24c0 .95.8 1.72 1.77 1.72.98 0 1.76-.78 1.76-1.72v-7.24c0-.95-.8-1.72-1.76-1.72zm14.27-6.5l1.24-2.2c.06-.12.02-.26-.1-.33-.1-.06-.27-.02-.33.1l-1.25 2.22c-1.05-.45-2.22-.7-3.47-.7-1.24 0-2.4.24-3.46.7L154.43.13c-.07-.12-.22-.16-.34-.1-.12.06-.17.2-.1.33l1.23 2.2c-2.43 1.22-4.07 3.55-4.07 6.22h15.94c0-2.67-1.63-5-4.06-6.22zm-7.54 3.4c-.36 0-.67-.3-.67-.65 0-.35.3-.64.67-.64.37 0 .67.3.67.65 0 .37-.3.66-.67.66zm7.27 0c-.37 0-.67-.3-.67-.65 0-.35.3-.64.67-.64.36 0 .66.3.66.65 0 .37-.3.66-.66.66zm-11.55 3.42V20.6c0 1.02.84 1.85 1.9 1.85h1.28v3.83c0 .94.8 1.72 1.76 1.72.98 0 1.77-.78 1.77-1.73v-3.83h2.4v3.83c0 .95.78 1.72 1.76 1.72.97 0 1.76-.78 1.76-1.73v-3.83h1.3c1.03 0 1.88-.82 1.88-1.85V9.37h-15.82zm20.05 1.4c0-.96-.8-1.72-1.77-1.72-.98 0-1.77.77-1.77 1.72v7.24c0 .95.8 1.72 1.77 1.72.98 0 1.77-.78 1.77-1.72v-7.24z"></path>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                </span>
-                                <span class="df">
-                                    <a href="https://itunes.apple.com/us/app/glassdoor-job-search-salaries/id589698942?mt=8" target="_blank" class="socialShareIcon">
-                                        <span class="apple-svg">
-                                            <svg width="23px" height="28px" viewBox="0 0 23 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <defs>
-                                                    <path d="M19.199 8.305c-.033-3.514 2.92-5.223 3.055-5.303C20.582.601 17.99.272 17.08.246 14.902.021 12.791 1.53 11.682 1.53 10.55 1.53 8.843.27 7.002.305 4.635.341 2.42 1.692 1.205 3.79-1.304 8.066.566 14.351 2.969 17.807c1.202 1.693 2.606 3.584 4.444 3.517 1.799-.073 2.47-1.13 4.64-1.13 2.151 0 2.782 1.13 4.657 1.088 1.93-.03 3.145-1.701 4.305-3.41 1.389-1.94 1.946-3.85 1.968-3.949-.045-.015-3.748-1.407-3.784-5.618z"
-                                                        id="a"></path>
-                                                </defs>
-                                                <g id="apple" fill="none" fill-rule="evenodd">
-                                                    <path id="apple-leaf" d="M15.657 4.468c.967-1.191 1.63-2.812 1.445-4.457-1.4.06-3.15.954-4.158 2.119-.892 1.027-1.69 2.71-1.483 4.293 1.572.115 3.187-.782 4.196-1.955z"
-                                                        fill="#6CBF40"></path>
-                                                    <g transform="translate(0 6.496)">
-                                                        <mask id="b" fill="#fff">
-                                                            <use xlink:href="#a"></use>
-                                                        </mask>
-                                                        <use fill="#FFF" xlink:href="#a"></use>
-                                                        <g id="path" mask="url(#b)">
-                                                            <rect fill="#F4BA2B" x="0" y="4.256" width="25.312" height="3.36"></rect>
-                                                            <rect fill="#D62B38" x="0" y="10.976" width="25.312" height="3.36"></rect>
-                                                            <rect fill="#3F9FDF" x="0" y="17.696" width="25.312" height="4.256"></rect>
-                                                            <rect fill="#EC8123" x="0" y="7.616" width="25.312" height="3.36"></rect>
-                                                            <rect fill="#903195" x="0" y="14.336" width="25.312" height="3.36"></rect>
-                                                            <rect fill="#6CBF40" x="0" y="0" width="25.312" height="4.256"></rect>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                </span>
-                            </li>
-                            <li class="col-md-5 margTopLg social">
-                                <ul class="justify-content-center socialIconList">
-                                    <li class="df">
-                                        <a href="/glassdoor" target="_top" class="socialShareIcon">
-                                            <span class="glassdoor-svg">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40">
-                                                    <g fill="none">
-                                                        <ellipse cx="20" cy="20" fill="#7F7F7F" rx="20" ry="20"></ellipse>
-                                                        <path fill="#fff" d="M23.9 27.22v-11.4c0-.06.03-.1.1-.1h2.57c.05 0 .1.04.1.1v11.4c0 1.54-1.25 2.78-2.78 2.78h-8.34c-1.54 0-2.78-1.24-2.78-2.78h11.1zm0-16.66c1.52 0 2.77 1.24 2.77 2.77h-11.1v11.4c0 .07-.06.1-.12.1h-2.57c-.06 0-.1-.03-.1-.1v-11.4c0-1.53 1.24-2.77 2.78-2.77h8.33z"></path>
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                        </a>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/india-investment-banking-analyst-salary-SRCH_IL.0,5_IN115_KO6,32.htm">Investment Banking Analyst Salaries</a>
                                     </li>
-                                    <li class="df">
-                                        <a href="https://www.facebook.com/Glassdoor/" target="_blank" class="socialShareIcon">
-                                            <span class="facebook-svg">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="52 0 41 40">
-                                                    <g fill="none" transform="translate(52)">
-                                                        <ellipse cx="20" cy="20" fill="#7F7F7F" rx="20" ry="20"></ellipse>
-                                                        <path fill="#fff" d="M21.78 30.9v-9.8H25l.44-3.77h-3.77V14.9c0-1.12.33-1.9 1.9-1.9h2V9.56c-.35 0-1.57-.12-2.9-.12-2.9 0-4.9 1.78-4.9 5v2.78h-3.33V21h3.34v9.78h4v.1z"></path>
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="df">
-                                        <a href="https://twitter.com/Glassdooruk" target="_blank" class="socialShareIcon">
-                                            <span class="twitter-svg">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="104 0 41 40">
-                                                    <g fill="none" transform="translate(104)">
-                                                        <ellipse cx="20" cy="20" fill="#7F7F7F" rx="20" ry="20"></ellipse>
-                                                        <path fill="#fff" d="M30.56 14.2c-.76.34-1.57.56-2.42.66.87-.52 1.54-1.34 1.85-2.33-.82.48-1.73.83-2.7 1.02-.76-.82-1.85-1.33-3.07-1.33-2.33 0-4.2 1.9-4.2 4.22 0 .33.02.65.1.96-3.5-.18-6.62-1.85-8.7-4.4-.36.62-.57 1.34-.57 2.1 0 1.48.75 2.77 1.88 3.52-.7-.02-1.34-.2-1.9-.52 0 0 0 .03 0 .05 0 2.04 1.44 3.75 3.37 4.14-.34.08-.72.13-1.1.13-.27 0-.54-.02-.8-.07.54 1.67 2.1 2.9 3.95 2.93-1.45 1.12-3.27 1.8-5.24 1.8-.33 0-.67-.03-1-.07 1.87 1.2 4.1 1.9 6.47 1.9 7.75 0 12-6.43 12-12 0-.18 0-.37-.02-.55.83-.6 1.54-1.33 2.1-2.18"></path>
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="df">
-                                        <a href="https://www.youtube.com/Glassdoor" target="_blank" class="socialShareIcon">
-                                            <span class="youtube-svg">
-                                                <svg width="41px" height="40px" viewBox="156 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <defs>
-                                                        <ellipse id="path-1" cx="20" cy="20" rx="20" ry="20"></ellipse>
-                                                    </defs>
-                                                    <g id="social-icon-youtube" fill="none" fill-rule="evenodd" transform="translate(156)">
-                                                        <mask id="mask-2" fill="#fff">
-                                                            <use xlink:href="#path-1"></use>
-                                                        </mask>
-                                                        <use id="Oval" fill="#7F7F7F" xlink:href="#path-1"></use>
-                                                        <g id="Group" mask="url(#mask-2)">
-                                                            <g id="Shape">
-                                                                <path fill-opacity=".25" fill="#000" d="M8.798 4.645l5.213 3.443.684-.39z" transform="translate(8.889 12.222)"></path>
-                                                                <path d="M21.968 12.272s-.216 1.534-.88 2.21c-.843.886-1.787.89-2.22.942-3.101.225-7.757.232-7.757.232s-5.76-.052-7.533-.223c-.493-.093-1.6-.065-2.443-.952-.665-.675-.88-2.21-.88-2.21s-.223-1.8-.223-3.602V6.981c0-1.802.222-3.603.222-3.603s.216-1.534.88-2.21c.843-.886 1.788-.89 2.22-.942C6.456 0 11.107 0 11.107 0h.01s4.651 0 7.752.225c.433.052 1.377.056 2.22.943.664.675.88 2.209.88 2.209s.222 1.801.222 3.603v1.688a33.75 33.75 0 0 1-.222 3.603zM8.798 4.645v6.27l5.88-3.201-5.88-3.069z"
-                                                                    fill="#fff" transform="translate(8.889 12.222)"></path>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="df">
-                                        <a href="https://www.instagram.com/glassdoor/" target="_blank" class="socialShareIcon">
-                                            <span class="instagram-svg">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-                                                    <g fill="none">
-                                                        <circle cx="20" cy="20" r="20" fill="#7F7F7F"></circle>
-                                                        <g fill="#fff">
-                                                            <path d="M20 9c-3 0-3.36.02-4.54.07-1.17.06-1.97.24-2.67.5-.73.3-1.34.67-1.95 1.28-.62.6-1 1.23-1.27 1.95-.27.7-.46 1.5-.5 2.67C9 16.64 9 17.02 9 20c0 3 0 3.36.07 4.54.05 1.17.24 1.97.5 2.67.3.73.66 1.34 1.28 1.95.6.62 1.22 1 1.94 1.27.7.27 1.5.46 2.66.5C16.64 31 17 31 20 31c2.98 0 3.36 0 4.53-.07 1.17-.05 1.97-.24 2.67-.5.72-.3 1.34-.66 1.95-1.28.6-.6.98-1.22 1.27-1.94.27-.7.45-1.5.5-2.66C31 23.36 31 23 31 20c0-2.98-.02-3.36-.07-4.53-.06-1.17-.24-1.97-.5-2.67-.3-.72-.67-1.34-1.28-1.95-.6-.6-1.23-.98-1.95-1.27-.7-.27-1.5-.45-2.67-.5C23.36 9 22.98 9 20 9zm0 2c2.93 0 3.28 0 4.44.05 1.07.05 1.65.23 2.04.38.52.2.88.44 1.27.82.38.4.62.75.82 1.27.15.4.33.97.38 2.04.05 1.16.06 1.5.06 4.44 0 2.94 0 3.3-.05 4.45-.05 1.07-.23 1.65-.38 2.04-.2.5-.44.87-.82 1.25-.4.4-.75.63-1.27.83-.4.15-.97.33-2.04.37-1.16.06-1.5.07-4.44.07-2.94 0-3.3 0-4.45-.07-1.07-.04-1.65-.22-2.04-.37-.5-.2-.87-.44-1.25-.83-.4-.38-.63-.75-.83-1.26-.15-.4-.33-.98-.37-2.05-.06-1.16-.07-1.5-.07-4.45 0-2.93 0-3.28.07-4.44.04-1.07.22-1.65.37-2.04.2-.52.44-.88.83-1.27.38-.38.75-.62 1.26-.82.4-.15.98-.33 2.05-.38C16.7 11 17.05 11 20 11zM20 23.67c-2.03 0-3.67-1.64-3.67-3.67 0-2.02 1.64-3.66 3.67-3.66 2.02 0 3.66 1.64 3.66 3.66 0 2.03-1.64 3.67-3.66 3.67zm0-9.3c-3.12 0-5.65 2.5-5.65 5.63 0 3.12 2.53 5.65 5.65 5.65 3.12 0 5.64-2.53 5.64-5.65 0-3.12-2.52-5.64-5.64-5.64zm7.2-.24c0 .73-.6 1.32-1.33 1.32-.73 0-1.32-.6-1.32-1.32 0-.73.6-1.32 1.32-1.32.73 0 1.32.6 1.32 1.33"></path>
-                                                        </g>
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                        </a>
+                                    <li class="link link-more">
+                                        <a class="link">More</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="col-9 col-sm-5 col-md-3 margTopLg tldSelector"></li>
-                        </ul>
-                    </nav>
-                    <hr>
-                    <div class="browseLinks center margTopLg padBotLg">
-                        <span class="padRtSm">Browse by: </span>
-                        <span class="sepafter">
-                            <a href="/sitedirectory/company-jobs.htm" target="_top">Companies</a>
-                        </span>
-                        <span class="sepafter">
-                            <a href="/sitedirectory/title-jobs.htm" target="_top">Jobs</a>
-                        </span>
-                        <span class="sepafter">
-                            <a href="/sitedirectory/city-jobs.htm" target="_top">locations</a>
-                        </span>
+                                <ul class="more">
+                                    <li>
+                                        <a class="secLink" href="/Salaries/devops-engineer-salary-SRCH_KO0,15.htm">Devops Engineer Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/junior-engineer-salary-SRCH_KO0,15.htm">Junior Engineer Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/agriculture-officer-salary-SRCH_KO0,19.htm">Agriculture Officer Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/software-engineer-salary-SRCH_KO0,17.htm">Software Engineer Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/mis-executive-salary-SRCH_KO0,13.htm">MIS Executive Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/assistant-manager-salary-SRCH_KO0,17.htm">Assistant Manager Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/android-developer-salary-SRCH_KO0,17.htm">Android Developer Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/data-analyst-salary-SRCH_KO0,12.htm">Data Analyst Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/dubai-software-engineer-salary-SRCH_IL.0,5_IM954_KO6,23.htm">Software Engineer Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/india-medical-representative-salary-SRCH_IL.0,5_IN115_KO6,28.htm?countryRedirect=true">Medical Representative Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/assistant-vice-president-salary-SRCH_KO0,24.htm">Assistant Vice President Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/graduate-engineer-trainee-salary-SRCH_KO0,25.htm">Graduate Engineer Trainee Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/digital-marketing-manager-salary-SRCH_KO0,25.htm">Digital Marketing Manager Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/sub-inspector-salary-SRCH_KO0,13.htm">SUB INSPECTOR Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/bangalore-software-testing-engineer-salary-SRCH_IL.0,9_IM1091_KO10,35.htm">Software Testing Engineer Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/senior-software-engineer-salary-SRCH_KO0,24.htm">Senior Software Engineer Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/bangalore-product-manager-salary-SRCH_IL.0,9_IM1091_KO10,25.htm">Product Manager Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/deputy-manager-salary-SRCH_KO0,14.htm">Deputy Manager Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/bangalore-solutions-architect-salary-SRCH_IL.0,9_IM1091_KO10,29.htm">Solutions Architect Salaries</a>
+                                    </li>
+                                    <li>
+                                        <a class="secLink" href="/Salaries/digital-marketing-salary-SRCH_KO0,17.htm">Digital Marketing Salaries</a>
+                                    </li>
+                                    <li class="link link-less">
+                                        <a class="link">Less</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="copyright center margTopLg padBotLg">
-                        <p>
-                            <!-- react-text: 88 -->Copyright
-                            <!-- /react-text -->
-                            <!-- react-text: 89 -->©
-                            <!-- /react-text -->
-                            <!-- react-text: 90 -->2008-2018, WeCarebill, Inc. "WeCarebill" and logo are proprietary trademarks of WeCarebill, Inc.
-                            <!-- /react-text -->
-                        </p>
-                    </div>
+                </section>
+
+                <div class="copyright center margTopLg padBotLg">
+                    <p>
+
+                        WeCarebill Foundation all right reserved ©2018.
+
+                    </p>
                 </div>
             </div>
-        </footer>
-        <script src="/js/jquery.easy-autocomplete.js"></script>
-        <script src="/js/script.js"></script>
+        </div>
+    </footer>
+    <script src="/js/jquery.easy-autocomplete.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
