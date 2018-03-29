@@ -162,6 +162,7 @@ jQuery(function ($) {
 	}
 });
 $(function () {
+
 	$("a.contribute-medical-bill").click(function () {
 		$("div.context-tabs-mask h1").text("Contribute medical bill info annoymously");
 	})
