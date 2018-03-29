@@ -168,6 +168,11 @@ $(function () {
 	$("a.contribute-reset-bill").click(function () {
 		$("div.context-tabs-mask h1").text("How much hospital treatment costed?");
 	})
+	$("a.navbar").click(function(){
+ $("div#navbar-drawer-mask").toggle();
+ $("div.strikingly-nav-transition").toggleClass("translate");
+ $("div.navbar-drawer-bar").toggleClass("drawer-open");
+	});
 	$("ul.context-choice-tabs li").click(function () {
 		$("ul.context-choice-tabs li").removeClass("active-context");
 		$(this).addClass("active-context");

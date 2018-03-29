@@ -2834,7 +2834,9 @@ i.fb {
     height: 20px;
     vertical-align: middle
 }
-
+ul.s-nav span li{
+    font-weight:bold;
+}
 @media (-webkit-min-device-pixel-ratio: 2),
 (-o-min-device-pixel-ratio: 2/1),
 (min-resolution: 192dpi) {
@@ -6513,7 +6515,9 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 @media only screen and (max-width: 767px) {
-
+    div#SrchHero{
+        padding-top:15% !important;
+    }
     .featured-employers {
         padding: 40px 0 20px
     }
@@ -6521,7 +6525,7 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 
 .featured-employers h2 {
     margin-bottom: 35px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     line-height: 1.33
 }
@@ -7197,6 +7201,9 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 @media screen and (max-width: 575px) {
+    div#SrchHero{
+        padding-top:25% !important;
+    }
     .value-prop-carousel-cell .img {
         display: none
     }
@@ -7211,6 +7218,9 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 @media screen and (max-width: 340px) {
+    div#SrchHero{
+        padding-top:38% !important;
+    }
     .value-prop-carousel-cell .btn:link {
         padding-left: 0;
         padding-right: 0;
