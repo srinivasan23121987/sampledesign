@@ -7201,8 +7201,9 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 @media screen and (max-width: 575px) {
+
     div#SrchHero{
-        padding-top:25% !important;
+        padding-top:10% !important;
     }
     .value-prop-carousel-cell .img {
         display: none
@@ -7219,7 +7220,7 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 
 @media screen and (max-width: 340px) {
     div#SrchHero{
-        padding-top:38% !important;
+        padding-top:27% !important;
     }
     .value-prop-carousel-cell .btn:link {
         padding-left: 0;
@@ -7434,6 +7435,9 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 @media only screen and (min-width: 1025px) {
+    div#logo{
+        float:left;
+    }
     .feature-link-carousel-cell {
         -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2)
@@ -7451,6 +7455,9 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    div#logo{
+        float:left;
+    }
     .feature-link-carousel-cell {
         -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2)

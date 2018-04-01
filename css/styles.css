@@ -42,6 +42,6 @@
   div.browseLinks {
       margin:10px 0px;
   }
-  div#SrchHero{
-    padding-top:10%;
-  }
+ul.s-nav{
+  padding-top:25px;
+}
