@@ -6531,6 +6531,9 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    div.context-tabs-mask{
+        margin-top: 37px;
+    }
     .featured-employers h2 {
         margin-bottom: 25px;
         font-size: 24px;
@@ -7201,6 +7204,17 @@ section.heroSlider div.frame div.slide div.content div.empInfo .data.cell div.sn
 }
 
 @media screen and (max-width: 575px) {
+
+
+    div.context-tabs-mask{
+        margin-top: 10px;
+    
+    }
+    div.context-tabs-mask h1{
+        margin-top: 14px;
+    
+    }
+
 
     div#SrchHero{
         padding-top:10% !important;
