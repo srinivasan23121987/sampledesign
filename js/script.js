@@ -134,40 +134,107 @@ function vidRescale() {
 	}
 }(jQuery));
 
+
 jQuery(function ($) {
 	var surgoptions = {
+		url: "/getSurgery",
+		ajaxSettings: {
+			dataType: "json",
+			method: "POST",
+			data: {
+				dataType: "json"
+			}
+		},
+		list: {
+			maxNumberOfElements: 8,
+			match: {
+				enabled: true
+			}, sort: {
+				enabled: true
+			}
+		},
 
-		url: "/js/jsondata.json",
-	  
 		getValue: "name",
+		requestDelay: 400,
 		theme: "square"
-	  };
-	  var specoptions = {
+	};
+	var specoptions = {
 
-		url: "/js/jsondata.json",
-	  
-		getValue: "name",
-		theme: "square"
-	  };
-	  var hospoptions = {
+		url: "/getType",
 
-		url: "/js/jsondata.json",
-	  
 		getValue: "name",
-		theme: "square"
-	  };
-	  var docoptions = {
+		ajaxSettings: {
+			dataType: "json",
+			method: "POST",
+			data: {
+				dataType: "json"
+			}
+		},
+		list: {
+			maxNumberOfElements: 8,
+			match: {
+				enabled: true
+			}, sort: {
+				enabled: true
+			}
+		},
 
-		url: "/js/jsondata.json",
-	  
+		theme: "square",
+		requestDelay: 400
+	};
+	var hospoptions = {
+
+		url: "/getHospital",
+
 		getValue: "name",
-		theme: "square"
-	  };
-	  
-	  $("input#SurgerySearch").easyAutocomplete(surgoptions);
-	  $("#SpecialitySearch").easyAutocomplete(specoptions);
-	  $("#HospitalSearch").easyAutocomplete(hospoptions);
-	  $("#DoctorSearch").easyAutocomplete(docoptions);
+		ajaxSettings: {
+			dataType: "json",
+			method: "POST",
+			data: {
+				dataType: "json"
+			}
+		},
+		list: {
+			maxNumberOfElements: 8,
+			match: {
+				enabled: true
+			}, sort: {
+				enabled: true
+			}
+		},
+
+		theme: "square",
+		requestDelay: 400
+	};
+	var docoptions = {
+
+		url: "/getHospital",
+
+		getValue: "name",
+		ajaxSettings: {
+			dataType: "json",
+			method: "POST",
+			data: {
+				dataType: "json"
+			}
+		},
+		list: {
+			maxNumberOfElements: 8,
+			match: {
+				enabled: true
+			}, sort: {
+				enabled: true
+			}
+		},
+
+		theme: "square",
+		requestDelay: 400
+	};
+
+	$("input#SurgerySearch").easyAutocomplete(surgoptions);
+	$("input#SpecialitySearch").easyAutocomplete(specoptions);
+	$("input#HospitalSearch").easyAutocomplete(hospoptions);
+	$("input#DoctorSearch").easyAutocomplete(docoptions);
 	// custom formatting example
 	$('.count-number').data('countToOptions', {
 		formatter: function (value, options) {
@@ -185,17 +252,17 @@ jQuery(function ($) {
 	}
 });
 $(function () {
-$("div.easy-autocomplete-container").addClass("style-4");
+	$("div.easy-autocomplete-container").addClass("style-4");
 	$("a.contribute-medical-bill").click(function () {
 		$("div.context-tabs-mask h1").text("Contribute medical bill info annoymously");
 	})
 	$("a.contribute-reset-bill").click(function () {
 		$("div.context-tabs-mask h1").text("How much hospital treatment costed?");
 	})
-	$("a.navbar").click(function(){
- $("div#navbar-drawer-mask").toggle();
- $("div.strikingly-nav-transition").toggleClass("translate");
- $("div.navbar-drawer-bar").toggleClass("drawer-open");
+	$("a.navbar").click(function () {
+		$("div#navbar-drawer-mask").toggle();
+		$("div.strikingly-nav-transition").toggleClass("translate");
+		$("div.navbar-drawer-bar").toggleClass("drawer-open");
 	});
 	$("form#surgery-form div input#SurgerySearch").parent().show();
 	$("ul.context-choice-tabs li").click(function () {
@@ -224,6 +291,15 @@ $("div.easy-autocomplete-container").addClass("style-4");
 			$("ul.context-choice-tabs").next().addClass("active-4")
 		}
 	})
+	$.ajax({
+		url: "/getAllData",
+		type: "POST",
+		dataType: "json",
+		success: function (result) {
+			console.log(result)
+			$("#div1").html(result);
+		}
+	});
 })
 $(window).on('load resize', function () {
 	vidRescale();
