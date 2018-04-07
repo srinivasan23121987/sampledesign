@@ -208,7 +208,7 @@ jQuery(function ($) {
 	};
 	var docoptions = {
 
-		url: "/getHospital",
+		url: "/getDoctor",
 
 		getValue: "name",
 		ajaxSettings: {
@@ -291,15 +291,7 @@ $(function () {
 			$("ul.context-choice-tabs").next().addClass("active-4")
 		}
 	})
-	$.ajax({
-		url: "/getAllData",
-		type: "POST",
-		dataType: "json",
-		success: function (result) {
-			console.log(result)
-			$("#div1").html(result);
-		}
-	});
+	
 })
 $(window).on('load resize', function () {
 	vidRescale();
