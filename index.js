@@ -16,12 +16,12 @@ app.post("/getDoctor", function (req, res) {
         if (err) {
             console.log(err);
         }
-        
-           console.log(db.collection());
-        
+
+
+
         db.collection("doctor").find().toArray(function (err, result) {
             var hospital = result;
-
+            console.log(result)
             hospital = hospital.map(item => {
                 return {
                     name: item["Doctors name"], value: item["Doctors name"]
