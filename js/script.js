@@ -185,7 +185,7 @@ jQuery(function ($) {
 	}
 });
 $(function () {
-
+$("div.easy-autocomplete-container").addClass("style-4");
 	$("a.contribute-medical-bill").click(function () {
 		$("div.context-tabs-mask h1").text("Contribute medical bill info annoymously");
 	})
