@@ -135,7 +135,28 @@ function vidRescale() {
 }(jQuery));
 
 jQuery(function ($) {
-	var options = {
+	var surgoptions = {
+
+		url: "/js/jsondata.json",
+	  
+		getValue: "name",
+		theme: "square"
+	  };
+	  var specoptions = {
+
+		url: "/js/jsondata.json",
+	  
+		getValue: "name",
+		theme: "square"
+	  };
+	  var hospoptions = {
+
+		url: "/js/jsondata.json",
+	  
+		getValue: "name",
+		theme: "square"
+	  };
+	  var docoptions = {
 
 		url: "/js/jsondata.json",
 	  
@@ -143,8 +164,10 @@ jQuery(function ($) {
 		theme: "square"
 	  };
 	  
-	  $("#LocationSearch").easyAutocomplete(options);
-	  
+	  $("input#SurgerySearch").easyAutocomplete(surgoptions);
+	  $("#SpecialitySearch").easyAutocomplete(specoptions);
+	  $("#HospitalSearch").easyAutocomplete(hospoptions);
+	  $("#DoctorSearch").easyAutocomplete(docoptions);
 	// custom formatting example
 	$('.count-number').data('countToOptions', {
 		formatter: function (value, options) {
@@ -174,6 +197,7 @@ $(function () {
  $("div.strikingly-nav-transition").toggleClass("translate");
  $("div.navbar-drawer-bar").toggleClass("drawer-open");
 	});
+	$("form#surgery-form div input#SurgerySearch").parent().show();
 	$("ul.context-choice-tabs li").click(function () {
 		$("ul.context-choice-tabs li").removeClass("active-context");
 		$(this).addClass("active-context");
@@ -182,16 +206,21 @@ $(function () {
 		arrowbox.removeClass("active-2");
 		arrowbox.removeClass("active-3");
 		arrowbox.removeClass("active-4");
+		$("form#surgery-form div input#DoctorSearch,form#surgery-form div input#SpecialitySearch,form#surgery-form div input#HospitalSearch,form#surgery-form div input#SurgerySearch").parent().hide();
 		if ($(this).text().trim() == "Hospital") {
-			$("ul.context-choice-tabs").next().addClass("active-3")
+			$("ul.context-choice-tabs").next().addClass("active-3");
+			$("form#surgery-form div input#HospitalSearch").parent().show();
 		}
 		else if ($(this).text().trim() == "Surgery") {
 			$("ul.context-choice-tabs").next().addClass("active-1")
+			$("form#surgery-form div input#SurgerySearch").parent().show();
 		}
 		else if ($(this).text().trim() == "Speciality") {
 			$("ul.context-choice-tabs").next().addClass("active-2")
+			$("form#surgery-form div input#SpecialitySearch").parent().show();
 		}
 		else if ($(this).text().trim() == "Doctor") {
+			$("form#surgery-form div input#DoctorSearch").parent().show();
 			$("ul.context-choice-tabs").next().addClass("active-4")
 		}
 	})

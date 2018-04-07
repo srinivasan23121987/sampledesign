@@ -8561,7 +8561,8 @@ samp,
         align-items: center;
         max-width: 630px;
         background: rgba(0, 0, 0, 0.6);
-        padding: 18px 20px 20px
+        padding: 18px 20px 20px;
+        margin-top: 0px;
     }
     .static-hph-hero-srch .context-tabs-mask h1 {
         font-size: 26px;

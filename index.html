@@ -18,11 +18,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="/js/bootstrap.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $('[data-toggle="popover"]').popover()
         })
-        	
-        </script>
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.2/react.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.6.2/react-dom.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.min.js" defer></script>
@@ -90,7 +90,7 @@
                                             <span class="s-font-body">Hospital Bills</span>
                                         </a>
                                     </li>
-                                    
+
                                     <li>
                                         <a class="s-nav-item" href="#what-we-do">
                                             <span class="s-font-body">About us</span>
@@ -101,7 +101,7 @@
                                             <span class="s-font-body">Terms</span>
                                         </a>
                                     </li>
-                                  
+
                                 </span>
                                 <span>
                                     <div id="loginContainer"></div>
@@ -109,7 +109,7 @@
                                 </span>
                             </ul>
                         </div>
-           
+
                     </div>
                 </div>
             </div>
@@ -148,8 +148,8 @@
                             <a class="navbar-drawer-item s-font-body" href="#3">Terms</a>
                         </li>
                     </span>
-               
-                 
+
+
                 </ul>
             </div>
             <div class="mobile-actions strikingly-nav-transition" style="height: 172px;">
@@ -187,27 +187,21 @@
                                     <div class="arrow"></div>
                                 </div>
                             </div>
-                            <form action="/Interview/job-interview-questions.htm" method="get" target="_top" class="" data-location-string-from-ip="Chennai"
-                                data-loc-ac-enabled="true" data-pick-best-match="true" data-zipcodes-ok="true">
-                                <input type="hidden" name="suggestCount" class="suggestCount" value="0">
-                                <input type="hidden" name="suggestChosen" class="suggestChosen" value="false">
-                                <input type="hidden" name="clickSource" value="searchBtn">
-                                <input type="hidden" name="typedKeyword" class="typedKey" value="">
-                                <label for="KeywordSearch" class="offScreen">Keyword</label>
-                                <!-- Do not show the keyword value in the input field if the flag is set to false Currently only used on JobView page based on a TLD feature flag -->
+                            <form action="#" method="get" target="_top" class="" id="surgery-form">
 
-
-                                <label for="LocationSearch" class="offScreen">Location</label>
-                                <input id="LocationSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                <input id="SurgerySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
                                     placeholder="Part of body, conditions, specialities or surgeries" autocomplete="off">
-                                <input type="hidden" class="locType" name="locT" value="C">
-                                <input type="hidden" class="locId" name="locId" value="2833209">
-                                <input type="hidden" class="jobType" name="jobType" value="">
-                                <button class="gd-btn-mkt" id="HeroSearchButton" type="submit" tabindex="0">
+                                <input id="SpecialitySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                    placeholder="Part of body, conditions or specialities" autocomplete="off">
+                                <input id="HospitalSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                    placeholder="Please Type hospital" autocomplete="off">
+                                <input id="DoctorSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value=""
+                                    data-srch-type="popular" placeholder="Please type doctor names" autocomplete="off">
+                                <button class="gd-btn-mkt" id="SurgerySearchButton" type="submit" tabindex="0">
                                     <span>Search</span>
                                 </button>
                             </form>
-                            <ul class="search-suggestion"></ul>
+
                         </div>
                     </div>
                 </div>
@@ -359,14 +353,14 @@
     </div>
 
     <footer id="PageBot" data-role="footer">
-        	<div class="menu pmd-floating-action" role="navigation" style="width:auto;">
-                    <a class="btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect  btn-danger" data-trigger="click" data-toggle="popover" data-placement="top"
-                     data-content="<iframe  src='http://ec2-52-15-127-37.us-east-2.compute.amazonaws.com:7000/?popup=1' height='530' width='360' style='border:none'></iframe>"
-                     data-html="true" href="javascript:void(0);"> 
-                    <span class="pmd-floating-hidden">Primary</span>
-                    <i style="color:#FFF;" class="	glyphicon glyphicon-comment gi-2x"></i>
-                </a>
-                </div>
+        <div class="menu pmd-floating-action" role="navigation" style="width:auto;">
+            <a class="btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect  btn-danger" data-trigger="click" data-toggle="popover" data-placement="top"
+                data-content="<iframe  src='http://ec2-52-15-127-37.us-east-2.compute.amazonaws.com:7000/?popup=1' height='530' width='360' style='border:none'></iframe>"
+                data-html="true" href="javascript:void(0);">
+                <span class="pmd-floating-hidden">Primary</span>
+                <i style="color:#FFF;" class="	glyphicon glyphicon-comment gi-2x"></i>
+            </a>
+        </div>
         <div id="FooterModule" class="gdGrid" style="border-top:1px solid #e0dfdf;background:#4a4949;color:#fff;">
             <div data-reactroot="" id="footer" class="darkBg">
 

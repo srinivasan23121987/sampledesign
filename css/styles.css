@@ -45,3 +45,16 @@
 ul.s-nav{
   padding-top:25px;
 }
+form#surgery-form div.easy-autocomplete {
+  display: none;
+}
+div.easy-autocomplete{
+  width:100%!important;
+}
+.ui-autocomplete {
+  z-index: 100;
+  }
+  div.easy-autocomplete-container{
+    max-height: 150px;
+    overflow-y: scroll;
+  }
