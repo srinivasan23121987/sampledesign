@@ -142,7 +142,7 @@
 }
 
 .form-body-material.form-wizard .btn {
-	min-width: 105px;
+	width: auto;
 	height: 40px;
     margin: 0;
     padding: 0 20px;
