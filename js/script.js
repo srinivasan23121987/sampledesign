@@ -135,12 +135,12 @@ function vidRescale() {
 	}
 }(jQuery));
 
-function initiateAjax(url, data, type, callback) {
+function initiateAjax(url, data, callback) {
 	$.ajax({
 		url: url,
 		type: "POST",
 		dataType: "json",
-		data: { 'type': type, "data": data },
+		data: { "data": data },
 		success: function (result) {
 			return callback(result, null);
 		}, error: function (err) {
@@ -156,7 +156,7 @@ jQuery(function ($) {
 			var surgerySearch = $("input#SurgerySearch");
 			var surgerySearchv = surgerySearch.val()
 			if (surgerySearchv) {
-				initiateAjax("/SearchSurgery", surgerySearchv, bills, function (data, err) {
+				initiateAjax("/SearchSurgery", surgerySearchv, function (data, err) {
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					$("#myModal").modal('show');
 				})

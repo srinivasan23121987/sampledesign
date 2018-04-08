@@ -16,7 +16,7 @@ app.post("/SearchSurgery", function (req, res) {
         if (err) {
             console.log(err);
         }
-        db.collection("doctor").find().toArray(function (err, result) {
+        db.collection("surgery").find().toArray(function (err, result) {
         })
     })
 })
