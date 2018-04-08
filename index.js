@@ -9,7 +9,17 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-
+app.post("/SearchSurgery", function (req, res) {
+    console.log(request.body);
+    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+        var db = database;
+        if (err) {
+            console.log(err);
+        }
+        db.collection("doctor").find().toArray(function (err, result) {
+        })
+    })
+})
 app.post("/getDoctor", function (req, res) {
     mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
         var db = database;
@@ -21,7 +31,6 @@ app.post("/getDoctor", function (req, res) {
 
         db.collection("doctor").find().toArray(function (err, result) {
             var hospital = result;
-            console.log(result)
             hospital = hospital.map(item => {
                 return {
                     name: item["Doctors name"], value: item["Doctors name"]

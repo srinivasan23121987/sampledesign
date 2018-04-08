@@ -63,167 +63,203 @@
     data-locale='en-GB'>
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
-      
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-              
-                <div class="row">
-                    <div class="col-xs-12">
-					
-						<!-- Form Wizard -->
-						<div class="form-wizard form-header-classic form-body-material">
-						<!-- 
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-xs-12">
+
+                            <!-- Form Wizard -->
+                            <div class="form-wizard form-header-classic form-body-material">
+                                <!-- 
 						Just change the class name for make it with different style of design.
 
 						Use anyone class "form-header-classic" or "form-header-modarn" or "form-header-stylist" for set your form header design.
 						
 						Use anyone class "form-body-classic" or "form-body-material" or "form-body-stylist" for set your form element design.
 						-->
-						
-                    	<form role="form" action="http://hitechparks.com/web/product/form-wizard-multi-step-form-validation/Template/classic/user.html" method="post">
 
-                    		<h3>How much hospital treatment costed?</h3>
-                    		
-							
-							<!-- Form progress -->
-                    		<div class="form-wizard-steps form-wizard-tolal-steps-4">
-                    			<div class="form-wizard-progress">
-                    			    <div class="form-wizard-progress-line" data-now-value="12.25" data-number-of-steps="4" style="width: 12.25%;"></div>
-                    			</div>
-								<!-- Step 1 -->
-                    			<div class="form-wizard-step active">
+                                <form role="form" action="#"
+                                    method="post">
+
+                                    <h3>How much hospital treatment costed?</h3>
+
+
+                                    <!-- Form progress -->
+                                    <div class="form-wizard-steps form-wizard-tolal-steps-3">
+                                        <div class="form-wizard-progress">
+                                            <div class="form-wizard-progress-line" data-now-value="12.25" data-number-of-steps="3" style="width: 12.25%;"></div>
+                                        </div>
+                                        <!-- Step 1 -->
+                                        <!-- <div class="form-wizard-step active">
                     				<div class="form-wizard-step-icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></div>
                     				<p>Surgery</p>
-                    			</div>
-								<!-- Step 1 -->
-								
-								<!-- Step 2 -->
-                    			<div class="form-wizard-step">
-                    				<div class="form-wizard-step-icon"><i class="fa fa-medkit" aria-hidden="true"></i></div>
-                    				<p>Speciality</p>
-                    			</div>
-								<!-- Step 2 -->
-								
-								<!-- Step 3 -->
-								<div class="form-wizard-step">
-                    				<div class="form-wizard-step-icon"><i class="fa fa-hospital-o" aria-hidden="true"></i></div>
-                    				<p>Hospital</p>
-                    			</div>
-								<!-- Step 3 -->
-								
-								<!-- Step 4 -->
-								<div class="form-wizard-step">
-                    				<div class="form-wizard-step-icon"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
-                    				<p>Doctor</p>
-                    			</div>
-								<!-- Step 4 -->
-                    		</div>
-							<!-- Form progress -->
-                    		
-							
-							<!-- Form Step 1 -->
-                    		<fieldset style="display: block;">
-								<!-- Progress Bar -->
-								<div class="progress">
+                    			</div> -->
+                                        <!-- Step 1 -->
+
+                                        <!-- Step 2 -->
+                                        <div class="form-wizard-step  active">
+                                            <div class="form-wizard-step-icon">
+                                                <i class="fa fa-medkit" aria-hidden="true"></i>
+                                            </div>
+                                            <p>Speciality</p>
+                                        </div>
+                                        <!-- Step 2 -->
+
+                                        <!-- Step 3 -->
+                                        <div class="form-wizard-step">
+                                            <div class="form-wizard-step-icon">
+                                                <i class="fa fa-hospital-o" aria-hidden="true"></i>
+                                            </div>
+                                            <p>Hospital</p>
+                                        </div>
+                                        <!-- Step 3 -->
+
+                                        <!-- Step 4 -->
+                                        <div class="form-wizard-step">
+                                            <div class="form-wizard-step-icon">
+                                                <i class="fa fa-stethoscope" aria-hidden="true"></i>
+                                            </div>
+                                            <p>Bill Info</p>
+                                        </div>
+                                        <!-- Step 4 -->
+                                    </div>
+                                    <!-- Form progress -->
+
+
+                                    <!-- Form Step 1 -->
+                                    <!-- <fieldset style="display: block;"> -->
+                                    <!-- Progress Bar -->
+                                    <!-- <div class="progress">
 								  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
 								  </div>
-								</div>
-								<!-- Progress Bar -->
-                    		    
+								</div> -->
+                                    <!-- Progress Bar -->
+                                    <!--                     		    
                     			<div class="form-group">
-                                    <label>Parts of body conditions or surgery <span>*</span></label>
-                    			    <input type="text" id="SurgerySearchs" name="SurgerySearchs" placeholder="" class="form-control required">
+                                    <div class="buying-selling-group" id="buying-selling-group" data-toggle="buttons">
+                                        <label class="btn btn-default buying-selling">
+                                            <input type="radio" name="options" id="option1" autocomplete="off">
+                                            <span class="radio-dot"></span>
+                                            <span class="buying-selling-word">Selling</span>
+                                        </label>
+                                    
+                                        <label class="btn btn-default buying-selling">
+                                            <input type="radio" name="options" id="option2" autocomplete="off">
+                                            <span class="radio-dot"></span>
+                                            <span class="buying-selling-word">Buying</span>
+                                        </label>
                                 </div>
                                 
                                 <div class="form-wizard-buttons">
                                     <button type="button" class="btn btn-next">Next</button>
                                 </div>
-                            </fieldset>
-							<!-- Form Step 1 -->
+                            </fieldset> -->
+                                    <!-- Form Step 1 -->
 
-							<!-- Form Step 2 -->
-                            <fieldset>
-								<!-- Progress Bar -->
-								<div class="progress">
-								  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-								  </div>
-								</div>
-								<!-- Progress Bar -->
-                                
-                    			<div class="form-group">
-                    			    <label>Parts of body condtions or specialities <span>*</span></label>
-                                    <input type="text" id="SpecialitySearchs" name="SpecialitySearchs" placeholder="" class="form-control required">
-                                </div>
-                                
-								<div style="clear:both;"></div>
-								
-                                <div class="form-wizard-buttons">
-                                    <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="button" class="btn btn-next">Next</button>
-                                </div>
-                            </fieldset>
-							<!-- Form Step 2 -->
+                                    <!-- Form Step 2 -->
+                                    <fieldset style="display: block;" >
+                                        <!-- Progress Bar -->
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 50%">
+                                            </div>
+                                        </div>
+                                        <!-- Progress Bar -->
 
-							<!-- Form Step 3 -->
-							<fieldset>
-                                <!-- Progress Bar -->
-                                
-								<div class="progress">
-								  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-								  </div>
-                                </div>
-                                
-                                <div class="form-group">
-                    			    <label>Please type hospital <span>*</span></label>
-                                    <input type="text" id="HospitalSearchs" name="HospitalSearchs" placeholder="" class="form-control required">
-                                </div>
-								<!-- Progress Bar -->
-                                <div style="clear:both;"></div>
-                                <div class="form-wizard-buttons">
-                                    <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="button" class="btn btn-next">Next</button>
-                                </div>
-                            </fieldset>
-							<!-- Form Step 3 -->
-							
-							<!-- Form Step 4 -->
-							<fieldset>
-								<!-- Progress Bar -->
-								<div class="progress">
-								  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-								  </div>
-								</div>
-                                <div style="clear:both;"></div>
-                                <div class="form-group">
-                    			    <label>Please type Doctor <span>*</span></label>
-                                    <input type="text" id="DoctorSearchs" name="DoctorSearchs" placeholder="" class="form-control required">
-                                </div>
-                                <div class="form-wizard-buttons">
-                                    <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="submit" class="btn btn-submit">Done</button>
-                                </div>
-                            </fieldset>
-							<!-- Form Step 4 -->
-                    	
-                    	</form>
-						
-						</div>
-						<!-- Form Wizard -->
+
+                                        <div class="form-group">
+                                            <div class="buying-selling-group" id="buying-selling-group" data-toggle="buttons">
+                                                <label class="btn btn-default buying-selling">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off">
+                                                    <span class="radio-dot"></span>
+                                                    <span class="buying-selling-word">Selling</span>
+                                                </label>
+
+                                                <label class="btn btn-default buying-selling">
+                                                    <input type="radio" name="options" id="option2" autocomplete="off">
+                                                    <span class="radio-dot"></span>
+                                                    <span class="buying-selling-word">Buying</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div style="clear:both;"></div>
+
+                                        <div class="form-wizard-buttons">
+                                            
+                                            <button type="button" class="btn btn-next">Next</button>
+                                        </div>
+                                    </fieldset>
+                                    <!-- Form Step 2 -->
+
+                                    <!-- Form Step 3 -->
+                                    <fieldset>
+                                        <!-- Progress Bar -->
+
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 75%">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Please type hospital
+                                                <span>*</span>
+                                            </label>
+                                            <input type="text" id="HospitalSearchs" name="HospitalSearchs" placeholder="" class="form-control required">
+                                        </div>
+                                        <!-- Progress Bar -->
+                                        <div style="clear:both;"></div>
+                                        <div class="form-wizard-buttons">
+                                            <button type="button" class="btn btn-previous">Previous</button>
+                                            <button type="button" class="btn btn-next">Next</button>
+                                        </div>
+                                    </fieldset>
+                                    <!-- Form Step 3 -->
+
+                                    <!-- Form Step 4 -->
+                                    <fieldset>
+                                        <!-- Progress Bar -->
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 100%">
+                                            </div>
+                                        </div>
+                                        <div style="clear:both;"></div>
+                                        <div class="form-group">
+                                            <label>Please type Doctor
+                                                <span>*</span>
+                                            </label>
+                                            <input type="text" id="DoctorSearchs" name="DoctorSearchs" placeholder="" class="form-control required">
+                                        </div>
+                                        <div class="form-wizard-buttons">
+                                            <button type="button" class="btn btn-previous">Previous</button>
+                                            <button type="submit" class="btn btn-submit">Done</button>
+                                        </div>
+                                    </fieldset>
+                                    <!-- Form Step 4 -->
+
+                                </form>
+
+                            </div>
+                            <!-- Form Wizard -->
+                        </div>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-      
+
         </div>
-      </div>
+    </div>
     <div id='FlexTestFF'>
         <div class='testMQ mqHH'></div>
         <div class='testMQ mqTab'></div>
@@ -360,8 +396,8 @@
                                     placeholder="Part of body, conditions or specialities" autocomplete="off">
                                 <input id="HospitalSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
                                     placeholder="Please Type hospital" autocomplete="off">
-                                <input id="DoctorSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value=""
-                                    data-srch-type="popular" placeholder="Please type doctor names" autocomplete="off">
+                                <input id="DoctorSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                    placeholder="Please type doctor names" autocomplete="off">
                                 <button class="gd-btn-mkt" id="SurgerySearchButton" type="button" tabindex="0">
                                     <span>Search</span>
                                 </button>

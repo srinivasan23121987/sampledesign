@@ -10,6 +10,7 @@
 
 	function bar_progress(progress_line_object, direction) {
 		var number_of_steps = progress_line_object.data('number-of-steps');
+		
 		var now_value = progress_line_object.data('now-value');
 		var new_value = 0;
 		if(direction == 'right') {
