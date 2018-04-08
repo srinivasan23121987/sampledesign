@@ -152,7 +152,7 @@ function initiateAjax(url, data, callback) {
 }
 jQuery(function ($) {
 	$("button.btn-next").click(function () {
-		var bills = hospital_bills[0];
+		var bills = hospital_bills[1];
 		alert(bills);
 	});
 	$("button#SurgerySearchButton").click(function () {
