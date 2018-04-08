@@ -159,7 +159,7 @@ jQuery(function ($) {
 			var surgicaltype = $("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group input[type='radio']:checked").val();
 			var hospital = $("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group input[type='radio']:checked").val();
 			alert(hospital);
-			if (surgerySearchv && surgicaltype && hopsital==undefined) {
+			if (surgerySearchv && surgicaltype && hospital==undefined) {
 				alert(hospital);
 				initiateAjax("/SearchSurgeryH", { surgery: surgerySearchv, type: surgicaltype }, function (data, err) {
 					console.log(data)
@@ -178,7 +178,7 @@ jQuery(function ($) {
 					$("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group").html(html)
 				})
 
-			} else if (surgerySearchv && surgicaltype && hopsital) {
+			} else if (surgerySearchv && surgicaltype && hospital) {
 				alert(hospital);
 				initiateAjax("/SearchSurgeryR", { surgery: surgerySearchv, type: surgicaltype,hospital:hospital }, function (data, err) {
 					console.log(data)
