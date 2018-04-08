@@ -1,4 +1,5 @@
 var hospital_bills = ["Surgery"];
+let incremntv = 0;
 var tag = document.createElement('script');
 tag.src = 'https://www.youtube.com/player_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -160,7 +161,15 @@ jQuery(function ($) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					$("#myModal").modal('show');
-					alert($("#myModal").find("fieldset:eq(0)").html());
+					data.foreach((item) => {
+						let html = `<label class="btn btn-default buying-selling">
+						<input type="radio" name="options" id="option${incremntv}" autocomplete="off">
+						<span class="radio-dot"></span>
+						<span class="buying-selling-word">${item.name}</span>
+					</label>`;
+					})
+
+					$("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group").html(html)
 				})
 
 			}
