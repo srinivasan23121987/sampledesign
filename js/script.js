@@ -158,8 +158,8 @@ jQuery(function ($) {
 			var surgerySearchv = surgerySearch.val();
 			var surgicaltype = $("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group input[type='radio']:checked").val();
 			var hospital = $("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group input[type='radio']:checked").val();
-			alert(hospital);
-			if (surgerySearchv && surgicaltype && hospital==undefined) {
+			alert(hospital + "=>" + surgerySearchv + "=>" + surgicaltype);
+			if (surgerySearchv && surgicaltype && hospital == undefined) {
 				initiateAjax("/SearchSurgeryH", { surgery: surgerySearchv, type: surgicaltype }, function (data, err) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
@@ -179,7 +179,7 @@ jQuery(function ($) {
 
 			} else if (surgerySearchv && surgicaltype && hospital) {
 				alert(hospital);
-				initiateAjax("/SearchSurgeryR", { surgery: surgerySearchv, type: surgicaltype,hospital:hospital }, function (data, err) {
+				initiateAjax("/SearchSurgeryR", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital }, function (data, err) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					$("#myModal").modal('show');
