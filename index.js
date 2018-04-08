@@ -4,6 +4,9 @@ var express = require('express'),
 var mongodb = require("mongodb");
 var _ = require('lodash');
 app.use(express.static(__dirname));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(bodyParser.json());
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/public/index.html');
