@@ -160,6 +160,7 @@ jQuery(function ($) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					$("#myModal").modal('show');
+					alert($("#myModal").find("fieldset:eq(0)").html());
 				})
 
 			}
