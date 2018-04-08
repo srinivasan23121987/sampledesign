@@ -152,7 +152,7 @@ function initiateAjax(url, data, callback) {
 }
 jQuery(function ($) {
 	$("button.btn-next").click(function () {
-		var bills = hospital_bills[1];
+		var bills = hospital_bills;
 		if (bills[0] == "Surgery" && bills[1] == "Hospital") {
 			var surgerySearch = $("input#SurgerySearch");
 			var surgerySearchv = surgerySearch.val();
