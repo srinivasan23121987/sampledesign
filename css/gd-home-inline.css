@@ -8122,16 +8122,16 @@ samp,
     display: none
 }
 
-.static-hph-hero-srch .search-bar button[type=submit] {
+.static-hph-hero-srch .search-bar button[type=button] {
     width: 60px;
     overflow: hidden
 }
 
-.static-hph-hero-srch .search-bar button[type=submit] span {
+.static-hph-hero-srch .search-bar button[type=button] span {
     display: none
 }
 
-.static-hph-hero-srch .search-bar button[type=submit]:hover {
+.static-hph-hero-srch .search-bar button[type=button]:hover {
     background-color: #ca0303
 }
 
@@ -8705,7 +8705,7 @@ samp,
     visibility: hidden
 }
 
-.hero .search-bar button[type=submit] {
+.hero .search-bar button[type=button] {
     cursor: pointer;
     height: 100%;
     margin: 0;

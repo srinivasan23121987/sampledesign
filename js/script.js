@@ -136,6 +136,9 @@ function vidRescale() {
 
 
 jQuery(function ($) {
+	$("button#SurgerySearchButton").click(function () {
+		$("#myModal").modal('show');
+	});
 	var surgoptions = {
 		url: "/getSurgery",
 		ajaxSettings: {
@@ -232,6 +235,7 @@ jQuery(function ($) {
 	};
 
 	$("input#SurgerySearch").easyAutocomplete(surgoptions);
+	$("input#SurgerySearchs").easyAutocomplete(surgoptions);
 	$("input#SpecialitySearch").easyAutocomplete(specoptions);
 	$("input#HospitalSearch").easyAutocomplete(hospoptions);
 	$("input#DoctorSearch").easyAutocomplete(docoptions);
@@ -291,7 +295,7 @@ $(function () {
 			$("ul.context-choice-tabs").next().addClass("active-4")
 		}
 	})
-	
+
 })
 $(window).on('load resize', function () {
 	vidRescale();
