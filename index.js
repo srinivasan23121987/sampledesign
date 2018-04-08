@@ -38,7 +38,7 @@ app.post("/SearchSurgeryH", function (req, res) {
             var hospital = result;
             hospital = hospital.map(item => {
                 return {
-                    name: item["TYPE"], value: item["TYPE"]
+                    name: item["HOSPITAL"], value: item["HOSPITAL"]
                 }
             })
             var hospital = _.uniqBy(hospital, 'name');
