@@ -163,11 +163,12 @@ jQuery(function ($) {
 					$("#myModal").modal('show');
 					let html;
 					data.forEach((item) => {
-						html+ = `<label class="btn btn-default buying-selling">
+						html+= `<label class="btn btn-default buying-selling">
 						<input type="radio" name="options" id="option${incremntv}" autocomplete="off">
 						<span class="radio-dot"></span>
 						<span class="buying-selling-word">${item.name}</span>
 					</label>`;
+					incremntv++;
 					})
 
 					$("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group").html(html)
