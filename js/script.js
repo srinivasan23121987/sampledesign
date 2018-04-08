@@ -161,7 +161,7 @@ jQuery(function ($) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					$("#myModal").modal('show');
-					data.foreach((item) => {
+					data.forEach((item) => {
 						let html = `<label class="btn btn-default buying-selling">
 						<input type="radio" name="options" id="option${incremntv}" autocomplete="off">
 						<span class="radio-dot"></span>
