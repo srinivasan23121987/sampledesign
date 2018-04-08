@@ -157,7 +157,10 @@ jQuery(function ($) {
 			var surgerySearch = $("input#SurgerySearch");
 			var surgerySearchv = surgerySearch.val();
 			var surgicaltype = $("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group input[type='radio']:checked").val();
-			if (surgerySearchv && surgicaltype) {
+			var hospital = $("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group input[type='radio']:checked").val();
+			alert(hospital);
+			if (surgerySearchv && surgicaltype && !hopsital) {
+				alert(hospital);
 				initiateAjax("/SearchSurgeryH", { surgery: surgerySearchv, type: surgicaltype }, function (data, err) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
@@ -175,6 +178,24 @@ jQuery(function ($) {
 					$("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group").html(html)
 				})
 
+			} else if (surgerySearchv && surgicaltype && hopsital) {
+				alert(hospital);
+				initiateAjax("/SearchSurgeryR", { surgery: surgerySearchv, type: surgicaltype,hospital:hospital }, function (data, err) {
+					console.log(data)
+					surgerySearch.css({ "border": "1px solid #7f8c8d" });
+					$("#myModal").modal('show');
+					let html = '';
+					data.forEach((item) => {
+						html += `<label class="btn btn-default buying-selling">
+						<input type="radio" name="options" value="${item.name}" id="option${incremntv}" autocomplete="off" required>
+						<span class="radio-dot"></span>
+						<span class="buying-selling-word">${item.name}</span>
+					</label>`;
+						incremntv++;
+					})
+
+					$("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group").html(html)
+				})
 			}
 		}
 
