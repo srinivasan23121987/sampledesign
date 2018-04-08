@@ -237,8 +237,11 @@ jQuery(function ($) {
 	$("input#SurgerySearch").easyAutocomplete(surgoptions);
 	$("input#SurgerySearchs").easyAutocomplete(surgoptions);
 	$("input#SpecialitySearch").easyAutocomplete(specoptions);
+	$("input#SpecialitySearchs").easyAutocomplete(specoptions);
 	$("input#HospitalSearch").easyAutocomplete(hospoptions);
+	$("input#HospitalSearchs").easyAutocomplete(hospoptions);
 	$("input#DoctorSearch").easyAutocomplete(docoptions);
+	$("input#DoctorSearchs").easyAutocomplete(docoptions);
 	// custom formatting example
 	$('.count-number').data('countToOptions', {
 		formatter: function (value, options) {
