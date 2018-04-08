@@ -151,14 +151,14 @@ function initiateAjax(url, data, callback) {
 
 }
 jQuery(function ($) {
+	var surgicaltype;
 	$("button.btn-next").click(function () {
 		var bills = hospital_bills;
 		if (bills[0] == "Surgery" && bills[1] == "Hospital") {
 			var surgerySearch = $("input#SurgerySearch");
 			var surgerySearchv = surgerySearch.val();
-			var surgicaltype = $("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group label input[type='radio']:checked").val();
+			surgicaltype = $("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group label input[type='radio']:checked").val() ? $("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group label input[type='radio']:checked").val() : surgicaltype;
 			var hospital = $("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group label input[type='radio']:checked").val();
-			alert(hospital + "=>" + surgerySearchv + "=>" + surgicaltype);
 			if (surgerySearchv && surgicaltype && hospital == undefined) {
 				initiateAjax("/SearchSurgeryH", { surgery: surgerySearchv, type: surgicaltype }, function (data, err) {
 					console.log(data)
@@ -178,22 +178,52 @@ jQuery(function ($) {
 				})
 
 			} else if (surgerySearchv && surgicaltype && hospital) {
-				alert(hospital);
 				initiateAjax("/SearchSurgeryR", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital }, function (data, err) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					$("#myModal").modal('show');
-					let html = '';
+					let html = '<ul class="nav nav-pills red" style="margin-bottom:10px;">';
+					let incrm = 0;
 					data.forEach((item) => {
-						html += `<label class="btn btn-default buying-selling">
-						<input type="radio" name="options" value="${item.name}" id="option${incremntv}" autocomplete="off" required>
-						<span class="radio-dot"></span>
-						<span class="buying-selling-word">${item.name}</span>
-					</label>`;
+						if (incrm == 0) {
+							html += `<li class="active"><a data-toggle="pill" style="margin-right:5px;" href="#home${incrm}">${item.Statistics}</a></li>
+						 `;
+						}
+						else if (incrm != 0) {
+							html += `<li><a data-toggle="pill" style="margin-right:5px;" href="#home${incrm}">${item.Statistics}</a></li>
+							`;
+						}
 						incremntv++;
+						incrm++;
 					})
+					html += `</ul><div class="tab-content">`;
+					let incrm1 = 0;
+					data.forEach((item, index) => {
+						if (incrm1 == 0) {
+							html += `<div id="home${incrm1}" class="tab-pane fade in active">
+							<table class="table table-bordered table-hover">`;
+							for (prop in item) {
+								if (prop != "_id" && prop != "HOSPITAL" && prop && prop != "Operation" && prop != "TYPE" && prop != "Statistics")
+									html += `<tr><td><b>${prop}</b></td><td>${item[prop]}</td></tr>`;
+							}
+							html += `</table></div>`;
+						}
+						else if (incrm1 != 0) {
+							html += `<div id="home${incrm1}" class="tab-pane fade">
+							<table class="table table-bordered table-hover">`;
+							for (prop in item) {
+								if (prop != "_id" && prop != "HOSPITAL" && prop && prop != "Operation" && prop != "TYPE" && prop != "Statistics")
+									html += `<tr><td><b>${prop}</b></td><td>${item[prop]}</td></tr>`;
+							}
+							html += `</table></div>`;
 
-					$("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group").html(html)
+						}
+						incremntv++;
+						incrm1++;
+					})
+					html += `</div>`
+
+					$("#myModal").find("fieldset:eq(2) div.form-group div.buying-selling-group").html(html)
 				})
 			}
 		}

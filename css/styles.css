@@ -151,7 +151,17 @@ div.easy-autocomplete{
 	background-color: #e60808;
 	border: 1px solid #c70303;
 }
-
+.red .active a,
+.red .active a:hover {
+    background-color: red;
+}
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: red;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus
+{
+	background-color: red;
+}
 
 
 .buying-selling.active {
