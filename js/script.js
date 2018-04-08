@@ -177,7 +177,7 @@ jQuery(function ($) {
 				})
 
 			} else if (surgerySearchv && surgicaltype && hospital) {
-				
+				alert(hospital);
 				initiateAjax("/SearchSurgeryR", { surgery: surgerySearchv, type: surgicaltype,hospital:hospital }, function (data, err) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
