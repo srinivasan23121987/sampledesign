@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.post("/SearchSurgery", function (req, res) {
-    console.log(request.body);
+    console.log(req.body);
     mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
         var db = database;
         if (err) {
