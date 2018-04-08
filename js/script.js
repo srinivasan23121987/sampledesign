@@ -157,6 +157,7 @@ jQuery(function ($) {
 			var surgerySearchv = surgerySearch.val()
 			if (surgerySearchv) {
 				initiateAjax("/SearchSurgery", surgerySearchv, function (data, err) {
+					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					$("#myModal").modal('show');
 				})

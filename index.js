@@ -13,13 +13,26 @@ app.get('/', function (req, res) {
 });
 
 app.post("/SearchSurgery", function (req, res) {
-    console.log(req.body);
+    let surgicaltyp = req.body.data;
     mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
         var db = database;
         if (err) {
             console.log(err);
         }
-        db.collection("surgery").find().toArray(function (err, result) {
+        filterarray = [{ $or: [{ "Operation": surgicaltyp.toLowerCase() }, { "Operation": surgicaltyp.toUpperCase() }, { "Operation": capitalizeFirstLetter(surgicaltyp) }, { "Operation": toTitleCase(surgicaltyp) }] }
+        ]
+
+        db.collection("surgery").find({
+            $and: filterarray
+        }).toArray(function (err, result) {
+            var hospital = result;
+            hospital = hospital.map(item => {
+                return {
+                    name: item["TYPE"], value: item["TYPE"]
+                }
+            })
+            var hospital = _.uniqBy(hospital, 'name');
+            res.send(hospital)
         })
     })
 })
