@@ -436,7 +436,7 @@ $(function () {
 			$("ul.context-choice-tabs").next().addClass("active-4")
 			hospital_bills[0] = "Doctor";
 		}
-		alert(hospital_bills[0]);
+		
 	})
 
 })
