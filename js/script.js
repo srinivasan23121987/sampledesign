@@ -153,7 +153,14 @@ function initiateAjax(url, data, callback) {
 jQuery(function ($) {
 	$("button.btn-next").click(function () {
 		var bills = hospital_bills[1];
-		alert(bills);
+		if (bills[0] == "Surgery" && bills[1] == "Hospital") {
+			var surgerySearch = $("input#SurgerySearch");
+			var surgerySearchv = surgerySearch.val();
+			var surgicaltype=$("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group input[type='radio']:checked").val();
+			alert(surgicaltype);
+
+		}
+
 	});
 	$("button#SurgerySearchButton").click(function () {
 		var bills = hospital_bills[0];
@@ -168,7 +175,7 @@ jQuery(function ($) {
 					let html = '';
 					data.forEach((item) => {
 						html += `<label class="btn btn-default buying-selling">
-						<input type="radio" name="options" id="option${incremntv}" autocomplete="off" required>
+						<input type="radio" name="options" value="${item.name}" id="option${incremntv}" autocomplete="off" required>
 						<span class="radio-dot"></span>
 						<span class="buying-selling-word">${item.name}</span>
 					</label>`;
@@ -178,7 +185,7 @@ jQuery(function ($) {
 					$("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group").html(html)
 				})
 
-			}
+			} 
 			else {
 				surgerySearch.css({ "border": "2px solid red" });
 			}
