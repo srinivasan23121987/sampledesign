@@ -1,4 +1,4 @@
-var hospital_bills = ["Surgery"];
+var hospital_bills = ["Surgery", "Hospital"];
 let incremntv = 0;
 var tag = document.createElement('script');
 tag.src = 'https://www.youtube.com/player_api';
@@ -151,6 +151,10 @@ function initiateAjax(url, data, callback) {
 
 }
 jQuery(function ($) {
+	$("button.btn-next").click(function () {
+		var bills = hospital_bills[0];
+		alert(bills);
+	});
 	$("button#SurgerySearchButton").click(function () {
 		var bills = hospital_bills[0];
 		if (bills == "Surgery") {
@@ -161,14 +165,14 @@ jQuery(function ($) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					$("#myModal").modal('show');
-					let html='';
+					let html = '';
 					data.forEach((item) => {
-						html+= `<label class="btn btn-default buying-selling">
-						<input type="radio" name="options" id="option${incremntv}" autocomplete="off">
+						html += `<label class="btn btn-default buying-selling">
+						<input type="radio" name="options" id="option${incremntv}" autocomplete="off" required>
 						<span class="radio-dot"></span>
 						<span class="buying-selling-word">${item.name}</span>
 					</label>`;
-					incremntv++;
+						incremntv++;
 					})
 
 					$("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group").html(html)
@@ -339,6 +343,8 @@ $(function () {
 			$("ul.context-choice-tabs").next().addClass("active-3");
 			$("form#surgery-form div input#HospitalSearch").parent().show();
 			hospital_bills[0] = "Hospital";
+			hospital_bills[1] = "Surgery";
+
 		}
 		else if ($(this).text().trim() == "Surgery") {
 			$("ul.context-choice-tabs").next().addClass("active-1")
@@ -349,6 +355,7 @@ $(function () {
 			$("ul.context-choice-tabs").next().addClass("active-2")
 			$("form#surgery-form div input#SpecialitySearch").parent().show();
 			hospital_bills[0] = "Speciality";
+			hospital_bills[1] = "Hospital";
 		}
 		else if ($(this).text().trim() == "Doctor") {
 			$("form#surgery-form div input#DoctorSearch").parent().show();
