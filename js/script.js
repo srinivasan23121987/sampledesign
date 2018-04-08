@@ -156,9 +156,9 @@ jQuery(function ($) {
 		if (bills[0] == "Surgery" && bills[1] == "Hospital") {
 			var surgerySearch = $("input#SurgerySearch");
 			var surgerySearchv = surgerySearch.val();
-			var surgicaltype=$("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group input[type='radio']:checked").val();
+			var surgicaltype = $("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group input[type='radio']:checked").val();
 			if (surgerySearchv && surgicaltype) {
-				initiateAjax("/SearchSurgeryH", {surgery:surgerySearchv,type:surgicaltype}, function (data, err) {
+				initiateAjax("/SearchSurgeryH", { surgery: surgerySearchv, type: surgicaltype }, function (data, err) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					$("#myModal").modal('show');
@@ -175,6 +175,7 @@ jQuery(function ($) {
 					$("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group").html(html)
 				})
 
+			}
 		}
 
 	});
@@ -201,7 +202,7 @@ jQuery(function ($) {
 					$("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group").html(html)
 				})
 
-			} 
+			}
 			else {
 				surgerySearch.css({ "border": "2px solid red" });
 			}
