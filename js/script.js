@@ -152,36 +152,38 @@ function initiateAjax(url, data, callback) {
 }
 jQuery(function ($) {
 	var surgicaltype;
-	$("button.btn-next").click(function () {
+	$("button.backfront").click(function () {
 		var bills = hospital_bills;
 		if (bills[0] == "Surgery" && bills[1] == "Hospital") {
 			var surgerySearch = $("input#SurgerySearch");
 			var surgerySearchv = surgerySearch.val();
-			surgicaltype = $("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group label input[type='radio']:checked").val() ? $("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group label input[type='radio']:checked").val() : surgicaltype;
-			var hospital = $("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group label input[type='radio']:checked").val();
-			if (surgerySearchv && surgicaltype && hospital == undefined) {
+			surgicaltype = $("input#speciality-1").val();
+			var hospital = $("input#hospital-1").val();
+			if (surgerySearchv && surgicaltype && hospital == "") {
 				initiateAjax("/SearchSurgeryH", { surgery: surgerySearchv, type: surgicaltype }, function (data, err) {
-					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
-					$("#myModal").modal('show');
-					let html = '';
-					data.forEach((item) => {
-						html += `<label class="btn btn-default buying-selling">
-						<input type="radio" name="options" value="${item.name}" id="option${incremntv}" autocomplete="off" required>
-						<span class="radio-dot"></span>
-						<span class="buying-selling-word">${item.name}</span>
-					</label>`;
-						incremntv++;
-					})
+					$("div.form-flows-1").hide();
+					$("div.form-flows-2").show();
+					$("div.form-flows-3").hide();
+					$('input#hospital-1').autoComplete({
+						minChars: 0,
+						cache: false,
+						source: function (term, suggest) {
+							term = term.toLowerCase();
+							var choices = data;
+							var matches = [];
+							for (i = 0; i < choices.length; i++)
+								if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+							suggest(matches);
 
-					$("#myModal").find("fieldset:eq(1) div.form-group div.buying-selling-group").html(html)
+						}
+					});
 				})
 
 			} else if (surgerySearchv && surgicaltype && hospital) {
 				initiateAjax("/SearchSurgeryR", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital }, function (data, err) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
-					$("#myModal").modal('show');
 					let html = '<ul class="nav nav-pills red" style="margin-bottom:10px;">';
 					let incrm = 0;
 					data.forEach((item) => {
@@ -201,7 +203,7 @@ jQuery(function ($) {
 					data.forEach((item, index) => {
 						if (incrm1 == 0) {
 							html += `<div id="home${incrm1}" class="tab-pane fade in active">
-							<table class="table table-bordered table-hover">`;
+							<table class="table table-bordered" style="word-wrap:break-word">`;
 							for (prop in item) {
 								if (prop != "_id" && prop != "HOSPITAL" && prop && prop != "Operation" && prop != "TYPE" && prop != "Statistics")
 									html += `<tr><td><b>${prop}</b></td><td>${item[prop]}</td></tr>`;
@@ -210,7 +212,7 @@ jQuery(function ($) {
 						}
 						else if (incrm1 != 0) {
 							html += `<div id="home${incrm1}" class="tab-pane fade">
-							<table class="table table-bordered table-hover">`;
+							<table class="table table-bordered"  style="word-wrap:break-word">`;
 							for (prop in item) {
 								if (prop != "_id" && prop != "HOSPITAL" && prop && prop != "Operation" && prop != "TYPE" && prop != "Statistics")
 									html += `<tr><td><b>${prop}</b></td><td>${item[prop]}</td></tr>`;
@@ -222,34 +224,56 @@ jQuery(function ($) {
 						incrm1++;
 					})
 					html += `</div>`
-
-					$("#myModal").find("fieldset:eq(2) div.form-group div.buying-selling-group").html(html)
+					$("div.static-hph").addClass("static-ph");
+					$("div.context-tabs-mask").addClass("different-box")
+					$("div.form-flows-1").hide();
+					$("div.form-flows-3").show();
+					$("div.form-flows-2").hide();
+					$("div.form-flows-3").html(html)
 				})
 			}
 		}
 
 	});
+	$("button.frontback").click(function () {
+		var parentele = $(this).parent();
+		parentele.hide();
+		if (parentele.prev().html() == undefined) {
+			$("div.form-flows").hide()
+			$("input#SurgerySearch").show();
+			$("button#SurgerySearchButton").show()
+			return;
+		}
+		parentele.prev().show();
+	})
 	$("button#SurgerySearchButton").click(function () {
 		var bills = hospital_bills[0];
 		if (bills == "Surgery") {
 			var surgerySearch = $("input#SurgerySearch");
 			var surgerySearchv = surgerySearch.val()
 			if (surgerySearchv) {
+				$("input#SurgerySearch").hide();
+				$("button#SurgerySearchButton").hide()
+				$("input#SurgerySearch").next().show()
+				$("input#SurgerySearch").next().find("div.form-flows-1").show()
 				initiateAjax("/SearchSurgery", surgerySearchv, function (data, err) {
-					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
-					$("#myModal").modal('show');
 					let html = '';
-					data.forEach((item) => {
-						html += `<label class="btn btn-default buying-selling">
-						<input type="radio" name="options" value="${item.name}" id="option${incremntv}" autocomplete="off" required>
-						<span class="radio-dot"></span>
-						<span class="buying-selling-word">${item.name}</span>
-					</label>`;
-						incremntv++;
-					})
+					$('input#speciality-1').autoComplete({
+						minChars: 0,
+						cache: false,
+						source: function (term, suggest) {
+							term = term.toLowerCase();
+							var choices = data;
+							var matches = [];
+							for (i = 0; i < choices.length; i++)
+								if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+							suggest(matches);
 
-					$("#myModal").find("fieldset:eq(0) div.form-group div.buying-selling-group").html(html)
+						}
+					});
+
+
 				})
 
 			}
@@ -259,111 +283,82 @@ jQuery(function ($) {
 		}
 
 	});
-	var surgoptions = {
-		url: "/getSurgery",
-		ajaxSettings: {
-			dataType: "json",
-			method: "POST",
-			data: {
-				dataType: "json"
-			}
-		},
-		list: {
-			maxNumberOfElements: 8,
-			match: {
-				enabled: true
-			}, sort: {
-				enabled: true
-			}
-		},
+	let surgoptions;
+	initiateAjax("/getSurgery", '', function (data, err) {
+		surgoptions = data;
+	});
+	let typeoptions;
+	initiateAjax("/getType", '', function (data, err) {
+		typeoptions = data;
+	});
+	let typehosp;
+	initiateAjax("/getHospital", '', function (data, err) {
+		typehosp = data;
+	});
+	let typedoc;
+	initiateAjax("/getDoctor", '', function (data, err) {
+		typedoc = data;
+	});
+	$('input#SurgerySearch').autoComplete({
+		minChars: 0,
+		cache: false,
+		source: function (term, suggest) {
+			term = term.toLowerCase();
 
-		getValue: "name",
-		requestDelay: 400,
-		theme: "square"
-	};
-	var specoptions = {
+			var choices = surgoptions;
+			console.log(choices)
+			var matches = [];
+			for (i = 0; i < choices.length; i++)
+				if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+			suggest(matches);
 
-		url: "/getType",
+		}
+	});
+	$('input#SpecialitySearch').autoComplete({
+		minChars: 0,
+		cache: false,
+		source: function (term, suggest) {
+			term = term.toLowerCase();
 
-		getValue: "name",
-		ajaxSettings: {
-			dataType: "json",
-			method: "POST",
-			data: {
-				dataType: "json"
-			}
-		},
-		list: {
-			maxNumberOfElements: 8,
-			match: {
-				enabled: true
-			}, sort: {
-				enabled: true
-			}
-		},
+			var choices = typeoptions;
+			console.log(choices)
+			var matches = [];
+			for (i = 0; i < choices.length; i++)
+				if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+			suggest(matches);
 
-		theme: "square",
-		requestDelay: 400
-	};
-	var hospoptions = {
+		}
+	});
+	$('input#HospitalSearch').autoComplete({
+		minChars: 0,
+		cache: false,
+		source: function (term, suggest) {
+			term = term.toLowerCase();
 
-		url: "/getHospital",
+			var choices = typehosp;
+			console.log(choices)
+			var matches = [];
+			for (i = 0; i < choices.length; i++)
+				if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+			suggest(matches);
 
-		getValue: "name",
-		ajaxSettings: {
-			dataType: "json",
-			method: "POST",
-			data: {
-				dataType: "json"
-			}
-		},
-		list: {
-			maxNumberOfElements: 8,
-			match: {
-				enabled: true
-			}, sort: {
-				enabled: true
-			}
-		},
+		}
+	});
+	$('input#DoctorSearch').autoComplete({
+		minChars: 0,
+		cache: false,
+		source: function (term, suggest) {
+			term = term.toLowerCase();
 
-		theme: "square",
-		requestDelay: 400
-	};
-	var docoptions = {
+			var choices = typedoc;
+			console.log(choices)
+			var matches = [];
+			for (i = 0; i < choices.length; i++)
+				if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+			suggest(matches);
 
-		url: "/getDoctor",
-
-		getValue: "name",
-		ajaxSettings: {
-			dataType: "json",
-			method: "POST",
-			data: {
-				dataType: "json"
-			}
-		},
-		list: {
-			maxNumberOfElements: 8,
-			match: {
-				enabled: true
-			}, sort: {
-				enabled: true
-			}
-		},
-
-		theme: "square",
-		requestDelay: 400
-	};
-
-	$("input#SurgerySearch").easyAutocomplete(surgoptions);
-	$("input#SurgerySearchs").easyAutocomplete(surgoptions);
-	$("input#SpecialitySearch").easyAutocomplete(specoptions);
-	$("input#SpecialitySearchs").easyAutocomplete(specoptions);
-	$("input#HospitalSearch").easyAutocomplete(hospoptions);
-	$("input#HospitalSearchs").easyAutocomplete(hospoptions);
-	$("input#DoctorSearch").easyAutocomplete(docoptions);
-	$("input#DoctorSearchs").easyAutocomplete(docoptions);
-	// custom formatting example
-
+		}
+	});
 
 	$('.count-number').data('countToOptions', {
 		formatter: function (value, options) {
@@ -403,40 +398,51 @@ $(function () {
 		$("div.strikingly-nav-transition").toggleClass("translate");
 		$("div.navbar-drawer-bar").toggleClass("drawer-open");
 	});
-	$("form#surgery-form div input#SurgerySearch").parent().show();
+	$("form#surgery-form input#SurgerySearch").show();
+
 	$("ul.context-choice-tabs li").click(function () {
 		$("ul.context-choice-tabs li").removeClass("active-context");
+		$("div.form-flows").hide();
 		$(this).addClass("active-context");
 		var arrowbox = $("ul.context-choice-tabs").next();
+		$("div.form-flows").hide();
+		$("div.form-flows-1").hide();
+		$("div.form-flows-2").hide();
+		$("div.form-flows-3").hide();
+		$("input").val('')
+		$("div.static-hph").removeClass("static-ph");
+		$("div.context-tabs-mask").removeClass("different-box")
 		arrowbox.removeClass("active-1");
 		arrowbox.removeClass("active-2");
 		arrowbox.removeClass("active-3");
 		arrowbox.removeClass("active-4");
-		$("form#surgery-form div input#DoctorSearch,form#surgery-form div input#SpecialitySearch,form#surgery-form div input#HospitalSearch,form#surgery-form div input#SurgerySearch").parent().hide();
+		$("form#surgery-form input#DoctorSearch,form#surgery-form input#SpecialitySearch,form#surgery-form input#HospitalSearch,form#surgery-form input#SurgerySearch").hide();
 		if ($(this).text().trim() == "Hospital") {
 			$("ul.context-choice-tabs").next().addClass("active-3");
-			$("form#surgery-form div input#HospitalSearch").parent().show();
+			$("form#surgery-form input#HospitalSearch").show();
 			hospital_bills[0] = "Hospital";
 			hospital_bills[1] = "Surgery";
 
 		}
 		else if ($(this).text().trim() == "Surgery") {
+			$("input#SurgerySearch").show();
+			$("button#SurgerySearchButton").show()
 			$("ul.context-choice-tabs").next().addClass("active-1")
-			$("form#surgery-form div input#SurgerySearch").parent().show();
+			$("form#surgery-form input#SurgerySearch").show();
 			hospital_bills[0] = "Surgery";
 		}
 		else if ($(this).text().trim() == "Speciality") {
 			$("ul.context-choice-tabs").next().addClass("active-2")
-			$("form#surgery-form div input#SpecialitySearch").parent().show();
+			$("form#surgery-form input#SpecialitySearch").show();
 			hospital_bills[0] = "Speciality";
 			hospital_bills[1] = "Hospital";
 		}
 		else if ($(this).text().trim() == "Doctor") {
-			$("form#surgery-form div input#DoctorSearch").parent().show();
+			$("form#surgery-form input#DoctorSearch").show();
 			$("ul.context-choice-tabs").next().addClass("active-4")
 			hospital_bills[0] = "Doctor";
 		}
-		
+
 	})
 
 })

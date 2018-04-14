@@ -61,12 +61,13 @@ app.post("/SearchSurgeryH", function (req, res) {
         }).toArray(function (err, result) {
             var hospital = result;
             hospital = hospital.map(item => {
-                return {
-                    name: item["HOSPITAL"], value: item["HOSPITAL"]
-                }
+                return item["HOSPITAL"]
             })
-            var hospital = _.uniqBy(hospital, 'name');
-            res.send(hospital)
+            
+            var destArray = _.uniq(hospital, function (x) {
+                return x;
+            });
+            res.send(destArray)
         })
     })
 })
@@ -85,12 +86,13 @@ app.post("/SearchSurgery", function (req, res) {
         }).toArray(function (err, result) {
             var hospital = result;
             hospital = hospital.map(item => {
-                return {
-                    name: item["TYPE"], value: item["TYPE"]
-                }
+               return item["TYPE"]
             })
-            var hospital = _.uniqBy(hospital, 'name');
-            res.send(hospital)
+            var destArray = _.uniq(hospital, function (x) {
+                return x;
+            });
+            res.send(destArray)
+            
         })
     })
 })
@@ -106,12 +108,12 @@ app.post("/getDoctor", function (req, res) {
         db.collection("doctor").find().toArray(function (err, result) {
             var hospital = result;
             hospital = hospital.map(item => {
-                return {
-                    name: item["Doctors name"], value: item["Doctors name"]
-                }
+                return item["Doctors name"]
             })
-            var hospital = _.uniqBy(hospital, 'name');
-            res.send(hospital)
+            var destArray = _.uniq(hospital, function (x) {
+                return x;
+            });
+            res.send(destArray)
         });
 
     })
@@ -128,12 +130,13 @@ app.post("/getHospital", function (req, res) {
             var hospital = result;
 
             hospital = hospital.map(item => {
-                return {
-                    name: item.HOSPITAL, value: item.HOSPITAL
-                }
+                return item.HOSPITAL
+
             })
-            var hospital = _.uniqBy(hospital, 'name');
-            res.send(hospital)
+            var destArray = _.uniq(hospital, function (x) {
+                return x;
+            });
+            res.send(destArray)
         });
 
     })
@@ -149,12 +152,13 @@ app.post("/getType", function (req, res) {
             var hospital = result;
 
             hospital = hospital.map(item => {
-                return {
-                    name: item.TYPE, value: item.TYPE
-                }
+                return item.TYPE
+
             })
-            var hospital = _.uniqBy(hospital, 'name');
-            res.send(hospital)
+            var destArray = _.uniq(hospital, function (x) {
+                return x;
+            });
+            res.send(destArray)
         });
 
     })
@@ -171,12 +175,12 @@ app.post("/getSurgery", function (req, res) {
             var surgery = result, hospital = result, speciality = result;
 
             surgery = surgery.map(item => {
-                return {
-                    name: item.Operation, value: item.Operation
-                }
+                return item.Operation
             })
-            var surgery = _.uniqBy(surgery, 'name');
-            res.send(surgery)
+            var destArray = _.uniq(surgery, function (x) {
+                return x;
+            });
+            res.send(destArray)
         });
 
     })

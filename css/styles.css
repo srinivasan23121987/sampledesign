@@ -48,6 +48,10 @@ ul.s-nav{
 form#surgery-form div.easy-autocomplete {
   display: none;
 }
+input#SpecialitySearch,input#HospitalSearch,input#DoctorSearch{
+	display: none;
+
+}
 div.easy-autocomplete{
   width:100%!important;
 }
@@ -590,4 +594,22 @@ div.easy-autocomplete{
 											  #bfe8f9 50%,
 											  #9fd8ef 51%,
 											  #2ab0ed 100%);
+}
+div.form-flows{
+	display: none;
+}
+div.form-flows-1,div.form-flows-2{
+	display: none;
+}
+.static-ph{
+	height:auto!important;
+}
+.different-box
+{
+	overflow-y: auto  !important;
+    height: 800px  !important;
+    overflow-x: hidden  !important;
+    display: block !important;
+    margin-top: 110px  !important;
+    color: #FFF;
 }
