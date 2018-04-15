@@ -2,12 +2,13 @@
 <html lang='en' class='flex'>
 
 <head>
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/propeller.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap-select.min.css" />
     <style>
         button.frontback {
             cursor: pointer;
@@ -41,6 +42,23 @@
             background-repeat: no-repeat;
             border-radius: 0 2px 2px 0;
         }
+
+        a.redbutton {
+            cursor: pointer;
+            height: 100%;
+
+
+            border: 0;
+            width: auto!important;
+            height: auto!important;
+            color: #FFF;
+            padding: 10px 10px !important;
+            background: #e60808;
+            background-image: url('') !important;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 0 2px 2px 0;
+        }
     </style>
 
 
@@ -49,7 +67,7 @@
     <link href='/css/gd-footer.bundle.css' rel='stylesheet' type='text/css' media='all' />
     <link href='/css/gd-home-bottom.css' rel='stylesheet' type='text/css' media='all' />
     <link href='/css/main_v4_editor.css' rel='stylesheet' type='text/css' media='all' />
-    <!-- <link href='/css/animate.css' rel='stylesheet' type='text/css' media='all' /> -->
+    <link href='/css/animate.css' rel='stylesheet' type='text/css' media='all' />
     <link href='/css/styles.css' rel='stylesheet' type='text/css' media='all' />
 
     <link rel="stylesheet" href="/css/form-wizard-red.css">
@@ -62,7 +80,7 @@
         })
 
     </script>
-    
+
     <title>WeCarebill.org</title>
 
     <link rel='shortcut icon' href='https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_64,w_64,q_auto/v1/45082/SINGLE_LOGO_oiwdo4.png'
@@ -313,19 +331,24 @@
                             <ul class="s-nav">
                                 <span>
                                     <li>
-                                        <a class="s-nav-item" href="#hospital-bills">
-                                            <span class="s-font-body">Hospital Bills</span>
+                                        <a class="s-nav-item" href="https://masimov.shinyapps.io/hospital/" target="__blank">
+                                            <span class="s-font-body">Compare</span>
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a class="s-nav-item" href="#what-we-do">
-                                            <span class="s-font-body">About us</span>
+                                        <a class="s-nav-item" target="__blank" href="http://ec2-52-15-127-37.us-east-2.compute.amazonaws.com:7000">
+                                            <span class="s-font-body">Chatbot</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="s-nav-item" target="__blank" href="https://wecarebill.typeform.com/to/vmhr01">
+                                            <span class="s-font-body">Survey</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="s-nav-item" href="#who-we-are">
-                                            <span class="s-font-body">Terms</span>
+                                            <span class="s-font-body">中</span>
                                         </a>
                                     </li>
 
@@ -387,12 +410,12 @@
     <div id="SrchHero" class="siteSrchBar banner">
         <div class="static-hph static ">
             <div class="static-hph-hero-srch">
-                <div class="context-tabs-mask col-md-offset-3 col-md-6">
+                <div class="context-tabs-mask col-md-offset-3 col-md-6 style-4">
                     <h1>How much hospital treatment costed?</h1>
                     <div class="search-bar minimized">
                         <div class="container-form">
                             <div class="context-choice-tabs-box">
-                                <ul class="row justify-content-space-evenly context-choice-tabs">
+                                <ul class="row justify-content-space-evenly  context-choice-tabs">
                                     <li class="col-3 jobs" data-search-type="JOBS" data-search-url="/Job/jobs.htm" data-zipcodes-ok="true" data-placeholder="Job Title, Keywords or Company"
                                         tabindex="1">
                                         <span>Surgery</span>
@@ -436,14 +459,84 @@
                                             <i class="glyphicon glyphicon-chevron-left"></i>
 
                                         </button>
-                                        <input id="hospital-1" style="height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0" value=""
-                                            data-srch-type="popular" placeholder="Part of body, conditions or specialities" autocomplete="off">
+                                        <input id="hospital-1" style="height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                            placeholder="Part of body, conditions or specialities" autocomplete="off">
                                         <button type="button" class="backfront" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button>
                                     </div>
                                     <div class="col-md-12 form-flows-3 animated bounceInLeft">
+                                        <div class="col-md-12" style="margin-bottom:5px;">
+                                            <a class="btn btn-danger redbutton col-md-1" style="margin-right:5px;">Option 1</a>
+                                            <select class="col-md-3 form-control">
+                                                <option value="50th percentile">50th percentile</option>
+                                                <option value="90th percentile">90th percentile</option>
+                                            </select>
+                                            <div class="col-md-2">
+                                                <span>| XX Cases</span>
+                                            </div>
+                                            <a class="btn btn-danger redbutton col-md-1" style="margin-left:5px;margin-right:5px;">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>Length of Stays</td>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="| in days" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Doctor fees</td>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="HKD" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Anaesthetic fees</td>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="HKD" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hospital Total Bills</td>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="HKD" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>It is a recent case?</td>
+                                                <td>
+                                                    <input type="radio" id="recentCY" class="form-control col-md-5" name="recent-cases" value="Yes" />
+                                                    <div class="col-md-1" style="padding-top:10px;">Yes</div>
+                                                    <input type="radio" id="recentCN" class="form-control col-md-5"
+                                                        value="No" name="recent-cases" />
+                                                    <div class="col-md-1" style="padding-top:10px;">No</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="recentcases">
+                                                <td></td>
+                                                <td>
+                                                    <select class="form-control">
+                                                        <option value="2018">2018</option>
+                                                        <option value="2017winter-spring">2017winter-spring</option>
+                                                        <option value="2016">2016</option>
+                                                        <option value="2015 or before">2015 or before</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <select class="form-control" name="ward-type">
+                                                        <option value="non-private">non-private</option>
+                                                        <option value="semi private">semi private</option>
+                                                        <option value="private">private</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
 
                                     </div>
                                 </div>
@@ -622,29 +715,32 @@
                 <section class="section wide gradient">
                     <div class="prefooter-module">
                         <div class="row prefooter-module-wrapper">
-                            <div class="prefooter-module-col col-12 col-sm-6 col-md-3" data-col-group="0">
+                            <div class="prefooter-module-col col-12 col-sm-6 col-md-4" data-col-group="0">
                                 <h4>Popular Searches</h4>
                                 <ul>
                                     <li>
-                                        <a class="secLink" href="/Job/web-developer-jobs-SRCH_KO0,13.htm">Web Developer Jobs</a>
+                                        <a class="secLink" href="#">Colonoscopy</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/mechanical-engineer-jobs-SRCH_KO0,19.htm">Mechanical Engineer Jobs</a>
+                                        <a class="secLink" href="#">Gastroscopy</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/project-manager-jobs-SRCH_KO0,15.htm">Project Manager Jobs</a>
+                                        <a class="secLink" href="#">Cataract Surgery</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/human-resources-jobs-SRCH_KO0,15.htm">Human Resources Jobs</a>
+                                        <a class="secLink" href="#">Hernia Repair</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/consultant-jobs-SRCH_KO0,10.htm">Consultant Jobs</a>
+                                        <a class="secLink" href="#">Caesarean Section</a>
                                     </li>
-                                    <li class="link link-more">
+                                    <li>
+                                        <a class="secLink" href="#">Arthroscopy</a>
+                                    </li>
+                                    <!-- <li class="link link-more">
                                         <a class="link">More</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
-                                <ul class="more">
+                                <!-- <ul class="more">
                                     <li>
                                         <a class="secLink" href="/Job/civil-engineer-jobs-SRCH_KO0,14.htm">Civil Engineer Jobs</a>
                                     </li>
@@ -708,31 +804,31 @@
                                     <li class="link link-less">
                                         <a class="link">Less</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
-                            <div class="prefooter-module-col col-12 col-sm-6 col-md-3" data-col-group="0">
-                                <h4>Jobs</h4>
+                            <div class="prefooter-module-col col-12 col-sm-6 col-md-4" data-col-group="0">
+                                <h4>Functions</h4>
                                 <ul>
                                     <li>
-                                        <a class="secLink" href="/Job/administrative-jobs-SRCH_KO0,14.htm">Jobs in Administrative</a>
+                                        <a class="secLink" target="__blank" href="https://masimov.shinyapps.io/hospital/">Compare</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/design-jobs-SRCH_KO0,6.htm">Jobs in Design</a>
+                                        <a class="secLink" target="__blank" href="http://ec2-52-15-127-37.us-east-2.compute.amazonaws.com:7000">Chatbot</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/business-jobs-SRCH_KO0,8.htm">Jobs in Business</a>
+                                        <a class="secLink" target="__blank" href="https://wecarebill.typeform.com/to/vmhr01">Survey</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/consulting-jobs-SRCH_KO0,10.htm">Jobs in Consulting</a>
+                                        <a class="secLink" target="__blank" alt="chatbot1" href="/Job/consulting-jobs-SRCH_KO0,10.htm">中</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/customer-support-services-jobs-SRCH_KO0,25.htm">Jobs in Customer Services &amp; Support</a>
+                                        <a class="secLink" target="__blank" href="http://wecarebillhk.strikingly.com/#survey">Anonymous survey</a>
                                     </li>
-                                    <li class="link link-more">
+                                    <!-- <li class="link link-more">
                                         <a class="link">More</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
-                                <ul class="more">
+                                <!-- <ul class="more">
                                     <li>
                                         <a class="secLink" href="/Job/education-jobs-SRCH_KE0,9.htm">Jobs in Education</a>
                                     </li>
@@ -790,21 +886,21 @@
                                     <li class="link link-less">
                                         <a class="link">Less</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
-                            <div class="prefooter-module-col col-12 col-sm-6 col-md-3" data-col-group="1">
-                                <h4>Browse by City</h4>
+                            <div class="prefooter-module-col col-12 col-sm-6 col-md-4" data-col-group="1">
+                                <h4>Browse by</h4>
                                 <ul>
                                     <li>
-                                        <a class="secLink" href="/Job/bangalore-jobs-SRCH_IL.0,9_IC2940587.htm">Jobs in Bangalore</a>
+                                        <a class="secLink" target="__blank" href="https://wecarebill.typeform.com/to/IZfAEd">Terms</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/pune-jobs-SRCH_IL.0,4_IC2856202.htm">Jobs in Pune</a>
+                                        <a class="secLink" target="__blank" href="https://www.facebook.com/WeCareBill/]">Facebook</a>
                                     </li>
                                     <li>
-                                        <a class="secLink" href="/Job/mumbai-jobs-SRCH_IL.0,6_IC2851180.htm">Jobs in Mumbai</a>
+                                        <a class="secLink" href="#">Contactus: 96450045 </a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a class="secLink" href="/Job/chennai-jobs-SRCH_IL.0,7_IC2833209.htm">Jobs in Chennai</a>
                                     </li>
                                     <li>
@@ -812,9 +908,9 @@
                                     </li>
                                     <li class="link link-more">
                                         <a class="link">More</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
-                                <ul class="more">
+                                <!-- <ul class="more">
                                     <li>
                                         <a class="secLink" href="/Job/gurgaon-jobs-SRCH_IL.0,7_IC2921225.htm">Jobs in Gurgaon</a>
                                     </li>
@@ -878,9 +974,9 @@
                                     <li class="link link-less">
                                         <a class="link">Less</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
-                            <div class="prefooter-module-col col-12 col-sm-6 col-md-3" data-col-group="1">
+                            <!-- <div class="prefooter-module-col col-12 col-sm-6 col-md-3" data-col-group="1">
                                 <h4>Salaries</h4>
                                 <ul>
                                     <li>
@@ -967,7 +1063,7 @@
                                         <a class="link">Less</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </section>
@@ -975,7 +1071,8 @@
                 <div class="copyright center margTopLg padBotLg">
                     <p>
 
-                        WeCarebill Foundation all right reserved ©2018.
+                        All right reserved. WeCarebill Foundation @
+                        <script>document.write(new Date().getFullYear())</script>
 
                     </p>
                 </div>
@@ -984,6 +1081,7 @@
     </footer>
     <script src="/js/jquery.auto-complete.js" />
     <script src="/js/form-wizard.js"></script>
+    <script src="/js/bootstrap-select.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 

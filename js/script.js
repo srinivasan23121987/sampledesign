@@ -166,7 +166,7 @@ jQuery(function ($) {
 					$("div.form-flows-2").show();
 					$("div.form-flows-3").hide();
 					$('input#hospital-1').autoComplete({
-						minChars: 0,
+						minChars: 1,
 						cache: false,
 						source: function (term, suggest) {
 							term = term.toLowerCase();
@@ -184,46 +184,47 @@ jQuery(function ($) {
 				initiateAjax("/SearchSurgeryR", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital }, function (data, err) {
 					console.log(data)
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
-					let html = '<ul class="nav nav-pills red" style="margin-bottom:10px;">';
-					let incrm = 0;
-					data.forEach((item) => {
-						if (incrm == 0) {
-							html += `<li class="active"><a data-toggle="pill" style="margin-right:5px;" href="#home${incrm}">${item.Statistics}</a></li>
-						 `;
-						}
-						else if (incrm != 0) {
-							html += `<li><a data-toggle="pill" style="margin-right:5px;" href="#home${incrm}">${item.Statistics}</a></li>
-							`;
-						}
-						incremntv++;
-						incrm++;
-					})
-					html += `</ul><div class="tab-content">`;
-					let incrm1 = 0;
-					data.forEach((item, index) => {
-						if (incrm1 == 0) {
-							html += `<div id="home${incrm1}" class="tab-pane fade in active">
-							<table class="table table-bordered" style="word-wrap:break-word">`;
-							for (prop in item) {
-								if (prop != "_id" && prop != "HOSPITAL" && prop && prop != "Operation" && prop != "TYPE" && prop != "Statistics")
-									html += `<tr><td><b>${prop}</b></td><td>${item[prop]}</td></tr>`;
-							}
-							html += `</table></div>`;
-						}
-						else if (incrm1 != 0) {
-							html += `<div id="home${incrm1}" class="tab-pane fade">
-							<table class="table table-bordered"  style="word-wrap:break-word">`;
-							for (prop in item) {
-								if (prop != "_id" && prop != "HOSPITAL" && prop && prop != "Operation" && prop != "TYPE" && prop != "Statistics")
-									html += `<tr><td><b>${prop}</b></td><td>${item[prop]}</td></tr>`;
-							}
-							html += `</table></div>`;
+					// let html = '<ul class="nav nav-pills red" style="margin-bottom:10px;">';
+					// let incrm = 0;
+					// data.forEach((item) => {
+					// 	if (incrm == 0) {
+					// 		html += `<li class="active"><a data-toggle="pill" style="margin-right:5px;" href="#home${incrm}">${item.Statistics}</a></li>
+					// 	 `;
+					// 	}
+					// 	else if (incrm != 0) {
+					// 		html += `<li><a data-toggle="pill" style="margin-right:5px;" href="#home${incrm}">${item.Statistics}</a></li>
+					// 		`;
+					// 	}
+					// 	incremntv++;
+					// 	incrm++;
+					// })
+					// html += `</ul><div class="tab-content">`;
+					// let incrm1 = 0;
+					// data.forEach((item, index) => {
+					// 	if (incrm1 == 0) {
+					// 		html += `<div id="home${incrm1}" class="tab-pane fade in active">
+					// 		<table class="table table-bordered" style="word-wrap:break-word">`;
+					// 		for (prop in item) {
+					// 			if (prop != "_id" && prop != "HOSPITAL" && prop && prop != "Operation" && prop != "TYPE" && prop != "Statistics")
+					// 				html += `<tr><td><b>${prop}</b></td><td>${item[prop]}</td></tr>`;
+					// 		}
+					// 		html += `</table></div>`;
+					// 	}
+					// 	else if (incrm1 != 0) {
+					// 		html += `<div id="home${incrm1}" class="tab-pane fade">
+					// 		<table class="table table-bordered"  style="word-wrap:break-word">`;
+					// 		for (prop in item) {
+					// 			if (prop != "_id" && prop != "HOSPITAL" && prop && prop != "Operation" && prop != "TYPE" && prop != "Statistics")
+					// 				html += `<tr><td><b>${prop}</b></td><td>${item[prop]}</td></tr>`;
+					// 		}
+					// 		html += `</table></div>`;
 
-						}
-						incremntv++;
-						incrm1++;
-					})
-					html += `</div>`
+					// 	}
+					// 	incremntv++;
+					// 	incrm1++;
+					// })
+					// html += `</div>`
+					$("div.context-tabs-mask h1").text('Compare total bill with Statistics');
 					$("div.static-hph").addClass("static-ph");
 					$("div.context-tabs-mask").addClass("different-box")
 					$("div.form-flows-1").hide();
@@ -246,7 +247,15 @@ jQuery(function ($) {
 		}
 		parentele.prev().show();
 	})
+	$('.selectpicker').selectpicker({
+		style: 'btn-default redbutton',
+		size: 4
+	});
+
 	$("button#SurgerySearchButton").click(function () {
+
+		$("div.form-flows-2").hide()
+		$("div.form-flows-3").hide()
 		var bills = hospital_bills[0];
 		if (bills == "Surgery") {
 			var surgerySearch = $("input#SurgerySearch");
@@ -254,13 +263,14 @@ jQuery(function ($) {
 			if (surgerySearchv) {
 				$("input#SurgerySearch").hide();
 				$("button#SurgerySearchButton").hide()
-				$("input#SurgerySearch").next().show()
-				$("input#SurgerySearch").next().find("div.form-flows-1").show()
+
 				initiateAjax("/SearchSurgery", surgerySearchv, function (data, err) {
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
 					let html = '';
+					$("input#SurgerySearch").next().show()
+					$("input#SurgerySearch").next().find("div.form-flows-1").show()
 					$('input#speciality-1').autoComplete({
-						minChars: 0,
+						minChars: 1,
 						cache: false,
 						source: function (term, suggest) {
 							term = term.toLowerCase();
@@ -300,7 +310,7 @@ jQuery(function ($) {
 		typedoc = data;
 	});
 	$('input#SurgerySearch').autoComplete({
-		minChars: 0,
+		minChars: 1,
 		cache: false,
 		source: function (term, suggest) {
 			term = term.toLowerCase();
@@ -315,7 +325,7 @@ jQuery(function ($) {
 		}
 	});
 	$('input#SpecialitySearch').autoComplete({
-		minChars: 0,
+		minChars: 1,
 		cache: false,
 		source: function (term, suggest) {
 			term = term.toLowerCase();
@@ -330,7 +340,7 @@ jQuery(function ($) {
 		}
 	});
 	$('input#HospitalSearch').autoComplete({
-		minChars: 0,
+		minChars: 1,
 		cache: false,
 		source: function (term, suggest) {
 			term = term.toLowerCase();
@@ -345,7 +355,7 @@ jQuery(function ($) {
 		}
 	});
 	$('input#DoctorSearch').autoComplete({
-		minChars: 0,
+		minChars: 1,
 		cache: false,
 		source: function (term, suggest) {
 			term = term.toLowerCase();
@@ -399,8 +409,18 @@ $(function () {
 		$("div.navbar-drawer-bar").toggleClass("drawer-open");
 	});
 	$("form#surgery-form input#SurgerySearch").show();
-
+	
+	$("input[name='recent-cases']").change(function () {
+		let selradio = $(this).val();
+		if (selradio == "Yes") {
+			$(this).parent().parent().next("tr").show();
+		}
+		else{
+			$(this).parent().parent().next("tr").hide();
+		}
+	})
 	$("ul.context-choice-tabs li").click(function () {
+		$("div.context-tabs-mask h1").text('How much hospital treatment costed?');
 		$("ul.context-choice-tabs li").removeClass("active-context");
 		$("div.form-flows").hide();
 		$(this).addClass("active-context");

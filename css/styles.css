@@ -613,3 +613,6 @@ div.form-flows-1,div.form-flows-2{
     margin-top: 110px  !important;
     color: #FFF;
 }
+tr.recentcases{
+	display: none;
+}
