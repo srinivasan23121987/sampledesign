@@ -218,6 +218,7 @@ jQuery(function ($) {
 						}, onSelect: function (e, term, item) {
 							if (term) {
 								$("button.backfront").click();
+								return;
 							}
 						}
 					});
@@ -240,7 +241,7 @@ jQuery(function ($) {
 						}
 					});
 
-
+					
 					// let html = '<ul class="nav nav-pills red" style="margin-bottom:10px;">';
 					// let incrm = 0;
 					// data.forEach((item) => {
