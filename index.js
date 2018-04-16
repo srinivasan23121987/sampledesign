@@ -63,7 +63,7 @@ app.post("/SearchSurgeryH", function (req, res) {
             hospital = hospital.map(item => {
                 return item["HOSPITAL"]
             })
-            
+
             var destArray = _.uniq(hospital, function (x) {
                 return x;
             });
@@ -86,16 +86,41 @@ app.post("/SearchSurgery", function (req, res) {
         }).toArray(function (err, result) {
             var hospital = result;
             hospital = hospital.map(item => {
-               return item["TYPE"]
+                return item["TYPE"]
             })
             var destArray = _.uniq(hospital, function (x) {
                 return x;
             });
             res.send(destArray)
-            
+
         })
     })
 })
+app.post("/SearchSurgerySpecDoctor", function (req, res) {
+    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+        var db = database;
+        if (err) {
+            console.log(err);
+        }
+        let surgicaltyp = req.body.data.type;
+        filterarray = [{ $or: [{ "Speciality": surgicaltyp.toLowerCase() }, { "Speciality": surgicaltyp.toUpperCase() }, { "Speciality": capitalizeFirstLetter(surgicaltyp) }, { "Speciality": toTitleCase(surgicaltyp) }] }]
+        db.collection("doctor").find({
+            $and: filterarray
+        }).toArray(function (err, result) {
+            var hospital = result;
+            hospital = hospital.map(item => {
+                return item["Doctors name"]
+            })
+            var destArray = _.uniq(hospital, function (x) {
+                return x;
+            });
+            res.send(destArray)
+        });
+
+    })
+
+})
+
 app.post("/getDoctor", function (req, res) {
     mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
         var db = database;

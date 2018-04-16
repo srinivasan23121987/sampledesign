@@ -416,20 +416,16 @@
                         <div class="container-form">
                             <div class="context-choice-tabs-box">
                                 <ul class="row justify-content-space-evenly  context-choice-tabs">
-                                    <li class="col-3 jobs" data-search-type="JOBS" data-search-url="/Job/jobs.htm" data-zipcodes-ok="true" data-placeholder="Job Title, Keywords or Company"
-                                        tabindex="1">
+                                    <li  class="col-3 jobs" data-type="Surgery" tabindex="1">
                                         <span>Surgery</span>
                                     </li>
-                                    <li class="col-3 reviews" data-search-type="EMPLOYER" data-search-url="/Reviews/company-reviews.htm" data-zipcodes-ok="false"
-                                        data-placeholder="Company Name" tabindex="2">
+                                    <li class="col-3 reviews" data-type="Speciality"  tabindex="2">
                                         <span>Speciality</span>
                                     </li>
-                                    <li class="col-3 salaries" data-search-type="SALARY" data-zipcodes-ok="false" data-search-url="/Salaries/company-salaries.htm"
-                                        data-placeholder="Job Title or Company" tabindex="3">
+                                    <li class="col-3 salaries" data-type="Hospital"  tabindex="3">
                                         <span>Hospital</span>
                                     </li>
-                                    <li class="col-3 interviews active-context" data-search-type="INTERVIEW" data-zipcodes-ok="false" data-search-url="/Interview/job-interview-questions.htm"
-                                        data-placeholder="Job Title or Company" tabindex="4">
+                                    <li class="col-3 interviews active-context" data-type="Doctor"  tabindex="4">
                                         <span>Doctor</span>
                                     </li>
                                 </ul>
@@ -467,6 +463,18 @@
                                         </button>
                                     </div>
                                     <div class="col-md-12 form-flows-3 animated bounceInLeft">
+                                        <button class="frontback" type="button" tabindex="0">
+                                            <i class="glyphicon glyphicon-chevron-left"></i>
+
+                                        </button>
+                                        <input id="doctor-1" style="height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                            placeholder="Part of body, conditions or specialities" autocomplete="off">
+                                        <button type="button" class="backfront" tabindex="0">
+                                            <i class="fa fa-chevron-right"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-12 form-flows-4 animated bounceInLeft">
                                         <div class="col-md-12" style="margin-bottom:5px;">
                                             <a class="btn btn-danger redbutton col-md-1" style="margin-right:5px;">Option 1</a>
                                             <select class="col-md-3 form-control">
@@ -474,8 +482,18 @@
                                                 <option value="90th percentile">90th percentile</option>
                                             </select>
                                             <div class="col-md-2">
-                                                <span>| XX Cases</span>
+                                                <select name="recent-cases" class="form-control">
+                                                    <option value="recent case">recent case</option>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                                
                                             </div>
+                                            <select class="form-control col-md-2" name="ward-type">
+                                                <option value="non-private">non-private</option>
+                                                <option value="semi private">semi private</option>
+                                                <option value="private">private</option>
+                                            </select>
                                             <a class="btn btn-danger redbutton col-md-1" style="margin-left:5px;margin-right:5px;">
                                                 <i class="fa fa-chevron-right"></i>
                                             </a>
@@ -505,16 +523,6 @@
                                                     <input type="text" class="form-control" placeholder="HKD" />
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>It is a recent case?</td>
-                                                <td>
-                                                    <input type="radio" id="recentCY" class="form-control col-md-5" name="recent-cases" value="Yes" />
-                                                    <div class="col-md-1" style="padding-top:10px;">Yes</div>
-                                                    <input type="radio" id="recentCN" class="form-control col-md-5"
-                                                        value="No" name="recent-cases" />
-                                                    <div class="col-md-1" style="padding-top:10px;">No</div>
-                                                </td>
-                                            </tr>
                                             <tr class="recentcases">
                                                 <td></td>
                                                 <td>
@@ -526,16 +534,7 @@
                                                     </select>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>Ward? non-private</td>
-                                                <td>
-                                                    <select class="form-control" name="ward-type">
-                                                        <option value="non-private">non-private</option>
-                                                        <option value="semi private">semi private</option>
-                                                        <option value="private">private</option>
-                                                    </select>
-                                                </td>
-                                            </tr>
+                                           
                                         </table>
 
                                     </div>
