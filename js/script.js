@@ -197,6 +197,7 @@ jQuery(function ($) {
 						}, onSelect: function (e, term, item) {
 							if (term) {
 								$("button.backfront").click();
+								$("div.autocomplete-suggestions").hide();
 							}
 						}
 					});
@@ -218,6 +219,7 @@ jQuery(function ($) {
 						}, onSelect: function (e, term, item) {
 							if (term) {
 								$("button.backfront").click();
+								$("div.autocomplete-suggestions").hide();
 								return;
 							}
 						}
