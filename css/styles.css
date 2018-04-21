@@ -613,6 +613,23 @@ div.form-flows-1,div.form-flows-2{
     margin-top: 110px  !important;
     color: #FFF;
 }
+select.button-view-white
+{
+	margin-bottom: 5px;
+    background: transparent !important;
+    color: #FFF !important;
+    text-decoration: underline;
+    border: 0px;
+}
+.col-xs-4 {
+    width: 33.33333333% !important;
+}
+.col-xs-3 {
+    width: 25% !important;
+}
+select.button-view-white option{
+	color:#000;
+}
 tr.recentcases{
 	display: none;
 }

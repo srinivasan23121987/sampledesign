@@ -43,6 +43,41 @@
             border-radius: 0 2px 2px 0;
         }
 
+        button.button-back {
+            cursor: pointer;
+            height: 30px;
+
+            border: 0;
+            
+            left: 0px;
+            color: #FFF;
+            width: 30px;
+            padding: 0;
+            background: #e60808;
+            background-image: url('') !important;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 0 2px 2px 0;
+        }
+
+        button.button-front {
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+            right: 0px;
+            
+            border: 0;
+            top: 0px;
+            color: #FFF;
+            padding: 0;
+            background: #e60808;
+            background-image: url('') !important;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 0 2px 2px 0;
+
+        }
+
         a.redbutton {
             cursor: pointer;
             height: 100%;
@@ -475,34 +510,55 @@
                                         </button>
                                     </div>
                                     <div class="col-md-12 form-flows-4 animated bounceInLeft">
-                                        <div class="col-md-12" style="margin-bottom:5px;">
-                                            <a class="btn btn-danger redbutton col-md-1" style="margin-right:5px;">Option 1</a>
-                                            <select class="col-md-3 form-control" style="margin-bottom:5px;">
+                                        <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
+                                            <button class="frontback" type="button" tabindex="0">
+                                                <i class="glyphicon glyphicon-chevron-left"></i>
+
+                                            </button>
+                                            <input id="SurgerySearch-1" style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0"
+                                                value="" data-srch-type="popular" placeholder="Part of body, conditions or specialities"
+                                                autocomplete="off">
+                                            <button type="button" class="backfront" tabindex="0">
+                                                <i class="fa fa-chevron-right"></i>
+                                                </span>
+                                            </button>
+                                            <select class="col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
+                                                <option value="median">median</option>
                                                 <option value="50th percentile">50th percentile</option>
                                                 <option value="90th percentile">90th percentile</option>
                                             </select>
 
-                                            <select name="recent-cases" class="form-control col-md-2" style="margin-bottom:5px;">
-                                                <option value="recent case">recent case</option>
-                                                <option value="Yes">Yes</option>
-                                                <option value="No">No</option>
-                                            </select>
 
 
-                                            <select class="form-control col-md-2" name="ward-type" style="margin-bottom:5px;">
+                                            <select class="form-control col-md-2 col-xs-4 col-sm-2 button-view-white" name="ward-type" style="margin-bottom:5px;">
                                                 <option value="non-private">non-private</option>
                                                 <option value="semi private">semi private</option>
                                                 <option value="private">private</option>
                                             </select>
-                                            <a class="btn btn-danger redbutton col-md-1" style="margin-left:5px;margin-right:5px;margin-bottom:5px;">
-                                                <i class="fa fa-chevron-right"></i>
-                                            </a>
+
+                                            <select name="recent-cases" class="form-control col-xs-4 col-sm-2 col-md-2 button-view-white" style="margin-bottom:5px;">
+                                                <option value="recent case">recent case</option>
+                                                <option value="20181H">20181H</option>
+                                                <option value="4Q2017">4Q2017</option>
+                                                <option value="3Q2017">3Q2017</option>
+                                                <option value="2Q2017">2Q2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                            </select>
+
                                         </div>
                                         <table class="table table-bordered">
                                             <tr>
                                                 <td>Length of Stays</td>
                                                 <td>
+                                                    <!-- <button class="button-back">
+                                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                                    </button> -->
                                                     <input type="text" class="form-control" placeholder="| in days" />
+                                                    <!-- <button class="button-front">
+                                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                                    </button> -->
                                                 </td>
                                             </tr>
                                             <tr>
