@@ -18,7 +18,7 @@
             position: absolute;
             left: 0px;
             color: #FFF;
-
+            z-index: 10;
             padding: 0;
             background: #e60808;
             background-image: url('') !important;
@@ -31,6 +31,7 @@
             cursor: pointer;
             height: 100%;
             right: 0px;
+            z-index: 10;
             position: absolute;
             border: 0;
             top: 0px;
@@ -48,7 +49,7 @@
             height: 30px;
 
             border: 0;
-            
+            z-index: 10;
             left: 0px;
             color: #FFF;
             width: 30px;
@@ -65,7 +66,7 @@
             height: 30px;
             width: 30px;
             right: 0px;
-            
+            z-index: 10;
             border: 0;
             top: 0px;
             color: #FFF;
@@ -103,6 +104,7 @@
     <link href='/css/gd-home-bottom.css' rel='stylesheet' type='text/css' media='all' />
     <link href='/css/main_v4_editor.css' rel='stylesheet' type='text/css' media='all' />
     <link href='/css/animate.css' rel='stylesheet' type='text/css' media='all' />
+    <link href='/css/select2.css' rel='stylesheet' type='text/css' media='all' />
     <link href='/css/styles.css' rel='stylesheet' type='text/css' media='all' />
 
     <link rel="stylesheet" href="/css/form-wizard-red.css">
@@ -146,6 +148,7 @@
 
 <body class='main flex flex-wide hero loggedOut lang-en en-GB gdGrid style-4' marginwidth='0' marginheight='0' style='margin:0;'
     data-locale='en-GB'>
+
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
@@ -470,16 +473,18 @@
                             </div>
                             <form action="#" method="get" target="_top" class="" id="surgery-form">
 
-                                <input id="SurgerySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                <select id="SurgerySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
                                     placeholder="Part of body, conditions, specialities or surgeries" autocomplete="off">
+                                </select>
                                 <div class="col-md-12 form-flows">
                                     <div class="col-md-12 form-flows-1 animated bounceInLeft">
                                         <button class="frontback" type="button" tabindex="0">
                                             <i class="glyphicon glyphicon-chevron-left"></i>
 
                                         </button>
-                                        <input id="speciality-1" style="height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0" value=""
+                                        <select id="speciality-1" style="height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0" value=""
                                             data-srch-type="popular" placeholder="Part of body, conditions or specialities" autocomplete="off">
+                                        </select>
                                         <button type="button" class="backfront" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
@@ -490,8 +495,9 @@
                                             <i class="glyphicon glyphicon-chevron-left"></i>
 
                                         </button>
-                                        <input id="hospital-1" style="height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                        <select id="hospital-1" style="height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
                                             placeholder="Part of body, conditions or specialities" autocomplete="off">
+                                        </select>
                                         <button type="button" class="backfront" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
@@ -502,8 +508,8 @@
                                             <i class="glyphicon glyphicon-chevron-left"></i>
 
                                         </button>
-                                        <input id="doctor-1" style="height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
-                                            placeholder="Part of body, conditions or specialities" autocomplete="off">
+                                        <select id="doctor-1" style="height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                            placeholder="Part of body, conditions or specialities" autocomplete="off"></select>
                                         <button type="button" class="backfront" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
@@ -515,9 +521,9 @@
                                                 <i class="glyphicon glyphicon-chevron-left"></i>
 
                                             </button>
-                                            <input id="SurgerySearch-1" style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0"
+                                            <select id="SurgerySearch-1" style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0"
                                                 value="" data-srch-type="popular" placeholder="Part of body, conditions or specialities"
-                                                autocomplete="off">
+                                                autocomplete="off"></select>
                                             <button type="button" class="backfront" tabindex="0">
                                                 <i class="fa fa-chevron-right"></i>
                                                 </span>
@@ -595,12 +601,19 @@
 
                                     </div>
                                 </div>
-                                <input id="SpecialitySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
-                                    placeholder="Part of body, conditions or specialities" autocomplete="off">
-                                <input id="HospitalSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
-                                    placeholder="Please Type hospital" autocomplete="off">
-                                <input id="DoctorSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
-                                    placeholder="Please type doctor names" autocomplete="off">
+                                <div id="SpecialitySearch">
+                                    <select  style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                        placeholder="Part of body, conditions or specialities" autocomplete="off">
+                                    </select>
+                                </div>
+                                <div id="HospitalSearch">
+                                <select  style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                    placeholder="Please Type hospital" autocomplete="off"></select>
+                                </div>
+                                <div id="DoctorSearch" >
+                                <select style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                    placeholder="Please type doctor names" autocomplete="off"></select>
+                                </div>
                                 <button class="gd-btn-mkt" id="SurgerySearchButton" type="button" tabindex="0">
                                     <span>Search</span>
                                 </button>
@@ -1137,6 +1150,7 @@
     <script src="/js/jquery.auto-complete.js" />
     <script src="/js/form-wizard.js"></script>
     <script src="/js/bootstrap-select.min.js"></script>
+    <script src="/js/select2.js"></script>
     <script src="/js/script.js"></script>
 </body>
 
