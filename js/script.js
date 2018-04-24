@@ -187,7 +187,7 @@ jQuery(function ($) {
 			var doctor = $("select#doctor-1").val();
 
 			// alert(hospital+"=>"+doctor+"=>"+surgerySearchv+"=>"+surgicaltype);
-			if (surgerySearchv && surgicaltype && (hospital == "" || hospital == null) && (doctor == "" || doctor==null)) {
+			if (surgerySearchv && surgicaltype && (hospital == "" || hospital == null) && (doctor == "" || doctor == null)) {
 				initiateAjax("/SearchSurgeryH", { surgery: surgerySearchv, type: surgicaltype }, function (data, err) {
 					$("ul.context-choice-tabs li:eq(1)").text(surgicaltype);
 
@@ -221,7 +221,12 @@ jQuery(function ($) {
 						$("select#hospital-1").html(`<option value="No Options">No Record Found</option>`);
 
 					$("select#hospital-1").html(html3);
-					$("select#hospital-1").select2();
+					var list=$("select#hospital-1").select2();
+                    setTimeout(() => {
+						console.log(list);
+						list.select2('open');
+					}, 1000)
+
 
 					if (data.length == 1)
 						$("button.backfront").click();
@@ -239,7 +244,12 @@ jQuery(function ($) {
 					if (data.length == 0)
 						$("select#doctor-1").html(`<option value="No Options">No Record Found</option>`);
 					$("select#doctor-1").html(html3);
-					$("select#doctor-1").select2();
+					var list=$("select#doctor-1").select2();
+					setTimeout(() => {
+						console.log(list);
+						list.select2('open');
+					}, 1000)
+
 
 					if (data.length == 1)
 						$("button.backfront").click();
@@ -399,7 +409,15 @@ jQuery(function ($) {
 						$("select#speciality-1").html(`<option value="No Options">No Record Found</option>`);
 
 					$("select#speciality-1").html(html);
-					$("select#speciality-1").select2();
+					var list = $("select#speciality-1").select2();
+
+					setTimeout(() => {
+						console.log(list);
+						list.select2('open');
+					}, 1000)
+
+
+
 
 					if (data.length == 1)
 						$("button.backfront").click();
@@ -412,6 +430,7 @@ jQuery(function ($) {
 						$(this).text($(this).text().substr(0, 10) + '...');
 					}
 				});
+
 			}
 			else {
 				surgerySearch.css({ "border": "2px solid red" });
@@ -472,7 +491,7 @@ jQuery(function ($) {
 					$("div#DoctorSearch select").select2();
 
 					removeLoader();
-					
+
 
 				});
 			});
