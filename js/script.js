@@ -211,7 +211,7 @@ jQuery(function ($) {
 					$("ul.context-choice-tabs").next().removeClass("active-4");
 					$("ul.context-choice-tabs").next().addClass("active-3");
 					$('input#hospital-1').autoComplete({
-						minChars: 1,
+						minChars: 0,
 						source: function (term, suggest) {
 							var choices = data;
 							var matches = [];
@@ -226,12 +226,16 @@ jQuery(function ($) {
 					});
 					if (data.length == 1)
 						$("button.backfront").click();
+					setTimeout(() => {
+						$('input#hospital-1').focus();
+					}, 1000)
+
 				})
 
 			} else if (surgerySearchv && surgicaltype && hospital && (doctor == "" || doctor == null)) {
 				initiateAjax("/SearchSurgerySpecDoctor", { type: surgicaltype }, function (data, err) {
 					$('input#doctor-1').autoComplete({
-						minChars: 1,
+						minChars: 0,
 						source: function (term, suggest) {
 							var choices = data;
 							var matches = [];
@@ -308,6 +312,9 @@ jQuery(function ($) {
 					$("div.form-flows-3").show();
 					$("div.form-flows-2").hide();
 					$("div.form-flows-4").hide();
+					setTimeout(() => {
+						$('input#doctor-1').focus();
+					}, 1000)
 
 				})
 			} else if (surgerySearchv && surgicaltype && hospital && doctor) {
@@ -348,15 +355,25 @@ jQuery(function ($) {
 		}
 		if (parentele.prev().hasClass("form-flows-1")) {
 			$("ul.context-choice-tabs").next().addClass("active-2");
+			setTimeout(() => {
+				$('input#speciality-1').focus();
+			}, 1000)
 		}
 		if (parentele.prev().hasClass("form-flows-2")) {
 			$("ul.context-choice-tabs").next().addClass("active-3");
+
+			setTimeout(() => {
+				$('input#hospital-1').focus();
+			}, 1000)
 
 		}
 		if (parentele.prev().hasClass("form-flows-3")) {
 			$("div.static-hph").removeClass("static-ph");
 			$("div.context-tabs-mask").removeClass("different-box")
 			$("ul.context-choice-tabs").next().addClass("active-4");
+			setTimeout(() => {
+				$('input#doctor-1').focus();
+			}, 1000)
 
 		}
 
@@ -390,7 +407,7 @@ jQuery(function ($) {
 					$("div.form-flows").show()
 					$("div.form-flows-1").show()
 					$('input#speciality-1').autoComplete({
-						minChars: 1,
+						minChars: 0,
 						source: function (term, suggest) {
 							var choices = data;
 							var matches = [];
@@ -400,13 +417,19 @@ jQuery(function ($) {
 						}, onSelect: function (e, term, item) {
 							if (term)
 								$("button#SurgerySearchButton").click();
+							$("div.autocomplete-suggestions ").hide()
 						}
 					});
 
 
 
+
 					if (data.length == 1)
 						$("button.backfront").click();
+					setTimeout(() => {
+						$('input#speciality-1').focus();
+					}, 1000)
+
 				})
 
 				$("ul.context-choice-tabs li:eq(0)").text(surgerySearchv);
@@ -432,7 +455,7 @@ jQuery(function ($) {
 	initialLoadAjax("/getSurgery", '', function (data, err) {
 		surgoptions = data;
 		$('input#SurgerySearch').autoComplete({
-			minChars: 1,
+			minChars: 0,
 			source: function (term, suggest) {
 				var choices = surgoptions;
 				var matches = [];
@@ -447,7 +470,7 @@ jQuery(function ($) {
 		initialLoadAjax("/getType", '', function (data, err) {
 			typeoptions = data;
 			$('input#SpecialitySearch').autoComplete({
-				minChars: 1,
+				minChars: 0,
 				source: function (term, suggest) {
 					var choices = typeoptions;
 					var matches = [];
@@ -459,7 +482,7 @@ jQuery(function ($) {
 			initialLoadAjax("/getHospital", '', function (data, err) {
 				typehosp = data;
 				$('input#HospitalSearch').autoComplete({
-					minChars: 1,
+					minChars: 0,
 					source: function (term, suggest) {
 						var choices = typehosp;
 						var matches = [];
@@ -471,7 +494,7 @@ jQuery(function ($) {
 				initialLoadAjax("/getDoctor", '', function (data, err) {
 					typedoc = data;
 					$('input#HospitalSearch').autoComplete({
-						minChars: 1,
+						minChars: 0,
 						source: function (term, suggest) {
 							var choices = typedoc;
 							var matches = [];
@@ -593,7 +616,7 @@ $(function () {
 			hospital_bills[1] = "Hospital";
 		}
 		else if ($(this).data('type') == "Doctor") {
-			$("form#surgery-form input#DoctorSearch").show();
+			$("form#surgery-form input #DoctorSearch").show();
 			$("button#SurgerySearchButton").show()
 			$("ul.context-choice-tabs").next().addClass("active-4")
 			hospital_bills[0] = "Doctor";
