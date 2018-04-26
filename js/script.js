@@ -224,8 +224,10 @@ jQuery(function ($) {
 							$("div.autocomplete-suggestions ").hide()
 						}
 					});
-					if (data.length == 1)
+					if (data.length == 1){
+						$('input#hospital-1').val(data[0])
 						$("button.backfront").click();
+					}
 					setTimeout(() => {
 						$('input#hospital-1').focus();
 					}, 1000)
@@ -423,9 +425,12 @@ jQuery(function ($) {
 
 
 
-
-					if (data.length == 1)
+                    
+					if (data.length == 1){
+						$('input#speciality-1').val(data[0])
 						$("button.backfront").click();
+
+					}
 					setTimeout(() => {
 						$('input#speciality-1').focus();
 					}, 1000)
