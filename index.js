@@ -18,6 +18,35 @@ app.use(bodyParser.json());
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
+app.get('/treatment/:type', function (req, res) {
+    res.sendFile(__dirname + '/index.html');
+})
+app.post('/treatment/:type', function (req, res) {
+    let surgicaltyp = req.params.type;
+    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+        var db = database;
+        if (err) {
+            console.log(err);
+        }
+        filterarray = [{ $or: [{ "Operation": surgicaltyp.toLowerCase() }, { "Operation": surgicaltyp.toUpperCase() }, { "Operation": capitalizeFirstLetter(surgicaltyp) }, { "Operation": toTitleCase(surgicaltyp) }] }
+        ]
+
+        db.collection("surgery").find({
+            $and: filterarray
+        }).toArray(function (err, result) {
+            var hospital = result;
+            hospital = hospital.map(item => {
+                return item["TYPE"]
+            })
+            var destArray = _.uniq(hospital, function (x) {
+                return x;
+            });
+            res.send(destArray)
+
+        })
+    })
+    
+})
 app.post("/SearchSurgeryR", function (req, res) {
     let body = req.body.data;
     let surgicaltyp = body.surgery;

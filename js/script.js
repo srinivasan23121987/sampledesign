@@ -177,6 +177,10 @@ function initiateAjax(url, data, callback) {
 jQuery(function ($) {
 
 	var surgicaltype;
+	let href = $(location).attr('href').split("/");
+	let urltype = decodeURI(href[4]);
+	let urlvalue = href[3];
+
 	$("button.backfront").click(function () {
 		var bills = hospital_bills;
 		if (bills[0] == "Surgery" && bills[1] == "Hospital") {
@@ -224,7 +228,7 @@ jQuery(function ($) {
 							$("div.autocomplete-suggestions ").hide()
 						}
 					});
-					if (data.length == 1){
+					if (data.length == 1) {
 						$('input#hospital-1').val(data[0])
 						$("button.backfront").click();
 					}
@@ -425,8 +429,8 @@ jQuery(function ($) {
 
 
 
-                    
-					if (data.length == 1){
+
+					if (data.length == 1) {
 						$('input#speciality-1').val(data[0])
 						$("button.backfront").click();
 
@@ -498,6 +502,7 @@ jQuery(function ($) {
 				});
 				initialLoadAjax("/getDoctor", '', function (data, err) {
 					typedoc = data;
+
 					$('input#HospitalSearch').autoComplete({
 						minChars: 0,
 						source: function (term, suggest) {
@@ -508,8 +513,19 @@ jQuery(function ($) {
 							suggest(matches);
 						}
 					});
-
-					removeLoader();
+					if (urltype && urlvalue) {
+						initialLoadAjax("/" + urlvalue + "/" + urltype.toLowerCase(), '', function (data, err) {
+							if (data instanceof Array && data.length > 0) {
+								$("input#SurgerySearch").val(urltype);
+								$("button#SurgerySearchButton").click();
+								removeLoader();
+							}
+						});
+					}
+					else
+					{
+						removeLoader();
+					}
 
 
 				});
@@ -599,7 +615,7 @@ $(function () {
 
 		}
 		else if ($(this).data('type') == "Surgery") {
-			$("ul.context-choice-tabs li:eq(0)").text('Surgery');
+			$("ul.context-choice-tabs li:eq(0)").text('Treatment');
 			$("ul.context-choice-tabs li:eq(1)").text('Speciality');
 			$("ul.context-choice-tabs li:eq(2)").text('Hospital');
 			$("ul.context-choice-tabs li:eq(3)").text('Doctor');
@@ -612,7 +628,7 @@ $(function () {
 		else if ($(this).data('type') == "Speciality") {
 			$("ul.context-choice-tabs").next().addClass("active-1")
 			$("ul.context-choice-tabs li:eq(0)").text('Speciality');
-			$("ul.context-choice-tabs li:eq(1)").text('Surgery');
+			$("ul.context-choice-tabs li:eq(1)").text('Treatment');
 			$("ul.context-choice-tabs li:eq(2)").text('Hospital');
 			$("ul.context-choice-tabs li:eq(3)").text('Doctor');
 			$("form#surgery-form input#SpecialitySearch").show();
