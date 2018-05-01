@@ -216,7 +216,7 @@ jQuery(function ($) {
 							var choices = data;
 							var matches = [];
 							for (i = 0; i < choices.length; i++)
-								if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+								if (~choices[i].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
 							suggest(matches);
 						}, onSelect: function (e, term, item) {
 							if (term)
@@ -242,7 +242,7 @@ jQuery(function ($) {
 							var choices = data;
 							var matches = [];
 							for (i = 0; i < choices.length; i++)
-								if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+								if (~choices[i].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
 							suggest(matches);
 						}, onSelect: function (e, term, item) {
 							if (term)
@@ -414,7 +414,7 @@ jQuery(function ($) {
 							var choices = data;
 							var matches = [];
 							for (i = 0; i < choices.length; i++)
-								if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+								if (~choices[i].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
 							suggest(matches);
 						}, onSelect: function (e, term, item) {
 							if (term)
@@ -465,7 +465,7 @@ jQuery(function ($) {
 				var choices = surgoptions;
 				var matches = [];
 				for (i = 0; i < choices.length; i++)
-					if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+					if (~choices[i].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
 				suggest(matches);
 			}, onSelect: function (e, term, item) {
 				if (term)
@@ -480,7 +480,7 @@ jQuery(function ($) {
 					var choices = typeoptions;
 					var matches = [];
 					for (i = 0; i < choices.length; i++)
-						if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+						if (~choices[i].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
 					suggest(matches);
 				}
 			});
@@ -492,7 +492,7 @@ jQuery(function ($) {
 						var choices = typehosp;
 						var matches = [];
 						for (i = 0; i < choices.length; i++)
-							if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+							if (~choices[i].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
 						suggest(matches);
 					}
 				});
@@ -504,7 +504,7 @@ jQuery(function ($) {
 							var choices = typedoc;
 							var matches = [];
 							for (i = 0; i < choices.length; i++)
-								if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+								if (~choices[i].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
 							suggest(matches);
 						}
 					});
