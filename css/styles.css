@@ -98,9 +98,15 @@ ul.s-nav{
 form#surgery-form div.easy-autocomplete {
   display: none;
 }
+div.padding-extra{
+	padding-bottom: 40px!important;
+}
 div#SpecialitySearch,div#HospitalSearch,div#DoctorSearch{
 	display: none;
 
+}
+div.form-flows-4,div.form-flows-5,div.form-flows-6,div.form-flows-7,div.form-flows-8{
+	display: none;
 }
 div.form-flows-1  span.select2-container span.selection span span {
 	padding-left:66px;
