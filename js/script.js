@@ -181,6 +181,10 @@ jQuery(function ($) {
 	let urltype = decodeURI(href[4]);
 	let urlvalue = href[3];
 	$(".widthofrectr").click(function () {
+		var whichclss = $(this).parent().parent().parent().parent().parent().parent().next();
+		if(whichclss.html()==undefined){
+			return false;
+		}
 		$("div.form-flows-4").hide()
 		$("div.form-flows-5").hide();
 		$("div.form-flows-6").hide();
@@ -195,7 +199,7 @@ jQuery(function ($) {
 		var doctorfees = $("input.doctorfees").val();
 		var anaestheticfees = $("input.anaestheticfees").val();
 		$("div.context-tabs-mask").removeClass("padding-extra");
-		var whichclss = $(this).parent().parent().parent().parent().parent().parent().next();
+		
 		if (whichclss.hasClass("form-flows-5")) {
 			$("div.form-flows-5").show();
 		}
@@ -205,9 +209,9 @@ jQuery(function ($) {
 		else if (whichclss.hasClass("form-flows-7")) {
 			$("div.form-flows-7").show();
 		}
-		else if (whichclss.hasClass("form-flows-8")) {
-			$("div.form-flows-8").show();
-		}
+		// else if (whichclss.hasClass("form-flows-8")) {
+		// 	$("div.form-flows-8").show();
+		// }
 
 
 	});
@@ -418,6 +422,16 @@ jQuery(function ($) {
 
 		}
 		if (parentele.prev().hasClass("form-flows-3")) {
+			$("div.static-hph").removeClass("static-ph");
+			$("div.context-tabs-mask").removeClass("different-box")
+			$("div.context-tabs-mask").removeClass("padding-extra");
+			$("ul.context-choice-tabs").next().addClass("active-4");
+			setTimeout(() => {
+				$('input#doctor-1').focus();
+			}, 1000)
+
+		}
+		if (parentele.prev().hasClass("form-flows-4")) {
 			$("div.context-tabs-mask").removeClass("padding-extra")
 			$("ul.context-choice-tabs").next().addClass("active-4");
 			setTimeout(() => {
