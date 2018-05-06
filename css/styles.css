@@ -101,6 +101,31 @@ form#surgery-form div.easy-autocomplete {
 div.padding-extra{
 	padding-bottom: 40px!important;
 }
+div.widthofrectl{
+	width: 40px;
+    height: 34px;
+    background: #e60808;
+    position: absolute;
+    display: block;
+    left: 11px;
+    top: 11px;
+	text-align: center;
+	padding-top: 5px;
+	cursor: hand;
+}
+div.widthofrectr{
+	cursor: hand;
+	width: 40px;
+    height: 34px;
+    background: #e60808;
+	position: absolute;
+	text-align: center;
+	padding-top: 5px;
+    display: block;
+    right: 11px;
+    top: 11px;
+
+}
 div#SpecialitySearch,div#HospitalSearch,div#DoctorSearch{
 	display: none;
 

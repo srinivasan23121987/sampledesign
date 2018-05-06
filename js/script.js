@@ -180,22 +180,22 @@ jQuery(function ($) {
 	let href = $(location).attr('href').split("/");
 	let urltype = decodeURI(href[4]);
 	let urlvalue = href[3];
-	$("button.backfronts").click(function () {
+	$(".widthofrectr").click(function () {
 		$("div.form-flows-4").hide()
 		$("div.form-flows-5").hide();
 		$("div.form-flows-6").hide();
 		$("div.form-flows-7").hide();
 		$("div.form-flows-8").hide();
-		var operationopt = $("input#SurgerySearch-1").val();
-		var percentile = $("select#percentile").val();
-		var privateornot = $("select#privateornot").val();
-		var recentcases = $("select#recent-cases").val();
-		var lengthofstays = $("input#lengthofstays").val();
-		var totalfees = $("input#totalfees").val();
-		var doctorfees = $("input#doctorfees").val();
-		var anaestheticfees = $("input#anaestheticfees").val();
+		var operationopt = $("input.SurgerySearch-1").val();
+		var percentile = $("select.percentile").val();
+		var privateornot = $("select.privateornot").val();
+		var recentcases = $("select.recent-cases").val();
+		var lengthofstays = $("input.lengthofstays").val();
+		var totalfees = $("input.totalfees").val();
+		var doctorfees = $("input.doctorfees").val();
+		var anaestheticfees = $("input.anaestheticfees").val();
 		$("div.context-tabs-mask").removeClass("padding-extra");
-		var whichclss = $(this).parent().next();
+		var whichclss = $(this).parent().parent().parent().parent().parent().parent().next();
 		if (whichclss.hasClass("form-flows-5")) {
 			$("div.form-flows-5").show();
 		}
@@ -364,9 +364,9 @@ jQuery(function ($) {
 				$("div.form-flows-7").hide();
 				$("div.form-flows-8").hide();
 
-				// $("div.context-tabs-mask").addClass("different-box");
-				// $("div.static-hph").addClass("static-ph");
-				$("div.context-tabs-mask").addClass("padding-extra");
+				$("div.context-tabs-mask").addClass("different-box");
+				$("div.static-hph").addClass("static-ph");
+				// $("div.context-tabs-mask").addClass("padding-extra");
 
 				$("ul.context-choice-tabs li:eq(3)").text(doctor);
 				$("ul.context-choice-tabs").next().removeClass("active-1");

@@ -43,6 +43,7 @@
             background-repeat: no-repeat;
             border-radius: 0 2px 2px 0;
         }
+
         button.backfronts {
             cursor: pointer;
             height: 100%;
@@ -59,6 +60,7 @@
             background-repeat: no-repeat;
             border-radius: 0 2px 2px 0;
         }
+
         button.button-back {
             cursor: pointer;
             height: 30px;
@@ -533,15 +535,14 @@
                                         <button class="frontback" type="button" tabindex="0">
                                             <i class="glyphicon glyphicon-chevron-left"></i>
                                         </button>
-                                        <input id="SurgerySearch-1" style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0"
-                                            value="" data-srch-type="popular" placeholder="Operation options"
-                                            autocomplete="off">
+                                        <input style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc SurgerySearch-1" type="text" tabindex="0"
+                                            value="" data-srch-type="popular" placeholder="Operation options" autocomplete="off">
                                         <button type="button" class="backfronts" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button>
                                         <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
-                                            <select id="percentile" class="col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
+                                            <select class="percentile col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
                                                 <option value="median">median</option>
                                                 <option value="50th percentile">50th percentile</option>
                                                 <option value="90th percentile">90th percentile</option>
@@ -549,13 +550,13 @@
 
 
 
-                                            <select id="privateornot" class="form-control col-md-2 col-xs-4 col-sm-2 button-view-white" name="ward-type" style="margin-bottom:5px;">
+                                            <select class="privateornot form-control col-md-2 col-xs-4 col-sm-2 button-view-white" name="ward-type" style="margin-bottom:5px;">
                                                 <option value="non-private">non-private</option>
                                                 <option value="semi private">semi private</option>
                                                 <option value="private">private</option>
                                             </select>
 
-                                            <select name="recent-cases" id="recent-case" class="form-control col-xs-4 col-sm-2 col-md-2 button-view-white" style="margin-bottom:5px;">
+                                            <select class="recent-case form-control col-xs-4 col-sm-2 col-md-2 button-view-white" style="margin-bottom:5px;">
                                                 <option value="recent case">recent case</option>
                                                 <option value="20181H">20181H</option>
                                                 <option value="4Q2017">4Q2017</option>
@@ -565,73 +566,324 @@
                                                 <option value="2015">2015</option>
                                                 <option value="2014">2014</option>
                                             </select>
+                                            <table style="position:relative;" class="table table-bordered">
 
+
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Length of Stays</td>
+                                                    <td style="position:relative;">
+                                                        <!-- <button class="button-back">
+                                                                                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                                                                                    </button> -->
+                                                        <div class="widthofrectl">
+                                                            <i class="fa fa-chevron-left"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control lengthofstays" style="padding-left:51px;" placeholder="| in days" />
+                                                        <div class="widthofrectr">
+                                                            <i class="fa fa-chevron-right"></i>
+                                                        </div>
+                                                        <!-- <button class="button-front">
+                                                                                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                                                                                    </button> -->
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Hospital Total Bills</td>
+                                                    <td style="position:relative;">
+                                                        <input type="text" class="form-control totalfees" placeholder="HKD" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctor fees</td>
+                                                    <td>
+                                                        <input type="text" class="form-control doctorfees" placeholder="HKD" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Anaesthetic fees</td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="HKD" class="anaestheticfees" />
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                        <td style="position:relative;">Original Description</td>
+                                                        <td style="position:relative;">
+                                                            <textarea class="form-control" placeholder="Description" class="originaldescr"></textarea>
+                                                        </td>
+                                                    </tr>
+                                            </table>
                                         </div>
-                                        
+
 
                                     </div>
                                     <div class="col-md-12 form-flows-5 animated bounceInLeft">
                                         <button class="frontback" type="button" tabindex="0">
                                             <i class="glyphicon glyphicon-chevron-left"></i>
                                         </button>
-                                        <input id="lengthofstays" style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0"
-                                            value="" data-srch-type="popular" placeholder="Length of stays"
-                                            autocomplete="off">
+                                        <input style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc SurgerySearch-1" type="text" tabindex="0"
+                                            value="" data-srch-type="popular" placeholder="Operation options" autocomplete="off">
                                         <button type="button" class="backfronts" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button>
+                                        <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
+                                            <select class="percentile col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
+                                                <option value="median">median</option>
+                                                <option value="50th percentile">50th percentile</option>
+                                                <option value="90th percentile">90th percentile</option>
+                                            </select>
+
+
+
+                                            <select class="privateornot form-control col-md-2 col-xs-4 col-sm-2 button-view-white" name="ward-type" style="margin-bottom:5px;">
+                                                <option value="non-private">non-private</option>
+                                                <option value="semi private">semi private</option>
+                                                <option value="private">private</option>
+                                            </select>
+
+                                            <select class="recent-case form-control col-xs-4 col-sm-2 col-md-2 button-view-white" style="margin-bottom:5px;">
+                                                <option value="recent case">recent case</option>
+                                                <option value="20181H">20181H</option>
+                                                <option value="4Q2017">4Q2017</option>
+                                                <option value="3Q2017">3Q2017</option>
+                                                <option value="2Q2017">2Q2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                            </select>
+                                            <table style="position:relative;" class="table table-bordered">
+
+
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Length of Stays</td>
+                                                    <td style="position:relative;">
+                                                        <!-- <button class="button-back">
+                                                                                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                                                                                    </button> -->
+                                                        <span>2 | 1.4 days</span>
+
+                                                        <!-- <button class="button-front">
+                                                                                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                                                                                    </button> -->
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Hospital Total Bills</td>
+                                                    <td style="position:relative;">
+                                                        <div class="widthofrectl">
+                                                            <i class="fa fa-chevron-left"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control totalfees" placeholder="HKD" style="padding-left:51px;" />
+                                                        <div class="widthofrectr">
+                                                            <i class="fa fa-chevron-right"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doctor fees</td>
+                                                    <td>
+                                                        <input type="text" class="form-control doctorfees" placeholder="HKD" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Anaesthetic fees</td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="HKD" class="anaestheticfees" />
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                        <td style="position:relative;">Original Description</td>
+                                                        <td style="position:relative;">
+                                                            <textarea class="form-control" placeholder="Description" class="originaldescr"></textarea>
+                                                        </td>
+                                                    </tr>
+                                            </table>
+                                        </div>
+
+
                                     </div>
                                     <div class="col-md-12 form-flows-6 animated bounceInLeft">
                                         <button class="frontback" type="button" tabindex="0">
                                             <i class="glyphicon glyphicon-chevron-left"></i>
                                         </button>
-                                        <input id="totalfees" style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0"
-                                            value="" data-srch-type="popular" placeholder="Total Fees"
-                                            autocomplete="off">
+                                        <input style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc SurgerySearch-1" type="text" tabindex="0"
+                                            value="" data-srch-type="popular" placeholder="Operation options" autocomplete="off">
                                         <button type="button" class="backfronts" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button>
+                                        <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
+                                            <select class="percentile col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
+                                                <option value="median">median</option>
+                                                <option value="50th percentile">50th percentile</option>
+                                                <option value="90th percentile">90th percentile</option>
+                                            </select>
+
+
+
+                                            <select class="privateornot form-control col-md-2 col-xs-4 col-sm-2 button-view-white" name="ward-type" style="margin-bottom:5px;">
+                                                <option value="non-private">non-private</option>
+                                                <option value="semi private">semi private</option>
+                                                <option value="private">private</option>
+                                            </select>
+
+                                            <select class="recent-case form-control col-xs-4 col-sm-2 col-md-2 button-view-white" style="margin-bottom:5px;">
+                                                <option value="recent case">recent case</option>
+                                                <option value="20181H">20181H</option>
+                                                <option value="4Q2017">4Q2017</option>
+                                                <option value="3Q2017">3Q2017</option>
+                                                <option value="2Q2017">2Q2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                            </select>
+                                            <table style="position:relative;" class="table table-bordered">
+
+
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Length of Stays</td>
+                                                    <td style="position:relative;">
+                                                        <!-- <button class="button-back">
+                                                                                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                                                                                    </button> -->
+                                                        <span>2 | 1.4 days</span>
+
+                                                        <!-- <button class="button-front">
+                                                                                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                                                                                    </button> -->
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Hospital Total Bills</td>
+                                                    <td style="position:relative;">
+                                                        1500 | 1200 HKD
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Doctor fees</td>
+                                                    <td style="position:relative;">
+                                                        <div class="widthofrectl">
+                                                            <i class="fa fa-chevron-left"></i>
+                                                        </div>
+                                                        <input type="text" style="padding-left:51px;" class="form-control doctorfees" placeholder="HKD" />
+                                                        <div class="widthofrectr">
+                                                            <i class="fa fa-chevron-right"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Anaesthetic fees</td>
+                                                    <td>
+                                                        <input type="text" class="form-control" placeholder="HKD" class="anaestheticfees" />
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                        <td style="position:relative;">Original Description</td>
+                                                        <td style="position:relative;">
+                                                            <textarea class="form-control" placeholder="Description" class="originaldescr"></textarea>
+                                                        </td>
+                                                    </tr>
+                                            </table>
+                                        </div>
                                     </div>
                                     <div class="col-md-12 form-flows-7 animated bounceInLeft">
                                         <button class="frontback" type="button" tabindex="0">
                                             <i class="glyphicon glyphicon-chevron-left"></i>
                                         </button>
-                                        <input id="doctorfees" style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0"
-                                            value="" data-srch-type="popular" placeholder="Doctor Fees"
-                                            autocomplete="off">
+                                        <input style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc SurgerySearch-1" type="text" tabindex="0"
+                                            value="" data-srch-type="popular" placeholder="Operation options" autocomplete="off">
                                         <button type="button" class="backfronts" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button>
-                                    </div>
-                                    <div class="col-md-12 form-flows-8 animated bounceInLeft">
-                                        <button class="frontback" type="button" tabindex="0">
-                                            <i class="glyphicon glyphicon-chevron-left"></i>
-                                        </button>
-                                        <input id="anaestheticfees" style="color:#000;height:60px;width:100%;padding-left:60px;" class="loc" type="text" tabindex="0"
-                                            value="" data-srch-type="popular" placeholder="Anaesthetic Fees"
-                                            autocomplete="off">
-                                        <button type="button" class="backfronts" tabindex="0">
-                                            <i class="fa fa-chevron-right"></i>
-                                            </span>
-                                        </button>
+                                        <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
+                                            <select class="percentile col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
+                                                <option value="median">median</option>
+                                                <option value="50th percentile">50th percentile</option>
+                                                <option value="90th percentile">90th percentile</option>
+                                            </select>
+
+
+
+                                            <select class="privateornot form-control col-md-2 col-xs-4 col-sm-2 button-view-white" name="ward-type" style="margin-bottom:5px;">
+                                                <option value="non-private">non-private</option>
+                                                <option value="semi private">semi private</option>
+                                                <option value="private">private</option>
+                                            </select>
+
+                                            <select class="recent-case form-control col-xs-4 col-sm-2 col-md-2 button-view-white" style="margin-bottom:5px;">
+                                                <option value="recent case">recent case</option>
+                                                <option value="20181H">20181H</option>
+                                                <option value="4Q2017">4Q2017</option>
+                                                <option value="3Q2017">3Q2017</option>
+                                                <option value="2Q2017">2Q2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                            </select>
+                                            <table style="position:relative;" class="table table-bordered">
+
+
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Length of Stays</td>
+                                                    <td style="position:relative;">
+                                                        <!-- <button class="button-back">
+                                                                                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                                                                                    </button> -->
+                                                        <span>2 | 1.4 days</span>
+
+                                                        <!-- <button class="button-front">
+                                                                                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                                                                                    </button> -->
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Hospital Total Bills</td>
+                                                    <td style="position:relative;">
+                                                        1500 | 1200 HKD
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Doctor fees</td>
+                                                    <td style="position:relative;">
+                                                        1500 | 1200 HKD
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Anaesthetic fees</td>
+                                                    <td style="position:relative;">
+                                                        <div class="widthofrectl">
+                                                            <i class="fa fa-chevron-left"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" style="padding-left:51px;" placeholder="HKD" class="anaestheticfees" />
+                                                        <div class="widthofrectr">
+                                                            <i class="fa fa-chevron-right"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="position:relative;">
+                                                    <td style="position:relative;">Original Description</td>
+                                                    <td style="position:relative;">
+                                                        <textarea class="form-control" placeholder="Description" class="originaldescr"></textarea>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
-                                
-                                    <input  id="SpecialitySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular" placeholder="Part of body, conditions or specialities"
-                                        autocomplete="off">
 
-                                
-                                
-                                    <input  id="HospitalSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular" placeholder="Please Type hospital"
-                                        autocomplete="off">
-                                
-                                
-                                    <input  id="DoctorSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular" placeholder="Please type doctor names"
-                                        autocomplete="off">
-                                
+                                <input id="SpecialitySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                    placeholder="Part of body, conditions or specialities" autocomplete="off">
+
+
+
+                                <input id="HospitalSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                    placeholder="Please Type hospital" autocomplete="off">
+
+
+                                <input id="DoctorSearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                    placeholder="Please type doctor names" autocomplete="off">
+
                                 <button class="gd-btn-mkt" id="SurgerySearchButton" type="button" tabindex="0">
                                     <span>Search</span>
                                 </button>
