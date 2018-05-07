@@ -174,44 +174,102 @@ function initiateAjax(url, data, callback) {
 	});
 
 }
+function HideDivs() {
+	$("div.form-flows-4").hide()
+	$("div.form-flows-5").hide();
+	$("div.form-flows-6").hide();
+	$("div.form-flows-7").hide();
+	$("div.form-flows-8").hide();
+}
 jQuery(function ($) {
 
 	var surgicaltype;
 	let href = $(location).attr('href').split("/");
 	let urltype = decodeURI(href[4]);
 	let urlvalue = href[3];
+	$(".widthofrectl").click(function () {
+		$(this).parent().parent().parent().parent().parent().parent().find("button.frontback").click();
+
+	});
 	$(".widthofrectr").click(function () {
 		var whichclss = $(this).parent().parent().parent().parent().parent().parent().next();
-		if(whichclss.html()==undefined){
+		if (whichclss.html() == undefined) {
 			return false;
 		}
-		$("div.form-flows-4").hide()
-		$("div.form-flows-5").hide();
-		$("div.form-flows-6").hide();
-		$("div.form-flows-7").hide();
-		$("div.form-flows-8").hide();
 		var operationopt = $("input.SurgerySearch-1").val();
 		var percentile = $("select.percentile").val();
 		var privateornot = $("select.privateornot").val();
 		var recentcases = $("select.recent-cases").val();
-		var lengthofstays = $("input.lengthofstays").val();
-		var totalfees = $("input.totalfees").val();
-		var doctorfees = $("input.doctorfees").val();
-		var anaestheticfees = $("input.anaestheticfees").val();
+		var lengthofstays = $(this).parent().parent().parent().parent().find("input.lengthofstays").val();
+		var totalfees = $(this).parent().parent().parent().parent().find("input.totalfees").val();
+		var doctorfees = $(this).parent().parent().parent().parent().find("input.doctorfees").val();
+		var anaestheticfees = $(this).parent().parent().parent().parent().find("input.anaestheticfees").val();
 		$("div.context-tabs-mask").removeClass("padding-extra");
+		var surgerySearch = $("input#SurgerySearch");
+		var surgerySearchv = surgerySearch.val();
+		surgicaltype = $("input#speciality-1").val();
+		var hospital = $("input#hospital-1").val();
+		var doctor = $("input#doctor-1").val();
 		
 		if (whichclss.hasClass("form-flows-5")) {
-			$("div.form-flows-5").show();
+			if (lengthofstays) {
+				HideDivs();
+				initiateAjax("/SearchSurgeryHDS", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital, percentile: percentile }, function (data, err) {
+					$("span.stayslengthfield").text(lengthofstays);
+					$("span.stayslengthfielddb").text(data[0]["Average  Length of  Stay"]?data[0]["Average  Length of  Stay"]:"NA");
+					$("div.form-flows-5").show();
+				});
+			}
+			else {
+				return false;
+			}
 		}
 		else if (whichclss.hasClass("form-flows-6")) {
-			$("div.form-flows-6").show();
+			if (totalfees) {
+				HideDivs();
+				initiateAjax("/SearchSurgeryHDS", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital, percentile: percentile }, function (data, err) {
+					$("span.totalbillsfield").text(totalfees);
+					$("span.totalbillsfielddb").text(data[0]["Total  Charges"]?data[0]["Total  Charges"]:"NA");
+					$("div.form-flows-6").show();
+				});
+			}
+			else {
+				return false;
+			}
+
 		}
 		else if (whichclss.hasClass("form-flows-7")) {
-			$("div.form-flows-7").show();
+			if (doctorfees) {
+				HideDivs();
+				initiateAjax("/SearchSurgeryHDS", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital, percentile: percentile }, function (data, err) {
+					$("span.doctorfeesfield").text(doctorfees);
+					$("span.doctorfeesfielddb").text(data[0]["Doctor's  Fees"]?data[0]["Doctor's  Fees"]:"NA");
+					$("div.form-flows-7").show();
+				});
+			}
+			else {
+				return false;
+			}
+
+		}else if (whichclss.hasClass("form-flows-8")) {
+			alert(anaestheticfees);
+			if (anaestheticfees) {
+				
+				HideDivs();
+				initiateAjax("/SearchSurgeryHDS", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital, percentile: percentile }, function (data, err) {
+					$("span.anaestheticfeesfield").text(anaestheticfees);
+					$("span.anaestheticfeesfielddb").text(data[0]["Anaesthetist Fee"]?data[0]["Anaesthetist Fee"]:"NA");
+					$("div.form-flows-8").show();
+				});
+
+			}
+			else {
+				return false;
+			}
+
+
+			
 		}
-		// else if (whichclss.hasClass("form-flows-8")) {
-		// 	$("div.form-flows-8").show();
-		// }
 
 
 	});
@@ -359,24 +417,35 @@ jQuery(function ($) {
 
 				})
 			} else if (surgerySearchv && surgicaltype && hospital && doctor) {
-				$("div.form-flows-1").hide();
-				$("div.form-flows-3").hide();
-				$("div.form-flows-2").hide();
-				$("div.form-flows-4").show();
-				$("div.form-flows-5").hide();
-				$("div.form-flows-6").hide();
-				$("div.form-flows-7").hide();
-				$("div.form-flows-8").hide();
+				initiateAjax("/SearchSurgeryHD", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital }, function (data, err) {
+					alert(data.length);
+					if (data instanceof Array && data.length == 0) {
+						$("input.SurgerySearch-1").attr("readonly", "true");
+						$("input.SurgerySearch-1").val("No Operation Option Records found");
+					}
+					else if (data instanceof Array && data.length > 0) {
+						$("input.SurgerySearch-1").attr("readonly", "false");
 
-				$("div.context-tabs-mask").addClass("different-box");
-				$("div.static-hph").addClass("static-ph");
-				// $("div.context-tabs-mask").addClass("padding-extra");
+						data[0] != "" ? $("input.SurgerySearch-1").val(data[0]) : $("input.SurgerySearch-1").val("No Operation Option Records found");
+					}
+					$("div.form-flows-1").hide();
+					$("div.form-flows-3").hide();
+					$("div.form-flows-2").hide();
+					$("div.form-flows-4").show();
+					$("div.form-flows-5").hide();
+					$("div.form-flows-6").hide();
+					$("div.form-flows-7").hide();
+					$("div.form-flows-8").hide();
+					$("div.context-tabs-mask").addClass("different-box");
+					$("div.static-hph").addClass("static-ph");
+					// $("div.context-tabs-mask").addClass("padding-extra");
 
-				$("ul.context-choice-tabs li:eq(3)").text(doctor);
-				$("ul.context-choice-tabs").next().removeClass("active-1");
-				$("ul.context-choice-tabs").next().removeClass("active-2");
-				$("ul.context-choice-tabs").next().removeClass("active-3");
-				$("ul.context-choice-tabs").next().removeClass("active-4");
+					$("ul.context-choice-tabs li:eq(3)").text(doctor);
+					$("ul.context-choice-tabs").next().removeClass("active-1");
+					$("ul.context-choice-tabs").next().removeClass("active-2");
+					$("ul.context-choice-tabs").next().removeClass("active-3");
+					$("ul.context-choice-tabs").next().removeClass("active-4");
+				});
 
 			}
 
@@ -520,7 +589,7 @@ jQuery(function ($) {
 
 	initialLoadAjax("/getSurgery", '', function (data, err) {
 		surgoptions = data;
-		$('input#SurgerySearch,input#SurgerySearch-1').autoComplete({
+		$('input#SurgerySearch').autoComplete({
 			minChars: 0,
 			source: function (term, suggest) {
 				var choices = surgoptions;

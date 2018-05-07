@@ -45,7 +45,7 @@ app.post('/treatment/:type', function (req, res) {
 
         })
     })
-    
+
 })
 app.post("/SearchSurgeryR", function (req, res) {
     let body = req.body.data;
@@ -91,6 +91,63 @@ app.post("/SearchSurgeryH", function (req, res) {
             var hospital = result;
             hospital = hospital.map(item => {
                 return item["HOSPITAL"]
+            })
+
+            var destArray = _.uniq(hospital, function (x) {
+                return x;
+            });
+            res.send(destArray)
+        })
+    })
+})
+app.post("/SearchSurgeryHDS", function (req, res) {
+    let body = req.body.data;
+    let surgicaltyp = body.surgery;
+    let treatmentyp = body.type;
+    let hospitaltype = body.hospital;
+    let totalCost = body.percentile;
+    console.log(body);
+    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+        var db = database;
+        if (err) {
+            console.log(err);
+        }
+        filterarray = [{ $or: [{ "Operation": surgicaltyp.toLowerCase() }, { "Operation": surgicaltyp.toUpperCase() }, { "Operation": capitalizeFirstLetter(surgicaltyp) }, { "Operation": toTitleCase(surgicaltyp) }] },
+        { $or: [{ "TYPE": treatmentyp.toLowerCase() }, { "TYPE": treatmentyp.toUpperCase() }, { "TYPE": capitalizeFirstLetter(treatmentyp) }, { "TYPE": toTitleCase(treatmentyp) }] },
+        { $or: [{ "HOSPITAL": hospitaltype.toLowerCase() }, { "HOSPITAL": hospitaltype.toUpperCase() }, { "HOSPITAL": capitalizeFirstLetter(hospitaltype) }, { "HOSPITAL": toTitleCase(hospitaltype) }] },
+        { $or: [{ "Statistics": totalCost.toLowerCase() }, { "Statistics": totalCost.toUpperCase() }, { "Statistics": capitalizeFirstLetter(totalCost) }, { "Statistics": toTitleCase(totalCost) }] }
+        ]
+
+        db.collection("surgery").find({
+            $and: filterarray
+        }).toArray(function (err, result) {
+
+            res.send(result)
+        })
+    })
+})
+app.post("/SearchSurgeryHD", function (req, res) {
+    let body = req.body.data;
+    let surgicaltyp = body.surgery;
+    let treatmentyp = body.type;
+    let hospitaltype = body.hospital;
+    console.log(body);
+    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+        var db = database;
+        if (err) {
+            console.log(err);
+        }
+        filterarray = [{ $or: [{ "Operation": surgicaltyp.toLowerCase() }, { "Operation": surgicaltyp.toUpperCase() }, { "Operation": capitalizeFirstLetter(surgicaltyp) }, { "Operation": toTitleCase(surgicaltyp) }] },
+        { $or: [{ "TYPE": treatmentyp.toLowerCase() }, { "TYPE": treatmentyp.toUpperCase() }, { "TYPE": capitalizeFirstLetter(treatmentyp) }, { "TYPE": toTitleCase(treatmentyp) }] },
+        { $or: [{ "HOSPITAL": hospitaltype.toLowerCase() }, { "HOSPITAL": hospitaltype.toUpperCase() }, { "HOSPITAL": capitalizeFirstLetter(hospitaltype) }, { "HOSPITAL": toTitleCase(hospitaltype) }] }
+        ]
+
+        db.collection("surgery").find({
+            $and: filterarray
+        }).toArray(function (err, result) {
+            var hospital = result;
+            hospital = hospital.map(item => {
+                return item["operation Options"]
             })
 
             var destArray = _.uniq(hospital, function (x) {
