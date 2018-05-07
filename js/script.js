@@ -252,7 +252,7 @@ jQuery(function ($) {
 			}
 
 		}else if (whichclss.hasClass("form-flows-8")) {
-			alert(anaestheticfees);
+			
 			if (anaestheticfees) {
 				
 				HideDivs();
@@ -418,7 +418,6 @@ jQuery(function ($) {
 				})
 			} else if (surgerySearchv && surgicaltype && hospital && doctor) {
 				initiateAjax("/SearchSurgeryHD", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital }, function (data, err) {
-					alert(data.length);
 					if (data instanceof Array && data.length == 0) {
 						$("input.SurgerySearch-1").attr("readonly", "true");
 						$("input.SurgerySearch-1").val("No Operation Option Records found");
