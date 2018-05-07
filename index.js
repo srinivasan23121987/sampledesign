@@ -47,6 +47,37 @@ app.post('/treatment/:type', function (req, res) {
     })
 
 })
+app.post("/SearchSurgerySubmitData", function (req, res) {
+    let body = req.body.data;
+    let surgicaltyp = body.surgery;
+    let treatmentyp = body.type;
+    let hospitaltype = body.hospital;
+    let operationopt = body.operationopt;
+    let percentile = body.percentile;
+    let privateornots = body.privateornots;
+    let recentcases = body.recentcases;
+    let lengthofstays = body.lengthofstays;
+    let totalfees = body.totalfees;
+    let doctorfees = body.doctorfees;
+    let originaldescr = body.originaldescr;
+    let anaestheticfees = body.anaestheticfees;
+    let myObj = {
+        Operation: surgicaltyp, TYPE: treatmentyp, HOSPITAL: hospitaltype, 'operation Options': operationopt, 'Orignal description': originaldescr,
+        'Average  Length of  Stay': lengthofstays, 'Statistics': percentile, 'Total  Charges': totalfees, 'Doctor\'s  Fees': doctorfees, 'Anaesthetist Fee': anaestheticfees, 'recentcases': recentcases
+    };
+    mongodb.MongoClient.connect("mongodb://admin:admin123@ds249025.mlab.com:49025/surgery", function (err, database) {
+        var db = database;
+        if (err) {
+            console.log(err);
+        }
+
+        db.collection("surgery").insertOne(myObj, function (err, result) {
+            var hospital = result;
+            res.send(hospital)
+        })
+        
+    })
+})
 app.post("/SearchSurgeryR", function (req, res) {
     let body = req.body.data;
     let surgicaltyp = body.surgery;
