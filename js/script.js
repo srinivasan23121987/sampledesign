@@ -196,10 +196,12 @@ jQuery(function ($) {
 		if (whichclss.html() == undefined) {
 			return false;
 		}
+		var d = new Date();
+		var n = d.toISOString();
 		var operationopt = $("input.SurgerySearch-1").val();
 		var percentile = $("select.percentile").val();
 		var privateornot = $("select.privateornot").val();
-		var recentcases = $("select.recent-case").val();
+		var recentcases = $("select.recent-case").val() == 'recent case' ? n : $("select.recent-case").val();
 		var lengthofstays = $(this).parent().parent().parent().parent().find("input.lengthofstays").val();
 		var totalfees = $(this).parent().parent().parent().parent().find("input.totalfees").val();
 		var doctorfees = $(this).parent().parent().parent().parent().find("input.doctorfees").val();
@@ -286,16 +288,18 @@ jQuery(function ($) {
 		var operationopt = $("input.SurgerySearch-1").val();
 		var percentile = $(this).parent().parent().parent().parent().find("select.percentile").val();
 		var privateornot = $(this).parent().parent().parent().parent().find("select.privateornot").val();
-		var recentcases = $(this).parent().parent().parent().parent().find("select.recent-case").val();
+		var d = new Date();
+		var n = d.toISOString();
+		var recentcases = $("select.recent-case").val() == 'recent case' ? n : $("select.recent-case").val();
 		var lengthofstays = $(this).parent().parent().parent().parent().find("span.stayslengthfield").text();
 		var totalfees = $(this).parent().parent().parent().parent().find("span.totalbillsfield").text();
 		var doctorfees = $(this).parent().parent().parent().parent().find("span.doctorfeesfield").text();
 		var anaestheticfees = $(this).parent().parent().parent().parent().find("span.anaestheticfeesfield").text();
 		var originaldescr = $(this).parent().parent().parent().parent().find("textarea.originaldescr").val();
-        if (surgerySearchv && hospital && doctor && operationopt && percentile && originaldescr && privateornot && recentcases && lengthofstays && totalfees && doctorfees && anaestheticfees) {
+		if (surgerySearchv && hospital && doctor && operationopt && percentile && originaldescr && privateornot && recentcases && lengthofstays && totalfees && doctorfees && anaestheticfees) {
 			initiateAjax("/SearchSurgerySubmitData", {
 				surgery: surgerySearchv, type: surgicaltype, hospital: hospital, doctor: doctor, operationopt: operationopt, percentile: percentile, privateornots: privateornot,
-				recentcases: recentcases, lengthofstays: lengthofstays, totalfees: totalfees,originaldescr:originaldescr, doctorfees: doctorfees, anaestheticfees: anaestheticfees
+				recentcases: recentcases, lengthofstays: lengthofstays, totalfees: totalfees, originaldescr: originaldescr, doctorfees: doctorfees, anaestheticfees: anaestheticfees
 			}, function (data, err) {
 				alert("Data Submitted successfully!!!");
 				$("ul.context-choice-tabs li:eq(0)").click();

@@ -62,7 +62,7 @@ app.post("/SearchSurgerySubmitData", function (req, res) {
     let originaldescr = body.originaldescr;
     let anaestheticfees = body.anaestheticfees;
     let myObj = {
-        Operation: surgicaltyp, TYPE: treatmentyp, HOSPITAL: hospitaltype, 'operation Options': operationopt, 'Orignal description': originaldescr,
+        Operation: surgicaltyp, TYPE: treatmentyp, HOSPITAL: hospitaltype,ward:privateornots,website:'wecarebill website', 'operation Options': operationopt, 'Orignal description': originaldescr,
         'Average  Length of  Stay': lengthofstays, 'Statistics': percentile, 'Total  Charges': totalfees, 'Doctor\'s  Fees': doctorfees, 'Anaesthetist Fee': anaestheticfees, 'recentcases': recentcases
     };
     mongodb.MongoClient.connect("mongodb://admin:admin123@ds249025.mlab.com:49025/surgery", function (err, database) {
