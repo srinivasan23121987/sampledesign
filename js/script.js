@@ -707,7 +707,7 @@ $(function () {
 	$("form#surgery-form input#DoctorSearch").hide();
 	$("form#surgery-form input#HospitalSearch").hide();
 	$("ul.context-choice-tabs li").click(function () {
-
+		HideDivs();
 		$("div.context-tabs-mask h1").text('How much hospital treatment costed?');
 		$("ul.context-choice-tabs li").removeClass("active-context");
 		$("div.form-flows").hide();
