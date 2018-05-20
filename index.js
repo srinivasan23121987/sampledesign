@@ -158,19 +158,13 @@ app.post("/SearchSurgeryHDS", function (req, res) {
     })
 })
 app.post("/SearchSurgeryHD", function (req, res) {
-    let body = req.body.data;
-    let surgicaltyp = body.surgery;
-    let treatmentyp = body.type;
-    let hospitaltype = body.hospital;
-    console.log(body);
+    let surgicaltyp = req.body.data;
     mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
         var db = database;
         if (err) {
             console.log(err);
         }
-        filterarray = [{ $or: [{ "Operation": surgicaltyp.toLowerCase() }, { "Operation": surgicaltyp.toUpperCase() }, { "Operation": capitalizeFirstLetter(surgicaltyp) }, { "Operation": toTitleCase(surgicaltyp) }] },
-        { $or: [{ "TYPE": treatmentyp.toLowerCase() }, { "TYPE": treatmentyp.toUpperCase() }, { "TYPE": capitalizeFirstLetter(treatmentyp) }, { "TYPE": toTitleCase(treatmentyp) }] },
-        { $or: [{ "HOSPITAL": hospitaltype.toLowerCase() }, { "HOSPITAL": hospitaltype.toUpperCase() }, { "HOSPITAL": capitalizeFirstLetter(hospitaltype) }, { "HOSPITAL": toTitleCase(hospitaltype) }] }
+        filterarray = [{ $or: [{ "Operation": surgicaltyp.toLowerCase() }, { "Operation": surgicaltyp.toUpperCase() }, { "Operation": capitalizeFirstLetter(surgicaltyp) }, { "Operation": toTitleCase(surgicaltyp) }] }
         ]
 
         db.collection("surgery").find({
@@ -178,11 +172,11 @@ app.post("/SearchSurgeryHD", function (req, res) {
         }).toArray(function (err, result) {
             var hospital = result;
             hospital = hospital.map(item => {
-                return item["operation Options"]
+                return {"operation Options":item["operation Options"],"HOSPITAL":item["HOSPITAL"]}
             })
 
-            var destArray = _.uniq(hospital, function (x) {
-                return x;
+            var destArray = _.uniqBy(hospital, function (x) {
+                return x["operation Options"] && x["HOSPITAL"];
             });
             res.send(destArray)
         })
