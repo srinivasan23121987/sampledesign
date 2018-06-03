@@ -187,6 +187,7 @@ jQuery(function ($) {
 	let href = $(location).attr('href').split("/");
 	let urltype = decodeURI(href[4]);
 	let urlvalue = href[3];
+	
 	// $(".widthofrectl").click(function () {
 	// 	$(this).parent().parent().parent().parent().parent().parent().find("button.frontback").click();
 
@@ -198,7 +199,7 @@ jQuery(function ($) {
 		}
 		var operationoption = $("span.OperationOption").text();
 		var d = new Date();
-		var n = d.toISOString();
+		var n = d.toISOString().split('T')[0];
 		var operationopt = $("input.SurgerySearch-1").val();
 		if (operationopt) {
 			$("span.OperationOption").text(operationopt);
@@ -225,6 +226,8 @@ jQuery(function ($) {
 					$("span.stayslengthfielddb").text(data[0]["Average  Length of  Stay"] ? data[0]["Average  Length of  Stay"] : "NA");
 					$("div.form-flows-5").show();
 					$("textarea.originaldescr").val(data[0]["Orignal description"]);
+					$("div.form-flows-5").find("table tr:eq(1) td:eq(1) input").focus();
+
 				});
 			}
 			else {
@@ -239,6 +242,7 @@ jQuery(function ($) {
 					$("span.totalbillsfielddb").text(data[0]["Total  Charges"] ? data[0]["Total  Charges"] : "NA");
 					$("div.form-flows-6").show();
 					$("textarea.originaldescr").val(data[0]["Orignal description"]);
+					$("div.form-flows-6").find("table tr:eq(2) td:eq(1) input").focus()
 				});
 			}
 			else {
@@ -254,6 +258,7 @@ jQuery(function ($) {
 					$("span.doctorfeesfielddb").text(data[0]["Doctor's  Fees"] ? data[0]["Doctor's  Fees"] : "NA");
 					$("div.form-flows-7").show();
 					$("textarea.originaldescr").val(data[0]["Orignal description"]);
+					$("div.form-flows-7").find("table tr:eq(3) td:eq(1) input").focus()
 				});
 			}
 			else {
@@ -270,6 +275,7 @@ jQuery(function ($) {
 					$("span.anaestheticfeesfielddb").text(data[0]["Anaesthetist Fee"] ? data[0]["Anaesthetist Fee"] : "NA");
 					$("textarea.originaldescr").val(data[0]["Orignal description"]);
 					$("div.form-flows-8").show();
+					$("div.form-flows-8").find("table tr:eq(4) td:eq(1) textarea").focus()
 				});
 
 			}
@@ -284,19 +290,19 @@ jQuery(function ($) {
 
 	});
 	$("div.backfronts").click(function () {
-		
+
 		var surgerySearch = $("input#SurgerySearch");
 		var surgerySearchv = surgerySearch.val();
 		surgicaltype = $("input#speciality-1").val();
 		var hospital = $("input#hospital-1").val();
 		var doctor = $("input#doctor-1").val();
 		var operationopt = $("input.SurgerySearch-1").val();
-		var parentss=$(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent();
+		var parentss = $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent();
 		var percentile = parentss.find("select.percentile").val();
 		var privateornot = parentss.find("select.privateornot").val();
 		var d = new Date();
 		var n = d.toISOString();
-		var recentcases = $("select.recent-case").val() == 'recent case' ? n : $("select.recent-case").val();
+		var recentcases = $("select.recent-case").val() == 'recent case' ? n.split('T')[0] : $("select.recent-case").val();
 		var lengthofstays = parentss.find("span.stayslengthfield").text();
 		var totalfees = parentss.find("span.totalbillsfield").text();
 		var doctorfees = parentss.find("span.doctorfeesfield").text();
@@ -307,13 +313,23 @@ jQuery(function ($) {
 				surgery: surgerySearchv, type: surgicaltype, hospital: hospital, doctor: doctor, operationopt: operationopt, percentile: percentile, privateornots: privateornot,
 				recentcases: recentcases, lengthofstays: lengthofstays, totalfees: totalfees, originaldescr: originaldescr, doctorfees: doctorfees, anaestheticfees: anaestheticfees
 			}, function (data, err) {
-				alert("Data Submitted successfully!!!");
+				window.location.reload();
 				$("ul.context-choice-tabs li:eq(0)").click();
 			});
 		}
 
 
 	});
+	$("input,textarea").on("keyup", function (e) {
+		if (e.which == 13) {
+			
+			let widthofrectr = $(this).next().hasClass('widthofrectr');
+			if (widthofrectr) {
+				$(this).next().click();
+				$(this).blur();
+			}
+		}
+	})
 	$("button.backfront").click(function () {
 		var bills = hospital_bills;
 		if (bills[0] == "Surgery" && bills[1] == "Hospital") {
@@ -378,6 +394,7 @@ jQuery(function ($) {
 						}, onSelect: function (e, term, item) {
 							if (term)
 								$("button.backfront").click();
+							$("input.SurgerySearch-1").focus();
 							$("div.autocomplete-suggestions ").hide()
 						}
 					});
@@ -445,6 +462,7 @@ jQuery(function ($) {
 				})
 			} else if (surgerySearchv && surgicaltype && hospital && doctor) {
 				initiateAjax("/SearchSurgeryHD", surgerySearchv, function (data, err) {
+
 					if (data instanceof Array && data.length == 0) {
 						$("input.SurgerySearch-1").attr("readonly", "true");
 						$("input.SurgerySearch-1").val("No Operation Option Records found");
@@ -455,6 +473,10 @@ jQuery(function ($) {
 						data[0] != "" ? $("input.SurgerySearch-1").val(data[0]["operation Options"]) : $("input.SurgerySearch-1").val("No Operation Option Records found");
 					}
 					else if (data instanceof Array && data.length > 1) {
+						setTimeout(() => {
+							$('input.SurgerySearch-1').focus();
+						}, 1000)
+
 						$('input.SurgerySearch-1').autoComplete({
 							minChars: 0,
 							source: function (term, suggest) {
@@ -463,13 +485,21 @@ jQuery(function ($) {
 								for (i = 0; i < choices.length; i++)
 									if (~choices[i]["operation Options"].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]["operation Options"]);
 								suggest(matches);
+
 							}, onSelect: function (e, term, item) {
+
 								if (term)
 									$("div.autocomplete-suggestions ").hide()
-
 								let finv = data.filter(x => x["operation Options"] == term).map(x => x["HOSPITAL"]);
 								$("ul.context-choice-tabs li:eq(2)").text(finv);
 								textFilter();
+								$("table tr td:eq(1) div.widthofrectr").show();
+								$("span.OperationOption").text(term);
+								$("table tr td:eq(1) div.widthofrectl").show();
+								$("table tr td:eq(1) input").css("padding-left", "51px");
+								$("table tr td:eq(1) input").focus();
+								$('input.SurgerySearch-1').hide();
+
 							}
 						});
 
@@ -762,6 +792,11 @@ $(function () {
 	$("form#surgery-form input#DoctorSearch").hide();
 	$("form#surgery-form input#HospitalSearch").hide();
 	$("ul.context-choice-tabs li").click(function () {
+		$("table tr td:eq(1) div.widthofrectr").hide();
+		$("table tr td:eq(1) div.widthofrectl").hide();
+		$("span.OperationOption").text('');
+		$("table tr td:eq(1) input").css("padding-left", "0px");
+		$('input.SurgerySearch-1').show();
 		HideDivs();
 		$("div.context-tabs-mask h1").text('How much hospital treatment costed?');
 		$("ul.context-choice-tabs li").removeClass("active-context");
