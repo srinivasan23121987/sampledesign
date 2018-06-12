@@ -1,0 +1,2098 @@
+[
+  {
+    "abscess": [
+      "\u8179\u90e8", 
+      "vulva, release of pus in abscess", 
+      "skin lesion, incision and drainage (<3cm)", 
+      "anus, perineal abscess, saucerisation/drainage", 
+      "vulva, release of pus in abscess , vulva, abscess, incision", 
+      "chest, imaging guided insertion of catheter for drainage", 
+      "skin lesion, incision and drainage (>3cm)", 
+      "abscess / i & d (g.a.)", 
+      "thorax, effusion / fluid / abscess collection, imaging guided percutaneous drainage catheter insertion", 
+      "perineum, drainage of perineal abscess", 
+      "vulva, abscess, incision", 
+      "skin and subcutaneous tissue, hematoma, abscess/cellulitis/similar lesion<3cm, saucerisation/lncision & drainage", 
+      "perineum, drainage of perineal abscess , anus, perineal abscess, saucerisation/drainage", 
+      "\u4e00\u822c\u624b\u8853", 
+      "\u81bf\u816b\u5207\u9664", 
+      "\u6703\u9670", 
+      "general surgery", 
+      "skin lesion, incision and drainage (>3cm) , skin and subcutaneous tissue, hematoma /carbuncle cellulitis/similar lesion>3cm, saucerisation/lncision with drainage", 
+      "chest, imaging guided insertion of catheter for drainage , thorax, effusion / fluid / abscess collection, imaging guided percutaneous drainage catheter insertion", 
+      "skin lesion, incision and drainage (<3cm) , skin and subcutaneous tissue, hematoma, abscess/cellulitis/similar lesion<3cm, saucerisation/lncision & drainage", 
+      "skin and subcutaneous tissue, hematoma /carbuncle cellulitis/similar lesion>3cm, saucerisation/lncision with drainage"
+    ]
+  }, 
+  {
+    "arthroscopy": [
+      "hip/ knee, arthroscopy (therapeutic) , hip/knee, hip/knee therapeutic arthroscopy", 
+      "ankle, treatment with arthroscopy , ankle, therapeutic arthroscopy", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "arthroscopy", 
+      "ankle, treatment with arthroscopy", 
+      "\u95dc\u7bc0\u93e1", 
+      "knee arthroscopy", 
+      "ankle, therapeutic arthroscopy", 
+      "\u8173\u8e1d", 
+      "hip/ knee, arthroscopy (therapeutic)", 
+      "hip/knee, hip/knee therapeutic arthroscopy", 
+      "unilateral knee arthroscopy", 
+      "arthroscopy of knee (g.a.)", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "back pain relief": [
+      "\u80cc\u90e8\u75bc\u75db\u6e1b\u8f15", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "spine, pain relieving procedure for neck and back through therapeutic scarring , spinal/epidural, facet joint, various lesions, imaging guided, radiofrequency, cervical/lumbar/thoracic, more than 3 joints", 
+      "\u80cc\u810a", 
+      "spinal/epidural, facet joint, various lesions, imaging guided, radiofrequency, cervical/lumbar/thoracic, more than 3 joints", 
+      "spine, pain relieving procedure for neck and back through therapeutic scarring", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "bladder tumour": [
+      "bladder, removal of bladder tumour via urethra (>3cm)", 
+      "\u6ccc\u5c3f\u79d1\u5b78", 
+      "bladder/urethra, transurethral resection of bladder tumour (>3cm)", 
+      "bladder, removal of bladder tumour via urethra (<3cm)", 
+      "\u8180\u80f1", 
+      "bladder/urethra, transurethral resection of bladder tumour (<3cm)", 
+      "\u5c3f\u9053", 
+      "urology", 
+      "\u8180\u80f1\u816b\u7624", 
+      "bladder, removal of bladder tumour via urethra (>3cm) , bladder/urethra, transurethral resection of bladder tumour (>3cm)", 
+      "bladder, removal of bladder tumour via urethra (<3cm) , bladder/urethra, transurethral resection of bladder tumour (<3cm)"
+    ]
+  }, 
+  {
+    "bone marrow biopsy": [
+      "marrow, various lesions, diagnostic aspiration", 
+      "\u9aa8\u9ad3\u6d3b\u6aa2", 
+      "bone marrow biopsy", 
+      "\u816b\u7624\u79d1", 
+      "\u9aa8\u9ad3", 
+      "\u6dcb\u5df4\u7cfb\u7d71", 
+      "bone marrow biopsy , marrow, various lesions, diagnostic aspiration", 
+      "oncologist"
+    ]
+  }, 
+  {
+    "breast biopsy": [
+      "\u4e73\u623f\u6d3b\u6aa2", 
+      "breast, image guided biopsy (multiple)", 
+      "breast, image guided biopsy (single) , breast, lumps, imaging guided vacuum assisted biopsy / mammotome, single lesion", 
+      "\u4e73\u623f", 
+      "breast, lumps, imaging guided vacuum assisted biopsy / mammotome, > 1 lesions", 
+      "general surgery", 
+      "breast, image guided biopsy (multiple) , breast, lumps, imaging guided vacuum assisted biopsy / mammotome, > 1 lesions", 
+      "breast, fine needle biopsy (ultrasound or mammogram guided, single)", 
+      "breast, various lesions, trucut biopsy, ultrasound guided or stereotactic (multiple)", 
+      "\u80f8\u90e8", 
+      "breast, lumps, imaging guided vacuum assisted biopsy / mammotome, single lesion", 
+      "breast, fine needle biopsy (ultrasound or mammogram guided, multiple)", 
+      "breast, fine needle biopsy (ultrasound or mammogram guided, multiple) , breast, various lesions, trucut biopsy, ultrasound guided or stereotactic (multiple)", 
+      "\u4e00\u822c\u624b\u8853", 
+      "breast, fine needle biopsy (ultrasound or mammogram guided, single) , breast, various lesions, trucut biopsy, ultrasound guided or stereotactic (single)", 
+      "breast, image guided biopsy (single)", 
+      "breast, various lesions, trucut biopsy, ultrasound guided or stereotactic (single)"
+    ]
+  }, 
+  {
+    "bypass": [
+      "heart, coronary disease, coronary artery bypass graft (open)", 
+      "heart, coronary artery bypass graft", 
+      "heart, coronary artery bypass graft , heart, coronary disease, coronary artery bypass graft (open)", 
+      "\u5fc3\u81df\u642d\u6a4b", 
+      "\u5fc3", 
+      "\u80f8\u90e8", 
+      "cardiology", 
+      "\u5fc3\u9ad2\u79d1"
+    ]
+  }, 
+  {
+    "caesarean section": [
+      "elective (pre-booked) cesarean package (5 days, 4 nights)", 
+      "delivery (caesarean section) with tubal ligation , uterus, pregnancy and multiparity, lower segment/classical caesarean section and tubal ligation", 
+      "\u7522\u5b50", 
+      "caesarean section", 
+      "caesarean section (elective, non-timed)", 
+      "cesarean section", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "\u5256\u8179\u751f\u7522", 
+      "uterus, pregnancy, caesarean section (classical/lower segment)", 
+      "delivery (caesarean section)", 
+      "\u5a66\u7522\u79d1", 
+      "caesarean section (5 days, 4 nights package)", 
+      "obstetrics & gynaecology", 
+      "delivery (caesarean section) , uterus, pregnancy, caesarean section (classical/lower segment)", 
+      "elective caesarean section package (5 days 4 nights)", 
+      "uterus, pregnancy and multiparity, lower segment/classical caesarean section and tubal ligation", 
+      "delivery (caesarean section) with tubal ligation"
+    ]
+  }, 
+  {
+    "carpal tunnel release": [
+      "carpal tunnel release (single) , nerve (upper limb), carpal tunnel syndrome, release (unilateral) (with endoneurolysis)", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "carpal tunnel release (single)", 
+      "nerve (upper limb), carpal tunnel syndrome, release (unilateral) (with endoneurolysis)", 
+      "\u8155\u96a7\u9053\u75c7\u4fee\u88dc", 
+      "\u624b/\u624b\u6307", 
+      "\u624b", 
+      "carpal tunnel release", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "cataract surgery": [
+      "phacoemulsification and intraocular lens implantation", 
+      "lens, various lesions, yag laser capsulotomy", 
+      "cataract surgery, removal with implantation of lens (complex, single eye) , lens, cataract, extraction with intra-ocular lens implant and trabeculectomy with/without antimetabolites", 
+      "\u767d\u5167\u969c", 
+      "extracapsular cataract extraction", 
+      "phacoemulsification + intraocular lens implantation", 
+      "lens, various lesions, secondary insertion of intra-ocular lens/ intra-ocular lens exchange", 
+      "cataract surgery (outpatient, topical anaesthesia, monofocal lens)", 
+      "phacoemulsification", 
+      "cataract surgery with lens implant (simple, both eye) , lens, cataract, extraction with intra-ocular lens implant (bilateral)", 
+      "\u773c\u775b", 
+      "cataract surgery with lens implant (simple, single eye)", 
+      "cataract surgery, removal with implantation of lens (complex, single eye)", 
+      "cataract surgery (using yag laser)", 
+      "eye", 
+      "lens, cataract, extraction with intra-ocular lens implant (bilateral)", 
+      "phacoemulsification +  intraocular lens implantation", 
+      "cataract surgery (using yag laser) , lens, various lesions, yag laser capsulotomy", 
+      "cataract surgery with lens implant (simple, both eye)", 
+      "lens, cataract, extraction with intra-ocular lens implant (unilateral)", 
+      "phacoemusification + intraoocular lens implantation", 
+      "cataract surgery with lens implant (simple, single eye) , lens, cataract, extraction with intra-ocular lens implant (unilateral)", 
+      "lens, cataract, extraction with intra-ocular lens implant and trabeculectomy with/without antimetabolites", 
+      "cataract surgery (inpatient, monitored anaestletic care, monofocal lens)", 
+      "phacoemusification+ intraocular lens implantation (la) (outpatient)", 
+      "lens implantation after previous lens/ cataract surgery", 
+      "lens implantation after previous lens/ cataract surgery , lens, various lesions, secondary insertion of intra-ocular lens/ intra-ocular lens exchange", 
+      "cataract surgery (outpatient, monitored anaesthetic care, monofocal lens)", 
+      "\u773c\u79d1"
+    ]
+  }, 
+  {
+    "cervical lymph node biopsy": [
+      "cervical lymph node, biopsy of cervical lymph node (deep)", 
+      "cervical lymph node, removal/ biopsy of cervical lymph node", 
+      "\u9838\u90e8\u6dcb\u5df4\u7d50", 
+      "\u5a66\u7522\u79d1", 
+      "\u6dcb\u5df4\u7cfb\u7d71", 
+      "obstetrics & gynaecology", 
+      "cervical lymph node, removal/ biopsy of cervical lymph node , lymph node (cervical), various lesions, excision biopsy", 
+      "lymph node (cervical) - deep, various lesions, biopsy", 
+      "cervical lymph node, biopsy of cervical lymph node (deep) , lymph node (cervical) - deep, various lesions, biopsy", 
+      "\u9838\u90e8\u6dcb\u5df4\u7d50\u6d3b\u6aa2", 
+      "lymph node (cervical), various lesions, excision biopsy"
+    ]
+  }, 
+  {
+    "curettage": [
+      "\u5b50\u5bae", 
+      "uterus, various lesions, curettage with/without dilatation", 
+      "uterus, currettage via cervical scope", 
+      "dilation & curettage", 
+      "d&c", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "uterus, currettage with or without dilation", 
+      "uterus, currettage via cervical scope , uterus, various lesions, curettage with colposcopy/biopsy/diathermy/ cryosurgery/laser therapy of cervix", 
+      "d.& c.", 
+      "\u5a66\u7522\u79d1", 
+      "dilation and curettage", 
+      "uterus, currettage with or without dilation , uterus, various lesions, curettage with/without dilatation", 
+      "dilatation and curettage", 
+      "obstetrics & gynaecology", 
+      "\u64f4\u5f35\u5b50\u5bae\u9838\u53ca\u522e\u5bae\u624b\u8853", 
+      "hysteroscopy + d & c", 
+      "uterus, various lesions, curettage with colposcopy/biopsy/diathermy/ cryosurgery/laser therapy of cervix"
+    ]
+  }, 
+  {
+    "disc removal": [
+      "spine, image guided disc removal (1 levels)", 
+      "spine, image guided disc removal (1 levels) , spine, various lesions, imaging guided percutaneous disc ablation, single level (eg idet - intradiscal electrothermal annuloplasty)", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u810a\u67f1\u690e\u9593\u76e4\u5207\u9664", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "spine, various lesions, imaging guided percutaneous disc ablation, single level (eg idet - intradiscal electrothermal annuloplasty)", 
+      "spine, image guided disc removal (2 levels) , spine, various lesions, imaging guided percutaneous disc ablation, 2 levels (eg idet -intradiscal electrothermal annuloplasty)", 
+      "spine, various lesions, imaging guided percutaneous disc ablation, 2 levels (eg idet -intradiscal electrothermal annuloplasty)", 
+      "\u80cc\u810a", 
+      "spine, image guided disc removal (2 levels)", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "disc replacement": [
+      "spine, artifical disc replacement (multiple levels) , spine, various lesions, artificial disc replacement of the cervical/lumbar spine, multiple levels", 
+      "spine, various lesions, artificial disc replacement of the cervical/lumbar spine, multiple levels", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "spine, artifical disc replacement (multiple levels)", 
+      "\u80cc\u810a", 
+      "\u810a\u67f1\u690e\u9593\u76e4\u7f6e\u63db", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "ear fluid swelling": [
+      "ear,nose,throat", 
+      "\u8033", 
+      "\u982d", 
+      "ear, removal of fluid-swelling lesion , ear, excision pseudocyst pinna", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "ear, removal of fluid-swelling lesion", 
+      "ear, excision pseudocyst pinna", 
+      "\u8033\u6db2\u816b\u8139"
+    ]
+  }, 
+  {
+    "fetal genetic abnormalities": [
+      "\u5b50\u5bae", 
+      "uterus, ultrasound guided biopsy for fetal genetic abnormalities", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "uterus, genetic abnormality, ultrasound guided chorionic biopsy", 
+      "\u80ce\u5152\u907a\u50b3\u7570\u5e38", 
+      "\u5a66\u7522\u79d1", 
+      "uterus, diagnostic test for fetal genetic abnormalities (amniocentesis)", 
+      "obstetrics & gynaecology", 
+      "uterus, diagnostic test for fetal genetic abnormalities (amniocentesis) , uterus, genetic abnormality/fetal maturity, with/without ultrasound guided amniocentesis", 
+      "uterus, ultrasound guided biopsy for fetal genetic abnormalities , uterus, genetic abnormality, ultrasound guided chorionic biopsy", 
+      "uterus, genetic abnormality/fetal maturity, with/without ultrasound guided amniocentesis"
+    ]
+  }, 
+  {
+    "fracture fixation": [
+      "open reduction and internal fixation of various fractures", 
+      "patella, fracture, open reduction and internal fixation", 
+      "open reduction & internal fixation of various fratures", 
+      "clavicle, repair of fracture with plating.", 
+      "ankle, ankle fracture, bimalleolar, open reduction and internal fixation (orif)", 
+      "humerus, fracture fixation , humerus, proximal humerus or supracondylar fracture, open reduction and internal fixation (orif)", 
+      "patella, realignment and fixation of fractured patella , patella, fracture, open reduction and internal fixation", 
+      "wrist, distal radius fracture, open reduction and internal fixation (orif) (complex, with autologous bone graft)", 
+      "humerus, fracture fixation", 
+      "shinbone, fracture fixation", 
+      "foot, fixation of foot fracture (multiple, complex) , foot, fractures, complex, multiple, including talus and calcaneum, open reduction and internal fixation", 
+      "foot, fractures, simple, single", 
+      "open reduction and internal fixation", 
+      "tibia, fracture, open reduction and internal fixation with plates and screws, comminuted", 
+      "shinbone, fracture fixation , tibia, fracture, open reduction and internal fixation with plates and screws, comminuted", 
+      "forearm bones, fracture/dislocation fixation", 
+      "ankle, fracture fixation (one side)", 
+      "forearm bones, fracture/dislocation fixation , radius and ulna, fracture/dislocation, open reduction and internal fixation with or without bone grafting", 
+      "radius and ulna, fracture/dislocation, open reduction and internal fixation with or without bone grafting", 
+      "foot, fixation of foot fracture (single, simple)", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "open reduction & internal fixation (orif)", 
+      "hand, fixation of fracture with plate and screws (single) , hand, closed fracture, open reduction and internal fixation (orif) complex/ plate and screws (single)", 
+      "open reduction with internal fixation", 
+      "hand, closed fracture, open reduction and internal fixation (orif) complex/ plate and screws (single)", 
+      "foot, fixation of foot fracture (multiple, complex)", 
+      "ankle, fracture fixation (both sides) , ankle, ankle fracture, bimalleolar, open reduction and internal fixation (orif)", 
+      "foot, fractures, complex, multiple, including talus and calcaneum, open reduction and internal fixation", 
+      "hand, fixation of fracture with plate and screws (single)", 
+      "clavicle, repair of fracture with plating. , clavicle, clavicle fracture, comminuted plating with or without bone grafting", 
+      "clavicle, clavicle fracture, comminuted plating with or without bone grafting", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "wrist, fracture fixation with autologous bone graft (complex)", 
+      "open reduction & internal fixation of various fractures", 
+      "\u9aa8\u6298\u56fa\u5b9a", 
+      "wrist, fracture fixation with autologous bone graft (complex) , wrist, distal radius fracture, open reduction and internal fixation (orif) (complex, with autologous bone graft)", 
+      "orthopaedics & traumatology", 
+      "humerus, proximal humerus or supracondylar fracture, open reduction and internal fixation (orif)", 
+      "ankle, fracture fixation (one side) , ankle, ankle fracture, unimalleolar, open reduction and internal fixation (orif)", 
+      "ankle, ankle fracture, unimalleolar, open reduction and internal fixation (orif)", 
+      "ankle, fracture fixation (both sides)", 
+      "foot, fixation of foot fracture (single, simple) , foot, fractures, simple, single", 
+      "\u8173\u8e1d", 
+      "patella, realignment and fixation of fractured patella"
+    ]
+  }, 
+  {
+    "fracture realignment": [
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "\u4e0a\u80a2", 
+      "upper limb, realignment of fracture/dislocation , upper limb, fracture/dislocation, manipulation and reduction", 
+      "\u9aa8\u6298\u5fa9\u4f4d", 
+      "upper limb, fracture/dislocation, manipulation and reduction", 
+      "orthopaedics & traumatology", 
+      "upper limb, realignment of fracture/dislocation"
+    ]
+  }, 
+  {
+    "gastroscopy": [
+      "gastroscopy(ogd) with polypectomy", 
+      "gastroscopy (ogd) with polypectomy  (monitored anesthesia care)", 
+      "gastroscopy (ogd) (monitored anesthesia care)", 
+      "upper gastrointestinal tract, gastroscopy , intestine/stomach, upper gl endoscopy with / without biopsy", 
+      "upper gastrointestinal tract, gastroscopy (therapeutic) , intestine/stomach, upper gl endoscopy with polypectomy/ removal of foreign body/diathermy of bleeding lesions / injection of varices / removal of single polyp", 
+      "\u8179\u90e8", 
+      "gastrointestinal tract, capsule endoscopy , capsule endoscopy", 
+      "oesophago-gastro-duodenoscopy (ogd)", 
+      "gastroscopy+/- polypectomy", 
+      "intestine/stomach, upper gl endoscopy with polypectomy/ removal of foreign body/diathermy of bleeding lesions / injection of varices / removal of single polyp", 
+      "gastroscopy (ogd)", 
+      "gastroscopy", 
+      "gastrocopy+polypectomy", 
+      "upper gastrointestinal tract, gastroscopy", 
+      "gastroscopy (ogd) (intravenous sedation)", 
+      "\u5167\u93e1", 
+      "endoscopy", 
+      "\u80c3\u8178\u9053", 
+      "upper gastrointestinal tract, gastroscopy (therapeutic)", 
+      "gastrointestinal tract, capsule endoscopy", 
+      "gastroscopy +/- polypectomy", 
+      "gastroscopy with or without polypectomy (outpatient)", 
+      "intestine/stomach, upper gl endoscopy with / without biopsy", 
+      "gastroscopy with or without polypectomy", 
+      "gastroscopy (ogd) with polypectomy  (intravenous sedation)", 
+      "capsule endoscopy", 
+      "\u80c3\u93e1"
+    ]
+  }, 
+  {
+    "glaucoma": [
+      "eye, glaucoma, filtering and allied operations with anti-metabolites", 
+      "eye", 
+      "glaucoma filtration surgery", 
+      "eye, glaucoma, selective laser trabeculoplasty (bilateral)", 
+      "glaucoma filtration surgery , eye, glaucoma, filtering and allied operations with anti-metabolites", 
+      "glaucoma laser surgery (single eye) , eye, glaucoma, selective laser trabeculoplasty (unilateral)", 
+      "laser treatment for glaucoma (both eyes) , eye, glaucoma, selective laser trabeculoplasty (bilateral)", 
+      "\u773c\u775b", 
+      "\u9752\u5149\u773c", 
+      "eye, glaucoma, selective laser trabeculoplasty (unilateral)", 
+      "glaucoma laser surgery (single eye)", 
+      "\u773c\u79d1", 
+      "laser treatment for glaucoma (both eyes)"
+    ]
+  }, 
+  {
+    "haemorrhoidectomy": [
+      "anus, hemorrhoids, hemorrhoidectomy with or without sigmoidoscopy", 
+      "haemorrhoidectomy with use of staples", 
+      "haemorrhoidectomy , anus, hemorrhoids, hemorrhoidectomy with or without sigmoidoscopy", 
+      "general surgery", 
+      "haemorrhoidectomy", 
+      "stapled haemorrhoidectomy", 
+      "anus, hemorrhoids,stapled haemorrhoidectomy", 
+      "\u809b\u9580", 
+      "haemorrhoidectomy / h.d.s.", 
+      "haemorrhoidectomy with use of staples , anus, hemorrhoids,stapled haemorrhoidectomy", 
+      "\u8179\u90e8", 
+      "\u4e00\u822c\u624b\u8853", 
+      "\u75d4\u7621"
+    ]
+  }, 
+  {
+    "heart balloon catheter": [
+      "heart, percutaneous transluminal coronary angioplasty (ptca) + stenting (1 vessel) -complex (defined as > 1 hr), with/without ivus/ffr", 
+      "heart, coronary angioplasty with stent, >1 vessel , heart, percutaneous transluminal coronary angioplasty (ptca) + stenting (more than 1 vessel) - intravascular ultrasound (ivus), fractional flow reserve (ffr)", 
+      "heart, cardiac catheterisation (left) and intracoronary pressure wire without percutaneous transluminal coronary angioplasty (ptca)", 
+      "heart, cardiac catheterisation (left) with coronary pressure wire without intervention , heart, cardiac catheterisation (left) and intracoronary pressure wire without percutaneous transluminal coronary angioplasty (ptca)", 
+      "\u8840\u7ba1", 
+      "vein, various lesions, imaging guided peripheral insertion of central catheter (picc)", 
+      "vein, peripheral insertion of central catheter with image guidance", 
+      "heart, coronary angioplasty", 
+      "\u5fc3\u9ad2\u79d1", 
+      "vein, peripheral insertion of central catheter with image guidance , vein, various lesions, imaging guided peripheral insertion of central catheter (picc)", 
+      "\u5fc3\u5c0e\u7ba1\u7403, \u901a\u6ce2\u4ed4", 
+      "heart, coronary angioplasty (emergency)", 
+      "heart, percutaneous transluminal coronary angioplasty (ptca) + stenting (more than 1 vessel) - intravascular ultrasound (ivus), fractional flow reserve (ffr)", 
+      "heart, coronary disease, coronary angioplasty (transluminal), with/without angiocardiography", 
+      "heart, coronary angioplasty , heart, coronary disease, coronary angioplasty (transluminal), with/without angiocardiography", 
+      "heart, coronary angioplasty with stent, >1 vessel", 
+      "heart, primary percutaneous transluminal coronary angioplasty for st-elevation myocardial infarction", 
+      "cardiology", 
+      "heart, coronary angioplasty (emergency) , heart, primary percutaneous transluminal coronary angioplasty for st-elevation myocardial infarction", 
+      "heart, cardiac catheterisation (left) with coronary pressure wire without intervention", 
+      "heart, coronary angioplasty with stent, 1 vessel (complex)", 
+      "heart, coronary angioplasty with stent, 1 vessel (complex) , heart, percutaneous transluminal coronary angioplasty (ptca) + stenting (1 vessel) -complex (defined as > 1 hr), with/without ivus/ffr", 
+      "\u975c\u8108"
+    ]
+  }, 
+  {
+    "heart imaging": [
+      "heart, coronary angiography (with left ventriculography)", 
+      "heart, coronary angiography for poor blood supply to heart , heart, coronary artery disease, cardiac catherisation and coronary angiogram", 
+      "heart, coronary artery disease, cardiac catherisation and coronary angiogram", 
+      "heart, coronary angiography with left ventricle imaging", 
+      "heart, coronary angiography (selective)", 
+      "heart, coronary angiography", 
+      "heart, invasive cardiac vessel imaging (non-ptca)", 
+      "heart, invasive cardiac vessel imaging (non-ptca) , heart, invasive intravascular imaging/visualization, inclusive of iv u/s and oct, without percutaenous transluminal coronary angioplasty (ptca)", 
+      "heart, coronary angiography , heart, coronary angiography (selective)", 
+      "heart, invasive intravascular imaging/visualization, inclusive of iv u/s and oct, without percutaenous transluminal coronary angioplasty (ptca)", 
+      "heart, coronary angiography for poor blood supply to heart", 
+      "\u5fc3", 
+      "\u80f8\u90e8", 
+      "\u51a0\u72c0\u52d5\u8108\u9020\u5f71", 
+      "heart, coronary angiography with left ventricle imaging , heart, coronary angiography (with left ventriculography)", 
+      "cardiology", 
+      "\u5fc3\u9ad2\u79d1"
+    ]
+  }, 
+  {
+    "hemangioma/lymphangioma": [
+      "skin and subcutaneous tissue, hemangioma/lymphangioma (moderate), excision", 
+      "skin, removal of hemangioma/lymphangioma", 
+      "\u816b\u7624\u79d1", 
+      "\u76ae\u819a", 
+      "\u76ae\u819a/\u8edf\u7d44\u7e54", 
+      "skin, removal of hemangioma/lymphangioma , skin and subcutaneous tissue, hemangioma/lymphangioma (moderate), excision", 
+      "\u8840\u7ba1\u7624, \u6dcb\u5df4\u7ba1\u7624", 
+      "oncologist"
+    ]
+  }, 
+  {
+    "hernia repair": [
+      "hernia repair (laparoscopic)", 
+      "laparoscopic herniorrhaphy", 
+      "herniotomy", 
+      "\u759d\u4fee\u88dc", 
+      "\u8179\u58c1", 
+      "hernia repair", 
+      "\u8179\u90e8", 
+      "abdominal wall, inguinal hernia (infants & children), herniotomy (bilateral)", 
+      "repair of complicated hernia (inguinal or femoral, adult, single side)", 
+      "abdominal wall, inguinal/femoral hernia, bilateral herniorrhaphy (laparoscopic or open)", 
+      "abdominal wall, inguinal/femoral hernia, unilateral herniorrhaphy (laparoscopic or open)", 
+      "hernia rerpair (=herniotomy)", 
+      "laparoscopic unilateral herniorrhaphy", 
+      "repair of hernia (ventral/ incisional/ recurrent hernia) , abdominal wall, ventral/incisional/recurrent hernia, repair (laparoscopic or open)", 
+      "repair of hernia (inguinal, children, two sides)", 
+      "repair of hernia (inguinal, children, single side)", 
+      "repair of hernia (inguinal, children, single side) , abdominal wall, inguinal hernia (infants & children), herniotomy (unilateral)", 
+      "hernia repair laparoscopic", 
+      "repair of complicated hernia (inguinal or femoral, adult, single side) , abdominal wall, strangulated/obstructed hernia, repair without bowel resection", 
+      "repair of hernia (inguinal or femoral, adult, single side) , abdominal wall, inguinal/femoral hernia, unilateral herniorrhaphy (laparoscopic or open)", 
+      "laparoscopic hernia repair", 
+      "repair of hernia (inguinal or femoral, adult, two sides)", 
+      "abdominal wall, inguinal hernia (infants & children), herniotomy (unilateral)", 
+      "repair of hernia (inguinal or femoral, adult, single side)", 
+      "\u4e00\u822c\u624b\u8853", 
+      "open unilateral herniorrhaphy", 
+      "repair of hernia (inguinal or femoral, adult, two sides) , abdominal wall, inguinal/femoral hernia, bilateral herniorrhaphy (laparoscopic or open)", 
+      "herniorrhaphy", 
+      "abdominal wall, ventral/incisional/recurrent hernia, repair (laparoscopic or open)", 
+      "repair of hernia (ventral/ incisional/ recurrent hernia)", 
+      "general surgery", 
+      "abdominal wall, strangulated/obstructed hernia, repair without bowel resection", 
+      "repair of hernia (inguinal, children, two sides) , abdominal wall, inguinal hernia (infants & children), herniotomy (bilateral)"
+    ]
+  }, 
+  {
+    "hip replacement": [
+      "hip, partial hip replacement", 
+      "\u9ad6\u95dc\u7bc0", 
+      "hip, various lesions, primary total joint replacement, open/mis/navigated", 
+      "hip, various lesions, hemi-arthroplasty", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "hip, partial hip replacement , hip, various lesions, hemi-arthroplasty", 
+      "\u9ad6\u95dc\u7bc0\u7f6e\u63db", 
+      "hip, total hip replacement", 
+      "hip, total hip replacement , hip, various lesions, primary total joint replacement, open/mis/navigated", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "insert central venous line": [
+      "vein, insertion of central venous line , vein, various lesions, insertion of central venous line", 
+      "eye", 
+      "\u975c\u8108\u5c0e\u7ba1\u63d2\u5165", 
+      "\u8840\u7ba1", 
+      "vein, various lesions, insertion of central venous line", 
+      "vein, insertion of central venous line", 
+      "\u773c\u79d1", 
+      "\u975c\u8108"
+    ]
+  }, 
+  {
+    "insert stomach tube": [
+      "stomach, image-guided insertion of stomach tube", 
+      "\u80c3", 
+      "\u5167\u93e1", 
+      "endoscopy", 
+      "\u80c3\u7ba1\u63d2\u5165", 
+      "stomach, image-guided insertion of stomach tube , stomach, various lesions, imaging guided percutaneous gastrostomy / gastrojejunostomy", 
+      "\u8179\u90e8", 
+      "stomach, various lesions, imaging guided percutaneous gastrostomy / gastrojejunostomy"
+    ]
+  }, 
+  {
+    "irregular heart rhythm": [
+      "heart, insertion of pacemaker , heart, heart block/arrhythmia, insertion of dual chamber pacemaker (permanent)", 
+      "heart, therapeutic scarring of heart tissue via catheter, with/without heart mapping", 
+      "heart, therapeutic scarring of heart tissue via catheter, with/without heart mapping , heart, arrhythmia, catheter ablation, with/without electroanatomical mapping", 
+      "heart, arrhythmia, catheter ablation, with/without electroanatomical mapping", 
+      "heart, insertion of pacemaker", 
+      "heart, replacement of pacemaker", 
+      "\u5fc3\u5f8b\u4e0d\u9f4a", 
+      "\u5fc3", 
+      "\u80f8\u90e8", 
+      "heart, heart block/arrhythmia, insertion of dual chamber pacemaker (permanent)", 
+      "heart, replacement of pacemaker , heart, replacement of pacemaker", 
+      "cardiology", 
+      "\u5fc3\u9ad2\u79d1"
+    ]
+  }, 
+  {
+    "jawbone": [
+      "jaw, surgical correction with bone removal , mandible and maxilla, various lesions, osteotomy including segmental osteotomy with/without grafting", 
+      "jaw, surgical correction with bone removal", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "orthopaedics & traumatology", 
+      "mandible or maxilla, alveolar defect/deformity, simple alveoloplasty / bone regenerative procedure", 
+      "mandible and maxilla, various lesions, osteotomy including segmental osteotomy with/without grafting", 
+      "\u984e\u9aa8\u4fee\u88dc\u53ca\u7cfe\u6b63", 
+      "\u53e3", 
+      "\u984e", 
+      "repair of jawbone (simple) , mandible or maxilla, alveolar defect/deformity, simple alveoloplasty / bone regenerative procedure", 
+      "repair of jawbone (simple)"
+    ]
+  }, 
+  {
+    "joint fluid aspiration / injection": [
+      "joint, various lesions, joint aspiration/arthrocentesis/iniection", 
+      "joints, injection or removal or fluid with needle , joint, various lesions, joint aspiration/arthrocentesis/iniection", 
+      "\u95dc\u7bc0", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "joints, injection or removal or fluid with needle", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "\u95dc\u7bc0\u6db2\u62bd\u53d6\u53ca\u6ce8\u5c04", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "knee ligament": [
+      "knee, repair of knee cartilage/meniscus , knee, meniscus/cartilage, arthroscopic meniscal repair", 
+      "knee, repair of knee cartilage/meniscus (complex) , knee, ligaments/meniscus/cartilage/bone combined, arthroscopic ligament reconstruction with meniscal repair", 
+      "knee, repair of cartilage with graft", 
+      "knee, arthroscopy with ligament reconstruction (complex) , knee, ligaments/meniscus/cartilage/bone combined, arthroscopic acl or pcl reconstruction", 
+      "knee, ligaments/meniscus/cartilage/bone combined, arthroscopic acl or pcl reconstruction", 
+      "knee, removal of torn meniscus", 
+      "knee, various lesions, meniscectomy with/without arthroscopy", 
+      "knee, ligaments/meniscus/cartilage/bone combined, arthroscopic primary double bundle acl or pcl reconstruction", 
+      "knee, reconstruction of ligament (double bundle)", 
+      "knee, meniscus/cartilage ( small defects ), open/arthroscopic mosaicplasty or oats", 
+      "knee, ligaments/meniscus/cartilage/bone combined, autologous chondrocyte implantation with osteotomy", 
+      "knee, reconstruction of knee ligament and meniscal removal with arthroscopy , knee, ligaments/meniscus/cartilage/bone combined, arthroscopic ligament reconstruction with meniscectomy", 
+      "knee, arthroscopy, knee ligament reconstruction (1 or more)", 
+      "knee, arthroscopy with ligament reconstruction (complex)", 
+      "knee, repair of knee cartilage/meniscus", 
+      "knee, repair of cartilage through chondrocyte implantation , knee, ligaments/meniscus/cartilage/bone combined, autologous chondrocyte implantation with osteotomy", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "arthroscopic ligament repair", 
+      "knee, reconstruction and repair of ligaments , knee ligaments, disruption, reconstruction and repair", 
+      "knee, repair of cartilage through chondrocyte implantation", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "knee ligaments, disruption, reconstruction and repair", 
+      "\u819d\u84cb", 
+      "anterior cruciate ligament reconstruction", 
+      "knee, arthroscopy with ligament reconstruction (1 or more) , knee, arthroscopy, knee ligament reconstruction (1 or more)", 
+      "knee, removal of torn meniscus , knee, various lesions, meniscectomy with/without arthroscopy", 
+      "\u819d\u84cb\u97cc\u5e36\u4fee\u88dc\u53ca\u518d\u9020", 
+      "knee, ligaments/meniscus/cartilage/bone combined, arthroscopic ligament reconstruction with meniscal repair", 
+      "orthopaedics & traumatology", 
+      "knee, ligaments/meniscus/cartilage/bone combined, arthroscopic ligament reconstruction with meniscectomy", 
+      "knee, repair of knee cartilage/meniscus (complex)", 
+      "knee, repair of cartilage with graft , knee, meniscus/cartilage ( small defects ), open/arthroscopic mosaicplasty or oats", 
+      "knee, meniscus/cartilage, arthroscopic meniscal repair", 
+      "knee, reconstruction of ligament (double bundle) , knee, ligaments/meniscus/cartilage/bone combined, arthroscopic primary double bundle acl or pcl reconstruction", 
+      "knee, reconstruction and repair of ligaments", 
+      "knee, arthroscopy with ligament reconstruction (1 or more)", 
+      "knee, reconstruction of knee ligament and meniscal removal with arthroscopy"
+    ]
+  }, 
+  {
+    "knee replacement": [
+      "knee replacement surgery (total, single side, simple) , knee, various lesions, primary total joint replacement (unilateral), open/mis/navigated", 
+      "knee replacement surgery (total, single side, complex)", 
+      "knee, various lesions, primary total joint replacement (unilateral), open/mis/navigated", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "knee replacement surgery (both sides) , knee, various lesions, total joint replacement (bilateral)", 
+      "knee replacement surgery (total, single side, complex) , knee, various lesions, primary total joint replacement (unilateral) with augmentation, requiring extra implants or bone grafts, open/mis/navigated", 
+      "knee, various lesions, primary total joint replacement (unilateral) with augmentation, requiring extra implants or bone grafts, open/mis/navigated", 
+      "knee replacement surgery (both sides)", 
+      "total knee replacement (tkr)", 
+      "total knee replacement", 
+      "knee replacement surgery (total, single side, simple)", 
+      "\u819d\u95dc\u7bc0\u7f6e\u63db", 
+      "knee, various lesions, total joint replacement (bilateral)", 
+      "orthopaedics & traumatology", 
+      "\u819d\u84cb"
+    ]
+  }, 
+  {
+    "lasik": [
+      "\u6fc0\u5149\u8996\u529b\u624b\u8853", 
+      "eye", 
+      "intralasik operation (both eye)", 
+      "lasik (outpatient, unilateral)", 
+      "lasik {outpatient, bilateral)", 
+      "\u773c\u775b", 
+      "myopia treatment (including lasik) , cornea, myopia, phototherapeutic keratectomy/laser in-situ keratomileusis", 
+      "myopia treatment (including lasik)", 
+      "cornea, myopia, phototherapeutic keratectomy/laser in-situ keratomileusis", 
+      "lasik", 
+      "\u773c\u79d1"
+    ]
+  }, 
+  {
+    "male sterilisation": [
+      "\u6ccc\u5c3f\u79d1\u5b78", 
+      "male sterilisation", 
+      "vas deferens, various lesions, vasectomy", 
+      "\u96c4\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "male sterilisation , vas deferens, various lesions, vasectomy", 
+      "urology", 
+      "\u7537\u6027\u7d55\u80b2", 
+      "\u8f38\u7cbe\u7ba1"
+    ]
+  }, 
+  {
+    "photodynamic therapy": [
+      "\u816b\u7624\u79d1", 
+      "\u773c\u775b", 
+      "\u5149\u52d5\u529b\u7642\u6cd5", 
+      "photodynamic therapy , photodynamic therapy", 
+      "photodynamic therapy", 
+      "oncologist"
+    ]
+  }, 
+  {
+    "remove brain tumour, open skull": [
+      "removal of brain tumour through skull opening (complex)", 
+      "general surgery", 
+      "\u982d", 
+      "brain, intracerebral tumor, biopsy and/or decompression/removal via craniotomy, complex", 
+      "\u8166", 
+      "\u5207\u9664\u8166\u816b\u7624\uff0c\u982d\u9aa8", 
+      "removal of brain tumour through skull opening (complex) , brain, intracerebral tumor, biopsy and/or decompression/removal via craniotomy, complex", 
+      "\u4e00\u822c\u624b\u8853"
+    ]
+  }, 
+  {
+    "remove thyroid gland": [
+      "\u9838/\u5589", 
+      "ear,nose,throat", 
+      "thyroid, various lesions, total/subtotal thyroidectomy", 
+      "\u7532\u72c0\u817a", 
+      "thyroid gland, complete removal", 
+      "thyroid gland, partial removal , thyroid, various lesions, hemithyroidectomy/partial thyroidectomy", 
+      "thyroid, various lesions, hemithyroidectomy/partial thyroidectomy", 
+      "thyroidectomy", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "total thyroidectomy", 
+      "thyroid gland, partial removal", 
+      "hemi-thyroidectomy", 
+      "thyroid gland, complete removal , thyroid, various lesions, total/subtotal thyroidectomy", 
+      "\u5207\u9664\u7532\u72c0\u817a", 
+      "thyroidectomy (hemi / subtotal)"
+    ]
+  }, 
+  {
+    "repair eyelid abnormality": [
+      "eyelids, surgical correction of drooping eyelids (single eye) , eyelids, ptosis, correction levator palpebrae superioris resection (unilateral)", 
+      "ear,nose,throat", 
+      "eyelids, ptosis, correction levator palpebrae superioris resection (unilateral)", 
+      "\u4fee\u5fa9\u773c\u77bc\u7570\u5e38", 
+      "eyelids, ectropion/entropion, correction (complicated) (two lids)", 
+      "\u773c\u775b", 
+      "eyelids, ptosis, correction levator palpebrae superioris resection (bilateral)", 
+      "eyelids, surgical correction of drooping eyelids (single eye)", 
+      "eyelids, surgical correction of drooping eyelids (both eyes)", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "eyelids, surgical correction of drooping eyelids (both eyes) , eyelids, ptosis, correction levator palpebrae superioris resection (bilateral)", 
+      "corrective surgery for inverted/ everted eyelids (complicated, both eyelids) , eyelids, ectropion/entropion, correction (complicated) (two lids)", 
+      "corrective surgery for inverted/ everted eyelids (complicated, both eyelids)"
+    ]
+  }, 
+  {
+    "repair of gum tissue": [
+      "\u4fee\u5fa9\u7259\u9f66\u7d44\u7e54", 
+      "mouth, periodontium (within 1 quadrant), soft tissue defect/deformity, gingivoplasty", 
+      "plastic surgery", 
+      "repair of gum tissue", 
+      "\u6574\u5f62\u5916\u79d1", 
+      "\u7259\u8089", 
+      "repair of gum tissue , mouth, periodontium (within 1 quadrant), soft tissue defect/deformity, gingivoplasty", 
+      "\u53e3"
+    ]
+  }, 
+  {
+    "repair of skin cuts": [
+      "dental", 
+      "skin, large wound for repair (>3cm) , skin and subcutaneous tissue, wound (large>3cm), secondary suture", 
+      "skin and subcutaneous tissue, lacerations (deep >3cm/multiple) lacerations, repair/toilet & suture, with/without debridement", 
+      "skin and subcutaneous tissue(ear/nose/eyelid/face) complex lacerations, repair", 
+      "skin, multiple cuts for repair", 
+      "skin, removal of unhealthy tissues in a wound (>3cm)", 
+      "skin, repair of complex facial lacerations , skin and subcutaneous tissue(ear/nose/eyelid/face) complex lacerations, repair", 
+      "skin, repair of superficial cuts (<7cm) , skin and subcutaneous tissue, laceration (superficial) of less than 7cm, repair", 
+      "\u76ae\u819a/\u8edf\u7d44\u7e54", 
+      "skin and subcutaneous tissue, wound, debridement <3cm", 
+      "skin and subcutaneous tissue, deep>3cm/extensive contaminated wound, debridement", 
+      "skin, multiple cuts for repair , skin and subcutaneous tissue, lacerations (deep >3cm/multiple) lacerations, repair/toilet & suture, with/without debridement", 
+      "\u76ae\u819a\u5207\u5272\u4fee\u5fa9", 
+      "skin and subcutaneous tissue, wound (large>3cm), secondary suture", 
+      "skin, removal of unhealthy tissues in a wound (<3cm)", 
+      "skin, repair of superficial cuts (<7cm)", 
+      "\u7259\u79d1", 
+      "skin and subcutaneous tissue, laceration (superficial) of less than 7cm, repair", 
+      "skin, removal of unhealthy tissues in a wound (>3cm) , skin and subcutaneous tissue, deep>3cm/extensive contaminated wound, debridement", 
+      "skin, repair of complex facial lacerations", 
+      "skin, removal of unhealthy tissues in a wound (<3cm) , skin and subcutaneous tissue, wound, debridement <3cm", 
+      "\u76ae\u819a", 
+      "skin, large wound for repair (>3cm)"
+    ]
+  }, 
+  {
+    "repair rotator cuff": [
+      "\u80a9", 
+      "shoulder, shoulder soft tissue injury, arthroscopic/open bankart or superior labrum from anterior to posterior (slap) repair", 
+      "shoulder, repair of shoulder cartilage (open/scope) , shoulder, shoulder soft tissue injury, arthroscopic/open bankart or superior labrum from anterior to posterior (slap) repair", 
+      "shoulder, shoulder soft tissue injury, arthroscopic/open decompression with cuff repair & excision of distal clavicle", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "shoulder, repair of rotator cuff (open/scope)", 
+      "general surgery", 
+      "shoulder, repair of rotator cuff and removal of distal clavicle (open/scope)", 
+      "shoulder, shoulder soft tissue injury, arthroscopic/open decompression with cuff repair", 
+      "shoulder, repair of rotator cuff and removal of distal clavicle (open/scope) , shoulder, shoulder soft tissue injury, arthroscopic/open decompression with cuff repair & excision of distal clavicle", 
+      "shoulder, shoulder soft tissue injury, arthroscopic/open bankart repair with superior labrum from anterior to posterior (slap) repair/rotator cuff repair", 
+      "\u4fee\u5fa9\u80a9\u56de\u65cb\u808c\u74b0\u5e36", 
+      "shoulder, recurrent dislocation and repair of rotator cuff (open/scope) , shoulder, shoulder soft tissue injury, arthroscopic/open bankart repair with superior labrum from anterior to posterior (slap) repair/rotator cuff repair", 
+      "shoulder, repair of rotator cuff (open/scope) , shoulder, shoulder soft tissue injury, arthroscopic/open decompression with cuff repair", 
+      "shoulder, repair of shoulder cartilage (open/scope)", 
+      "shoulder, recurrent dislocation and repair of rotator cuff (open/scope)", 
+      "\u4e00\u822c\u624b\u8853"
+    ]
+  }, 
+  {
+    "repair shoulder cartilage": [
+      "\u80a9", 
+      "shoulder, shoulder soft tissue injury, arthroscopic/open bankart or superior labrum from anterior to posterior (slap) repair", 
+      "shoulder, repair of shoulder cartilage (open/scope) , shoulder, shoulder soft tissue injury, arthroscopic/open bankart or superior labrum from anterior to posterior (slap) repair", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "shoulder, repair of shoulder cartilage (open/scope)", 
+      "\u4fee\u5fa9\u80a9\u95dc\u7bc0\u8edf\u9aa8", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "retinal detachment operation": [
+      "eye", 
+      "retina, operation for retinal detachment (complex, >1 plomb) , retina, detachment (complex), operation (more than one plomb/encirclage)", 
+      "retina, operation for retinal detachment (complex, >1 plomb)", 
+      "\u773c\u775b", 
+      "retinal detachment operation", 
+      "\u8996\u7db2\u819c", 
+      "retina, detachment (complex), operation (more than one plomb/encirclage)", 
+      "\u8996\u7db2\u819c\u812b\u843d\u624b\u8853", 
+      "\u773c\u79d1"
+    ]
+  }, 
+  {
+    "spina fusion": [
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "\u810a\u690e\u878d\u5408", 
+      "spine, decompression and fusion of spine segments , spine, various lesions-decompression, interbody fusion (circumferential fusion with instrumentation and cages) - open or mis or with computer navigation", 
+      "\u80cc\u810a", 
+      "spine, various lesions-decompression, interbody fusion (circumferential fusion with instrumentation and cages) - open or mis or with computer navigation", 
+      "spine, decompression and fusion of spine segments", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "spinal frature": [
+      "\u810a\u690e\u9aa8\u6298", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "spine, injection of bone cement to fractured spinal body (single) , spine, various lesions, vertebroplasty or kyphoplasty, single level", 
+      "\u80cc\u810a", 
+      "spine, injection of bone cement to fractured spinal body (single)", 
+      "spine, various lesions, vertebroplasty or kyphoplasty, single level", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "spinal tap procedure": [
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u810a\u690e\u8170\u690e\u7a0b\u5e8f", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "spinal tap procedure , spine, various lesions, imaging guided lumbar puncture / myelogram / intrathecal chemotherapy", 
+      "spinal tap procedure", 
+      "spine, various lesions, imaging guided lumbar puncture / myelogram / intrathecal chemotherapy", 
+      "\u80cc\u810a", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "spine anaesthesia": [
+      "\u9ebb\u9189\u5b78", 
+      "spine, anaesthesia surrounding spine (multiple levels) , spine, paravertebral anaesthetic,more than 2", 
+      "anaesthesiology", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "spine, anaesthesia surrounding spine (multiple levels)", 
+      "\u80cc\u810a", 
+      "\u810a\u690e\u9ebb\u9189", 
+      "spine, paravertebral anaesthetic,more than 2"
+    ]
+  }, 
+  {
+    "tendon sheath release": [
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u808c\u8171\u9798\u91cb\u653e", 
+      "tendon sheath (upper limb), de quervain's (unilateral), release", 
+      "\u4e0a\u80a2", 
+      "upper limb, tendon sheath release , tendon sheath (upper limb), de quervain's (unilateral), release", 
+      "\u624b/\u624b\u6307", 
+      "upper limb, tendon sheath release", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "thorax biopsy": [
+      "ear,nose,throat", 
+      "thorax, various lesions, imaging guided percutaneous biopsy", 
+      "chest, imaging guided biopsy", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "\u80f8\u90e8", 
+      "\u80f8\u90e8\u6d3b\u6aa2", 
+      "chest, imaging guided biopsy , thorax, various lesions, imaging guided percutaneous biopsy"
+    ]
+  }, 
+  {
+    "thyroid gland biospy": [
+      "\u9838/\u5589", 
+      "\u7532\u72c0\u817a\u751f\u7269\u5708", 
+      "thyroid gland, aspiration/ biopsy", 
+      "ear,nose,throat", 
+      "\u7532\u72c0\u817a", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "thyroid gland, aspiration/ biopsy , thyroid, various lesions, imaging guided percutaneous aspiration / biopsy", 
+      "thyroid, various lesions, imaging guided percutaneous aspiration / biopsy"
+    ]
+  }, 
+  {
+    "trigger finger release": [
+      "trigger finger release", 
+      "\u89f8\u767c\u624b\u6307\u91cb\u653e", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "hand, flexor tendon, trigger finger (multiple), release", 
+      "\u624b\u6307", 
+      "hand, trigger finger release (multiple)", 
+      "trigger finger release (single)", 
+      "hand, flexor tendon, trigger finger (single), release", 
+      "trigger finger release (single) , hand, flexor tendon, trigger finger (single), release", 
+      "\u624b/\u624b\u6307", 
+      "hand, trigger finger release (multiple) , hand, flexor tendon, trigger finger (multiple), release", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "urethra tube scope": [
+      "bladder, cystoscopy with dilatation of urethra", 
+      "\u5c3f\u9053", 
+      "urology", 
+      "bladder, cystoscopy", 
+      "bladder, cystoscopy with removal of foreign body/stent , bladder, cystoscopy, removal of foreign body/ureteric stent", 
+      "cystoscopy+/- biopsy", 
+      "colonoscopy with or without polypectomy", 
+      "cystoscopy with or without biopsy", 
+      "ureter, cystoscopy with stent insertion , ureter, cystoscopy and insertion of double j stent", 
+      "flexible cystoscopy", 
+      "bladder, cystoscopy with removal of foreign body/stent", 
+      "rigid cystoscopy", 
+      "bladder, cystoscopy, removal of foreign body/ureteric stent", 
+      "ureter, cystoscopy and insertion of double j stent", 
+      "cystoscopy with or without biopsy (local anaesthesia)", 
+      "\u5c3f\u9053\u93e1\u7bc4\u570d", 
+      "\u6ccc\u5c3f\u79d1\u5b78", 
+      "\u8180\u80f1", 
+      "bladder/urethra, cystoscopy, with urethral dilatation", 
+      "ureter, cystoscopy with stent insertion", 
+      "bladder, cystoscopy , bladder, cystoscopy, with or without biopsy", 
+      "bladder, cystoscopy with dilatation of urethra , bladder/urethra, cystoscopy, with urethral dilatation", 
+      "cystoscopy", 
+      "bladder, cystoscopy, with or without biopsy"
+    ]
+  }, 
+  {
+    "uterus laparoscopy": [
+      "\u5b50\u5bae", 
+      "uterus, therapeutic laparoscopy", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "uterus, therapeutic laparoscopy , laparoscopy, therapeutic, except for retrieval and placement of gametes and placement of embryos", 
+      "\u5a66\u7522\u79d1", 
+      "\u5b50\u5bae\u8179\u8154\u93e1", 
+      "obstetrics & gynaecology", 
+      "laparoscopy, therapeutic, except for retrieval and placement of gametes and placement of embryos"
+    ]
+  }, 
+  {
+    "vaginal delivery": [
+      "\u7522\u5b50", 
+      "uterus, pregnancy, vaginal delivery (with or without episiotomy repair)", 
+      "delivery, vaginal (simple) , uterus, pregnancy, vaginal delivery (with or without episiotomy repair)", 
+      "delivery, vaginal (assisted, including twins and breech)", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "vaginal delivery (without epidural anaesthesia)", 
+      "normal vaginal delivery package (3 days 2 nights)", 
+      "vaginal delivery (with epidural anaesthesia)", 
+      "uterus, pregnancy, assisted vaginal delivery \u252c\u2592 twins \u252c\u2592 breech", 
+      "\u5a66\u7522\u79d1", 
+      "\u9670\u9053\u5206\u5a29", 
+      "obstetrics & gynaecology", 
+      "spontaneous vaginal delivery package (3 days 2 nights)", 
+      "vaginal delivery", 
+      "delivery, vaginal (assisted, including twins and breech) , uterus, pregnancy, assisted vaginal delivery \u252c\u2592 twins \u252c\u2592 breech", 
+      "delivery, vaginal (simple)", 
+      "normal vaginal delivery (4days, 3 nights package)", 
+      "normal vaginal delivery package (3 days2nights)"
+    ]
+  }, 
+  {
+    "abdomen ultrasound": [
+      "\u5167\u7aba\u93e1\u8d85\u8072\u6ce2\u6aa2\u67e5", 
+      "bowel, endoscopic ultrasound , bowels, endoscopic ultrasound without fine needle aspiration", 
+      "\u5167\u93e1", 
+      "endoscopy", 
+      "bowel, endoscopic ultrasound", 
+      "bowels, endoscopic ultrasound without fine needle aspiration", 
+      "bowel, endoscopic ultrasound with needle biopsy , bowels, endoscopic ultrasound with fine needle aspiration", 
+      "bowels, endoscopic ultrasound with fine needle aspiration", 
+      "\u8179\u90e8", 
+      "\u8178", 
+      "bowel, endoscopic ultrasound with needle biopsy"
+    ]
+  }, 
+  {
+    "remove mamillary ducts": [
+      "\u5207\u9664\u4e73\u817a", 
+      "\u4e73\u623f", 
+      "general surgery", 
+      "breast, ductal lesions, microdochectomy (unilateral)", 
+      "\u80f8\u90e8", 
+      "breast, removal of mamillary ducts (one side) , breast, ductal lesions, microdochectomy (unilateral)", 
+      "\u4e00\u822c\u624b\u8853", 
+      "breast, removal of mamillary ducts (one side)"
+    ]
+  }, 
+  {
+    "remove fallopian tube": [
+      "fallopian tube, tubal pathology, salpingectomy, mis/robotic", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "\u5a66\u7522\u79d1", 
+      "obstetrics & gynaecology", 
+      "fallopian tube, removal of tube (minimally invasive)", 
+      "fallopian tube, removal of tube (minimally invasive) , fallopian tube, tubal pathology, salpingectomy, mis/robotic", 
+      "\u8f38\u5375\u7ba1", 
+      "\u5207\u9664\u8f38\u5375\u7ba1"
+    ]
+  }, 
+  {
+    "dental": [
+      "dental extraction", 
+      "tooth, removal of multiple tooth roots , tooth, simple unerupted/partially erupted/impacted/fractured, removal of multiple roots", 
+      "tooth, simple unerupted/partially erupted/impacted/fractured, removal of multiple roots", 
+      "dental", 
+      "jaw, insertion of dental implant (single)", 
+      "tooth, excision of impacted tooth with removal of tooth and bone component (multiple) , teeth (2 to 3), impacted, excision with removal of bone and tooth division", 
+      "mandible or maxilla, various lesions, insertion of endosseous dental implant (single)(for multiple placement of implants, number of claims = number of implants placed )", 
+      "tooth, excision of impacted tooth with removal of tooth and bone component (multiple)", 
+      "jaw, insertion of dental implant (single) , mandible or maxilla, various lesions, insertion of endosseous dental implant (single)(for multiple placement of implants, number of claims = number of implants placed )", 
+      "\u984e", 
+      "tooth (superficial), unerupted/partially erupted/impacted, excision with removal of bone and tooth division", 
+      "tooth, excision of superficial tooth with removal of tooth and bone component , tooth (superficial), unerupted/partially erupted/impacted, excision with removal of bone and tooth division", 
+      "teeth (2 to 3), impacted, excision with removal of bone and tooth division", 
+      "\u7259\u79d1", 
+      "\u7259\u79d1\u624b\u8853", 
+      "\u53e3", 
+      "tooth, excision of superficial tooth with removal of tooth and bone component", 
+      "tooth, removal of multiple tooth roots"
+    ]
+  }, 
+  {
+    "urinary stone": [
+      "\u6ccc\u5c3f\u7cfb\u7d50\u77f3", 
+      "kidney, ultrasound shockwave therapy of stones , kidney, calculus, extra corporeal shockwave lithotripsy (eswl)", 
+      "\u6ccc\u5c3f\u79d1\u5b78", 
+      "kidney, calculus, extra corporeal shockwave lithotripsy (eswl)", 
+      "bladder, calculus, vesicolithotomy/litholapaxy/ultrasonic lithotripsy", 
+      "\u8180\u80f1", 
+      "kidney, ultrasound shockwave therapy of stones", 
+      "ureter, ureteroscopy and lithotripsy", 
+      "bladder, extraction/ removal of bladder stone", 
+      "ureter, non-invasive shock wave therapy for stones", 
+      "ureter, ultrasound therapy of stones", 
+      "ureter, calculus, ultrasound lithotripsy", 
+      "\u5c3f\u9053", 
+      "ureter, non-invasive shock wave therapy for stones , ureter, extra corporeal shockwave lithotripsy (eswl) for ureteric stone", 
+      "urology", 
+      "ureter, removal of stones using ureteroscopy", 
+      "ureter, removal of stones using ureteroscopy , ureter, ureteroscopy and lithotripsy", 
+      "ureter, extra corporeal shockwave lithotripsy (eswl) for ureteric stone", 
+      "bladder, extraction/ removal of bladder stone , bladder, calculus, vesicolithotomy/litholapaxy/ultrasonic lithotripsy", 
+      "ureter, ultrasound therapy of stones , ureter, calculus, ultrasound lithotripsy"
+    ]
+  }, 
+  {
+    "ear tympanic membrane": [
+      "ear,nose,throat", 
+      "\u8033\u9f13\u819c", 
+      "\u8033", 
+      "\u982d", 
+      "myringotomy with/ without tube insertion (both ears)", 
+      "ear, tympanic membrane, bilateral myrinqotomy with tube", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "myringotomy with/ without tube insertion (both ears) , ear, tympanic membrane, bilateral myrinqotomy with tube"
+    ]
+  }, 
+  {
+    "varicose vein laser": [
+      "vein, imaging guided laser treatment for varicose vein (1 leg) , vein, varicose veins, imaging guided endovenous laser treatment, 1 leg", 
+      "vein, imaging guided laser treatment for varicose vein (1 leg)", 
+      "vein, varicose veins, imaging guided endovenous laser treatment, 1 leg", 
+      "\u975c\u8108\u66f2\u5f35\u6fc0\u5149", 
+      "\u8840\u7ba1", 
+      "cardiology", 
+      "\u5fc3\u9ad2\u79d1", 
+      "\u975c\u8108"
+    ]
+  }, 
+  {
+    "eye laser treatment": [
+      "retina, laser treatment for retinal tears (single eye)", 
+      "iris, various lesions, laser iridotomy", 
+      "iris, laser therapy", 
+      "retina, laser treatment of the whole retina , retina, pan retinal photocoagulation", 
+      "retina, laser treatment for retinal detachment (complex, including vitreous bleeding, multiple retinal tears)", 
+      "\u773c\u775b", 
+      "retina, laser therapy for retinal tears (both eyes) , retina, tears, cryotherapy or photocoagulation (laser) (bilateral)", 
+      "\u773c\u775b\u6fc0\u5149\u6cbb\u7642", 
+      "retina, tears, photocoagulation (laser) (unilateral)", 
+      "eye", 
+      "retina, laser treatment (simple) , retina/macula, grid and focal laser photocoagulation", 
+      "retina, tears, cryotherapy or photocoagulation (laser) (bilateral)", 
+      "retina, laser retinopexy, complex (subretinal fluid, vitreous haemorrhage, multiple tears)", 
+      "retina, laser treatment (simple)", 
+      "\u773c\u79d1", 
+      "\u8996\u7db2\u819c", 
+      "iris, laser therapy , iris, various lesions, laser iridotomy", 
+      "retina, laser therapy for retinal tears (both eyes)", 
+      "retina, pan retinal photocoagulation", 
+      "retina, laser treatment of the whole retina", 
+      "retina, laser treatment for retinal detachment (complex, including vitreous bleeding, multiple retinal tears) , retina, laser retinopexy, complex (subretinal fluid, vitreous haemorrhage, multiple tears)", 
+      "retina/macula, grid and focal laser photocoagulation", 
+      "retina, laser treatment for retinal tears (single eye) , retina, tears, photocoagulation (laser) (unilateral)"
+    ]
+  }, 
+  {
+    "remove varicocele, scrotum": [
+      "scrotum, removal of varicocele (microsurgical) , vas deferens, various lesions, varicocelectomy (microsurgical)", 
+      "\u6ccc\u5c3f\u79d1\u5b78", 
+      "scrotum, removal of varicocele (microsurgical)", 
+      "\u96c4\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "\u9670\u56ca", 
+      "urology", 
+      "vas deferens, various lesions, varicocelectomy (microsurgical)", 
+      "\u5207\u9664\u9670\u56ca\u975c\u8108\u66f2\u5f35"
+    ]
+  }, 
+  {
+    "remove cyst, spermatic cord": [
+      "\u6ccc\u5c3f\u79d1\u5b78", 
+      "spermatic cord, removal of cyst , spermatic cord, spermatocele/epididymal cyst, excision", 
+      "spermatic cord, spermatocele/epididymal cyst, excision", 
+      "\u5207\u9664\u56ca\u816b\uff0c\u8f38\u7cbe\u7ba1", 
+      "\u96c4\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "urology", 
+      "spermatic cord, removal of cyst", 
+      "\u8f38\u7cbe\u7ba1"
+    ]
+  }, 
+  {
+    "bartholin cyst, valva": [
+      "vulva, laying open of bartholin cyst", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "vulva, laying open of bartholin cyst , vulva, bartholin cyst, incision/marsupialization with or without use of laser", 
+      "\u5916\u9670\u56ca\u816b", 
+      "\u5a66\u7522\u79d1", 
+      "vulva, removal of bartholin cyst , vulva, bartholin cyst, excision with/without use of laser", 
+      "obstetrics & gynaecology", 
+      "vulva, bartholin cyst, excision with/without use of laser", 
+      "\u5916\u9670", 
+      "vulva, removal of bartholin cyst", 
+      "vulva, bartholin cyst, incision/marsupialization with or without use of laser"
+    ]
+  }, 
+  {
+    "remove bone implants": [
+      "removal of implants of the upper limb (complex)", 
+      "\u5207\u9664\u9aa8\u690d\u5165\u7269", 
+      "lower limb, removal of implants of the lower limb (simple) , bone (lower limb), simple implants, removal (e.g screw/wire/pins)", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "bone (lower limb), plates and screws/nails, removal", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "orthopaedics & traumatology", 
+      "removal of implants of the upper limb (simple) , bone (upper limb), simple implants, removal (eg: k-wires, wires, pins, screws only)", 
+      "bone (upper limb), simple implants, removal (eg: k-wires, wires, pins, screws only)", 
+      "lower limb, removal of implants of the lower limb (complex)", 
+      "removal of implants of the upper limb (complex) , bone (upper limb), plates and screws, removal", 
+      "bone (upper limb), plates and screws, removal", 
+      "removal of implants of the upper limb (simple)", 
+      "lower limb, removal of implants of the lower limb (complex) , bone (lower limb), plates and screws/nails, removal", 
+      "\u4e0b\u80a2", 
+      "lower limb, removal of implants of the lower limb (simple)", 
+      "bone (lower limb), simple implants, removal (e.g screw/wire/pins)"
+    ]
+  }, 
+  {
+    "throat scope": [
+      "direct laryngoscopy with or without vocal polyp biopsy", 
+      "\u9838/\u5589", 
+      "micro-laryngoscopy (ml)", 
+      "voice box, scope", 
+      "external laryngeal manipulation using scope", 
+      "microscopic laryngoscopy", 
+      "\u5589", 
+      "micro. laryngoscopy", 
+      "voice box, scope , larynx, various lesions, direct examination with/without biopsy", 
+      "\u5589\u93e1\u6aa2\u67e5", 
+      "laryngoscopy, direct", 
+      "larynx, various lesions, direct examination with/without biopsy", 
+      "m.l. (micro-laryngoscopy)", 
+      "ear,nose,throat", 
+      "surgery", 
+      "direct laryngoscopy with or without vocal cord polyp biopsy", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "direct. laryngoscopy", 
+      "larynx, elms (endoscopic laryngeal microsugery/phonosurgery)", 
+      "external laryngeal manipulation using scope , larynx, elms (endoscopic laryngeal microsugery/phonosurgery)", 
+      "micro-laryngoscopy"
+    ]
+  }, 
+  {
+    "remove nose turbinate": [
+      "removal of tissue to reduce obstruction , nose, various lesions (turbinates), turbinectomy/turbinoplasty/submucous resection (with or without endoscopes)", 
+      "ear,nose,throat", 
+      "nose, therapeutic reduction of nose turbinate , inferior turbinate reduction (submucous diathermy oblique radiofreqeuncy)", 
+      "nose, various lesions (turbinates), turbinectomy/turbinoplasty/submucous resection (with or without endoscopes)", 
+      "removal of tissue to reduce obstruction", 
+      "\u9f3b\u5b50", 
+      "nose, therapeutic reduction of nose turbinate", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "\u5207\u9664\u9f3b\u7532", 
+      "inferior turbinate reduction (submucous diathermy oblique radiofreqeuncy)"
+    ]
+  }, 
+  {
+    "urinary incontinence tape": [
+      "vagina, therapeutic procedure for stress urinary incontinence", 
+      "\u9670\u9053\u81a0\u5e36, \u5c3f\u5931\u7981", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "\u5a66\u7522\u79d1", 
+      "vagina, tension free vaginal tape (tvt/tvto)", 
+      "obstetrics & gynaecology", 
+      "\u9670\u9053", 
+      "vagina, therapeutic procedure for stress urinary incontinence , vagina, tension free vaginal tape (tvt/tvto)"
+    ]
+  }, 
+  {
+    "remove anal fistula": [
+      "anus, excision of anal fistula & creation of colon stoma", 
+      "anus, removal of anal fistula , anus, fistula-in-ano, excision/ fistulectomy", 
+      "anus, removal of anal fistula", 
+      "general surgery", 
+      "anal fistula / fistulectomy", 
+      "\u809b\u9580", 
+      "anus, excision of anal fistula & creation of colon stoma , anus, fistula-in-ano (high), fistulectomy & colostomy, or complex and recurrent fistulectomy", 
+      "anus, fistula-in-ano, excision/ fistulectomy", 
+      "\u8179\u90e8", 
+      "\u4e00\u822c\u624b\u8853", 
+      "anus, fistula-in-ano (high), fistulectomy & colostomy, or complex and recurrent fistulectomy", 
+      "\u5207\u9664\u809b\u763a"
+    ]
+  }, 
+  {
+    "remove appendix": [
+      "laparoscopic appendicectomy", 
+      "\u5207\u9664\u95cc\u5c3e", 
+      "appendix, removal of appendix (without drainage)", 
+      "general surgery", 
+      "appendix, removal of appendix (with drainage)", 
+      "appendix, various lesions/abscess, appendicectomy with drainage (open/laparoscopic)", 
+      "appendix, various lesions, appendicectomy without drainage, open/laparoscopic", 
+      "\u76f2\u8178", 
+      "\u8179\u90e8", 
+      "laparoscopic appendectomy", 
+      "appendix, removal of appendix (without drainage) , appendix, various lesions, appendicectomy without drainage, open/laparoscopic", 
+      "appendix, removal of appendix (with drainage) , appendix, various lesions/abscess, appendicectomy with drainage (open/laparoscopic)", 
+      "\u4e00\u822c\u624b\u8853"
+    ]
+  }, 
+  {
+    "remove gallbladder": [
+      "gallbladder, removal of gallbladder (complex) , gallbladder (acute/complicated) open or laparascopic cholecyestectomy", 
+      "gallbladder (acute/complicated) open or laparascopic cholecyestectomy", 
+      "cholecystectomy (laparoscopic)", 
+      "gallbladder, removal of gallbladder (simple) , gallbladder, various lesions, cholecystectomy (open or lap)", 
+      "cholecystectomy", 
+      "\u5207\u9664\u81bd\u56ca", 
+      "general surgery", 
+      "\u81bd\u56ca", 
+      "gallbladder, removal of gallbladder (complex)", 
+      "gallbladder, removal of gallbladder (simple)", 
+      "gallbladder, various lesions, cholecystectomy (open or lap)", 
+      "\u8179\u90e8", 
+      "\u4e00\u822c\u624b\u8853", 
+      "laparoscopic cholecystectomy"
+    ]
+  }, 
+  {
+    "remove lamina, spine": [
+      "\u690e\u677f\u5207\u9664", 
+      "spine, removal of lamina (single level) , spine, various lesions, decompression laminectomy, single level (1 or 2 roots)", 
+      "spine, various lesions, decompression laminectomy, multiple levels (open or mis)", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "spine, removal of lamina (multiple levels) , spine, various lesions, decompression laminectomy, multiple levels (open or mis)", 
+      "spine, removal of lamina (single level)", 
+      "\u80cc\u810a", 
+      "laminectomy", 
+      "spine, various lesions, decompression laminectomy, single level (1 or 2 roots)", 
+      "spine, removal of lamina (multiple levels)", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "remove breast": [
+      "breast, partial removal of breast for malignant tumor , breast, tumor (malignant), wide excision/ lumpectomy/segmental mastectomy/ partial mastectomy", 
+      "breast, removal of tumour with lymph node biopsy (simple) , breast, tumor (malignant), wide excision/ lumpectomy/segmental mastectomy/ partial mastectomy, with sentinel node biopsy/ axiliary node sampling", 
+      "breast, tumor (malignant), wide excision/ lumpectomy/segmental mastectomy/ partial mastectomy", 
+      "breast, tumor (malignant), simple mastectomy with axiliary clearance, with/without sentinel node biopsy", 
+      "breast, partial removal of breast for malignant tumor", 
+      "breast, partial removal of breast and associated lymph node, with/without lymph node biopsy for malignant tumour , breast, tumor (malignant), wide excision/ lumpectomy/segmental mastectomy/ partial mastectomy, with axiliary clearance, with/without sentinel node biopsy", 
+      "\u80f8\u90e8", 
+      "breast, tumor (malignant), wide excision/ lumpectomy/segmental mastectomy/ partial mastectomy, with sentinel node biopsy/ axiliary node sampling", 
+      "breast, removal of tumour with lymph node biopsy (simple)", 
+      "breast, removal of entire breast and associated lymph node, with/without lymph node biopsy for malignant tumour , breast, tumor (malignant), simple mastectomy with axiliary clearance, with/without sentinel node biopsy", 
+      "\u5207\u9664\u4e73\u623f", 
+      "lumpectomy", 
+      "breast lumpectomy", 
+      "breast, partial removal of breast and associated lymph node, with/without lymph node biopsy for malignant tumour", 
+      "breast, removal of entire breast with lymph node biopsy", 
+      "breast, tumor (malignant), wide excision/ lumpectomy/segmental mastectomy/ partial mastectomy, with axiliary clearance, with/without sentinel node biopsy", 
+      "breast, removal of entire breast with lymph node biopsy , breast, tumor (malignant), simple mastectomy with sentinel node biopsy/ axiliary node sampling", 
+      "\u4e00\u822c\u624b\u8853", 
+      "\u4e73\u623f", 
+      "mastectomy", 
+      "general surgery", 
+      "breast, removal of entire breast and associated lymph node, with/without lymph node biopsy for malignant tumour", 
+      "breast, tumor (malignant), simple mastectomy with sentinel node biopsy/ axiliary node sampling"
+    ]
+  }, 
+  {
+    "remove breast lump": [
+      "breast, removal of breast lump (multiple/bilateral) , breast, lumps (multiple/bilateral), excision biopsy", 
+      "breast, removal of breast tissue by wire localization (single) , breast, various lesions, wire localisation, excision (single)", 
+      "breast, lump (single), excision biopsy", 
+      "breast, lumps (multiple/bilateral), excision biopsy", 
+      "breast, removal of breast tissue by wire localization (single)", 
+      "\u80f8\u90e8", 
+      "ultrasound guided excision of breast lump", 
+      "breast, various lesions, wire localisation, excision (single)", 
+      "breast, lump, more than 4 cm (removal) with parenchymal flap closure (unilateral/bilateral)", 
+      "breast lump excision (ga)", 
+      "breast lump excision", 
+      "breast mass excision", 
+      "breast, removal of breast lump (single) , breast, lump (single), excision biopsy", 
+      "breast, removal of breast tissue by wire localization (multiple)", 
+      "breast, various lesions, wire localisation, excision (multiple)", 
+      "breast biopsy (g.a.)", 
+      "breast, removal of lump, closure of wound with tissue flap (>4cm) , breast, lump, more than 4 cm (removal) with parenchymal flap closure (unilateral/bilateral)", 
+      "\u5207\u9664\u4e73\u623f\u816b\u584a", 
+      "breast, removal of lump, closure of wound with tissue flap (>4cm)", 
+      "breast, removal of breast tissue by wire localization (multiple) , breast, various lesions, wire localisation, excision (multiple)", 
+      "\u4e00\u822c\u624b\u8853", 
+      "breast, removal of breast lump (single)", 
+      "\u4e73\u623f", 
+      "general surgery", 
+      "breast, removal of breast lump (multiple/bilateral)", 
+      "excision of breast mass"
+    ]
+  }, 
+  {
+    "remove ovarian cyst": [
+      "\u5207\u9664\u5375\u5de2\u56ca\u816b", 
+      "ovary, tumor/cyst, cystectomy (simple) (<5cm)", 
+      "ovary, removal of ovarian cyst (complex, >5cm) , ovary, tumor/cyst, cystectomy (complicated) (>5cm)", 
+      "\u5375\u5de2", 
+      "laparoscopic unilateral ovarian cystectomy", 
+      "ovarian cystectomy (laparoscopic)", 
+      "ovary, removal of ovarian cyst (simple, <5cm, minimally invasive) with biopsy", 
+      "obstetrics & gynaecology", 
+      "ovary, tumor/cyst, cystectomy (complicated) (>5cm)", 
+      "ovary, removal of ovarian cyst (simple, <5cm, minimally invasive) with biopsy , ovary, tumor/cyst, ovarian cystectomy,mis/robotic (simple) (<5cm) with biopsy", 
+      "ovary, removal of ovarian cyst (simple <5cm)", 
+      "laparoscopic ovarian cystectomy", 
+      "ovarian cystectomy", 
+      "ovary, removal of ovarian cyst (complex, >5cm)", 
+      "ovary, tumor/cyst, ovarian cystectomy, mis /robotic(complicated) (>5cm)", 
+      "ovary, tumor/cyst, ovarian cystectomy,mis/robotic (simple) (<5cm) with biopsy", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "\u5a66\u7522\u79d1", 
+      "ovary, removal of ovarian cyst (complex, >5cm, minimally invasive) , ovary, tumor/cyst, ovarian cystectomy, mis /robotic(complicated) (>5cm)", 
+      "ovary, removal of ovarian cyst (simple <5cm) , ovary, tumor/cyst, cystectomy (simple) (<5cm)", 
+      "ovarian cystectomy / salpingooophrectomy", 
+      "ovary, removal of ovarian cyst (complex, >5cm, minimally invasive)"
+    ]
+  }, 
+  {
+    "remove ovary": [
+      "\u5207\u9664\u5375\u5de2", 
+      "ovary, removal of ovary (complex)", 
+      "\u5375\u5de2", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "ovary, removal of ovary (complex) , ovary, tumor/cyst, oophorectomy/salpingo-oophorectomy (complicated)", 
+      "\u5a66\u7522\u79d1", 
+      "obstetrics & gynaecology", 
+      "ovary, tumor/cyst, oophorectomy/salpingo-oophorectomy (complicated)"
+    ]
+  }, 
+  {
+    "remove nail": [
+      "nail, removal for infection/ injury , nail, infection/injury, avulsion", 
+      "\u5207\u9664\u6307\u7532", 
+      "general surgery", 
+      "nail, removal for infection/ injury", 
+      "nail, infection/injury, avulsion", 
+      "\u624b/\u624b\u6307", 
+      "\u4e00\u822c\u624b\u8853", 
+      "\u624b\u7532"
+    ]
+  }, 
+  {
+    "remove prostate tissue": [
+      "prostate gland, various lesions, transurethral resection of prostate (turp) (more than 30 gm)", 
+      "prostate gland, various lesions, saturation prostate biopsy", 
+      "prostate gland, various lesions, radical prostatectomy (open/laparascopic/robotic)", 
+      "robotic-assisted laparoscopic radical prostatectomy", 
+      "\u5207\u9664\u524d\u5217\u817a\u7d44\u7e54", 
+      "prostate gland, various lesions, transurethral resection of prostate (turp) (less than 30 gm)", 
+      "urology", 
+      "prostate, robotic biopsy of prostate via rectum", 
+      "prostate, removal of tissue (<30gm)", 
+      "prostate, removal of entire prostate", 
+      "prostate, removal of tissue (<30gm) , prostate gland, various lesions, transurethral resection of prostate (turp) (less than 30 gm)", 
+      "prostate, robotic biopsy of prostate via rectum , prostate gland, various lesions, saturation robotic transrectal/transperineal biopsy", 
+      "prostate, saturation biopsy of prostate , prostate gland, various lesions, saturation prostate biopsy", 
+      "transurethral resection of prostate (turp)", 
+      "prostate, removal of entire prostate , prostate gland, various lesions, radical prostatectomy (open/laparascopic/robotic)", 
+      "t.u.r.p.", 
+      "\u6ccc\u5c3f\u79d1\u5b78", 
+      "prostate gland, various lesions, saturation robotic transrectal/transperineal biopsy", 
+      "\u96c4\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "prostate, removal of tissue (>30gm)", 
+      "prostate gland, various lesions, trans-rectal ultrasound (trus) guided biopsy", 
+      "\u524d\u5217\u817a", 
+      "prostate, saturation biopsy of prostate", 
+      "prostate, ultrasound guided biopsy of prostate via rectum , prostate gland, various lesions, trans-rectal ultrasound (trus) guided biopsy", 
+      "prostate, ultrasound guided biopsy of prostate via rectum", 
+      "plasma vaporization of prostate", 
+      "prostate, removal of tissue (>30gm) , prostate gland, various lesions, transurethral resection of prostate (turp) (more than 30 gm)"
+    ]
+  }, 
+  {
+    "remove lumps and bumps": [
+      "skin lesion, removal and biopsy (multiple/recurrent/complex) , skin and subcutaneous tissue, tumor/cyst/ulcer/scar, excision biopsy, removal of 2 or more or recurrent or complicated (adherent), excision", 
+      "skin and subcutaneous tissue, tumor/cyst/ulcer/scar, excision biopsy, lesion size more than 15mm in diameter", 
+      "skin lesion, removal and biopsy (<1.5cm) , skin and subcutaneous tissue, tumor/cyst/ulcer/ scar, excision punch/shave biopsy, lesion size up to and including 15mm in diameter", 
+      "\u76ae\u819a", 
+      "\u76ae\u819a/\u8edf\u7d44\u7e54", 
+      "skin lesion, removal and biopsy (multiple/recurrent/complex)", 
+      "general surgery", 
+      "excision of lumps and bumps (l.a.)\ne.g. lipoma, sebaceous cyst", 
+      "\u5207\u9664\u7d44\u7e54/\u816b\u7624", 
+      "skin lesion, removal and biopsy (<1.5cm)", 
+      "skin lesion, removal and biopsy (>1.5cm) , skin and subcutaneous tissue, tumor/cyst/ulcer/scar, excision biopsy, lesion size more than 15mm in diameter", 
+      "skin and subcutaneous tissue, tumor/cyst/ulcer/ scar, excision punch/shave biopsy, lesion size up to and including 15mm in diameter", 
+      "excision of sebaceous cyst (g.a.)", 
+      "skin lesion, removal and biopsy (>1.5cm)", 
+      "\u4e00\u822c\u624b\u8853", 
+      "excision of lumps and bumps (g.a.)\ne.g. lipoma, sebaceous cyst", 
+      "skin and subcutaneous tissue, tumor/cyst/ulcer/scar, excision biopsy, removal of 2 or more or recurrent or complicated (adherent), excision"
+    ]
+  }, 
+  {
+    "ankle ligament": [
+      "\u8173\u8e1d\u97cc\u5e36", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "\u8173\u8e1d", 
+      "ankle, reconstruction of ligaments , ankle, ligamentous instability, reconstruction of ligaments (eg. bostrom, chrisman-snook)", 
+      "ankle, ligamentous instability, reconstruction of ligaments (eg. bostrom, chrisman-snook)", 
+      "orthopaedics & traumatology", 
+      "ankle, reconstruction of ligaments"
+    ]
+  }, 
+  {
+    "vessel port implant, portacath": [
+      "insertion of portacath , blood vessels, portacath, insertion", 
+      "\u690d\u5165\u5f0f\u975c\u8108\u5c0e\u7ba1\u88dd\u7f6e", 
+      "blood vessels, portacath, insertion", 
+      "\u8840\u7ba1", 
+      "insertion of portacath", 
+      "\u8179\u90e8", 
+      "cardiology", 
+      "\u5fc3\u9ad2\u79d1"
+    ]
+  }, 
+  {
+    "shoulder separation": [
+      "shoulder, stabilisation/reconstruction of acromioclavicular joint , shoulder, acromioclavicular joint stabilisation/reconstruction", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "orthopaedics & traumatology", 
+      "shoulder, stabilisation/reconstruction of acromioclavicular joint", 
+      "\u80a9", 
+      "\u80a9\u9396\u95dc\u7bc0\u88dc\u8853", 
+      "shoulder, acromioclavicular joint stabilisation/reconstruction"
+    ]
+  }, 
+  {
+    "circumcision": [
+      "circumcision (g.a.)", 
+      "\u9670\u8396", 
+      "\u5305\u76ae\u74b0\u5207\u8853", 
+      "general surgery", 
+      "\u96c4\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "circumcision (non-package)", 
+      "circumcision", 
+      "circumcision , penis, paraphimosis/phimosis/reduction prepuce, circumcision", 
+      "\u4e00\u822c\u624b\u8853", 
+      "penis, paraphimosis/phimosis/reduction prepuce, circumcision", 
+      "circumcision (ga)"
+    ]
+  }, 
+  {
+    "colposcopy": [
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "\u5b50\u5bae\u9838", 
+      "colposcopy / leep / cone biopsy", 
+      "leep (outpatient, hksh medical group doctors}", 
+      "colposcopy", 
+      "\u5a66\u7522\u79d1", 
+      "colposcopy+leep", 
+      "colposcopy (outpatient, hksh medical group doctors)", 
+      "cervix, inspection and biopsy cervix uterus using scope", 
+      "\u9670\u9053\u93e1\u6aa2\u67e5", 
+      "obstetrics & gynaecology", 
+      "cervix, various lesions, colposcopy and biopsy", 
+      "cervix, inspection and biopsy cervix uterus using scope , cervix, various lesions, colposcopy and biopsy"
+    ]
+  }, 
+  {
+    "liver tumour": [
+      "liver, tumour, imaging guided percutaneous local ablation (radiofrequency, cryotherapy, microwave, laser, alcohol,etc)", 
+      "liver, image guided therapetic scarring of tumour", 
+      "general surgery", 
+      "liver, image guided therapetic scarring of tumour , liver, tumour, imaging guided percutaneous local ablation (radiofrequency, cryotherapy, microwave, laser, alcohol,etc)", 
+      "\u809d\u816b\u7624", 
+      "\u809d", 
+      "\u8179\u90e8", 
+      "\u4e00\u822c\u624b\u8853"
+    ]
+  }, 
+  {
+    "nose scope": [
+      "ear,nose,throat", 
+      "nose, scope with biopsy , nose, various lesions (postnasal space), direct examination with biopsy and nasendoscopy", 
+      "nose, scope without biopsy , nose, nasendoscopy", 
+      "\u9f3b\u5b50", 
+      "\u9f3b\u7aba\u93e1", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "nasopharyngeal biopsy", 
+      "nose, scope with biopsy", 
+      "nose, nasendoscopy", 
+      "nose, scope without biopsy", 
+      "nose, various lesions (postnasal space), direct examination with biopsy and nasendoscopy"
+    ]
+  }, 
+  {
+    "remove eye vitreous contents": [
+      "\u73bb\u7483\u9ad4", 
+      "vitreous, removal of vitreous contents from the eye", 
+      "vitreous, various lesions, posterior vitrectomy (pars plana/ sclerotomy/ lensectomy-extraction with intra-ocular lens implant/ endolaser/ membrane peels)", 
+      "vitreous, removal of vitreous contents from the eye (complex cause)", 
+      "general surgery", 
+      "\u773c\u775b", 
+      "vitreous, removal of vitreous contents from the eye (complex cause) , vitreous, various lesions, complex posterior vitrectomy (pvr, grt, trauma)", 
+      "vitreous, removal of vitreous contents from the eye , vitreous, various lesions, posterior vitrectomy (pars plana/ sclerotomy/ lensectomy-extraction with intra-ocular lens implant/ endolaser/ membrane peels)", 
+      "vitreous, various lesions, complex posterior vitrectomy (pvr, grt, trauma)", 
+      "\u5207\u9664\u773c\u775b\u73bb\u7483\u9ad4\u5167\u5bb9\u7269", 
+      "\u4e00\u822c\u624b\u8853"
+    ]
+  }, 
+  {
+    "remove tonsils": [
+      "tonsillectomy", 
+      "\u9838/\u5589", 
+      "ear,nose,throat", 
+      "removal of tonsils", 
+      "tonsils, various lesions, removal with/without adenoidectomy", 
+      "\u5207\u9664\u6241\u6843\u817a", 
+      "tonsilectomy", 
+      "tonsillectomy / adenoidectomy", 
+      "removal of tonsils , tonsils, various lesions, removal with/without adenoidectomy", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "\u6241\u6843\u9ad4"
+    ]
+  }, 
+  {
+    "shoulder decompression": [
+      "shoulder, decompression surgery (open/scope)", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "shoulder, shoulder soft tissue injury, arthroscopic/open decompression alone", 
+      "shoulder, decompression surgery (open/scope) , shoulder, shoulder soft tissue injury, arthroscopic/open decompression alone", 
+      "\u80a9", 
+      "\u80a9\u90e8\u6e1b\u58d3\u8853", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "sinus surgery": [
+      "skin and subcutaneous tissue, sinus (deep>3cm), excision with/without biopsy", 
+      "ear,nose,throat", 
+      "functional endoscopic sinus surgery (fess)", 
+      "\u9f3b\u7ac7\u624b\u8853", 
+      "sinuses - nasal, various lesions, fronto-nasal ethmoidectomy with/without sphenoidotomy", 
+      "\u9f3b\u5b50", 
+      "removal of sinus bones , sinuses - nasal, various lesions, fronto-nasal ethmoidectomy with/without sphenoidotomy", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "removal of sinus bones", 
+      "skin, excision of sinus (deep, >3cm)", 
+      "skin, excision of sinus (deep, >3cm) , skin and subcutaneous tissue, sinus (deep>3cm), excision with/without biopsy"
+    ]
+  }, 
+  {
+    "spine fusion": [
+      "cervical spine, decompression surgery and fusion of spine segment (single level) , cervical spine, various lesions, anterior decompression and fusion (single level)", 
+      "\u9838\u690e", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "\u810a\u690e\u878d\u5408", 
+      "cervical spine, various lesions, anterior decompression and fusion (multiple levels)", 
+      "cervical spine, decompression surgery and fusion of spine segment (multiple levels) , cervical spine, various lesions, anterior decompression and fusion (multiple levels)", 
+      "cervical spine, decompression surgery and fusion of spine segment (multiple levels)", 
+      "spine fusion", 
+      "cervical spine, decompression surgery and fusion of spine segment (single level)", 
+      "cervical spine, various lesions, anterior decompression and fusion (single level)", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "stitch, incompetent cervix": [
+      "cervix, stitching of cervix due to cervical incompetence", 
+      "\u5bae\u9838\u74b0\u7d2e\u8853", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "\u5b50\u5bae\u9838", 
+      "\u5a66\u7522\u79d1", 
+      "cervix, cervical incompetence, cerclage", 
+      "obstetrics & gynaecology", 
+      "cervix, stitching of cervix due to cervical incompetence , cervix, cervical incompetence, cerclage"
+    ]
+  }, 
+  {
+    "tongue tie correction": [
+      "ear,nose,throat", 
+      "tongue, correction of tongue tie , tongue, tongue tie, release", 
+      "tongue, correction of tongue tie", 
+      "\u8033\u9f3b\u5589\u79d1", 
+      "tongue, tongue tie, release", 
+      "\u820c\u982d\u7cfe\u7d50", 
+      "\u53e3", 
+      "\u820c"
+    ]
+  }, 
+  {
+    "uterus scope": [
+      "uterus/cervix, hysteroscopy, diagnostic (with general anesthesia)", 
+      "\u5b50\u5bae", 
+      "uterus, hysteroscopy with general anesthesia (diagnostic) , uterus/cervix, hysteroscopy, diagnostic (with general anesthesia)", 
+      "uterus, hysteroscopy with general anesthesia (diagnostic)", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "\u5b50\u5bae\u7bc4\u570d", 
+      "\u5a66\u7522\u79d1", 
+      "uterus/cervix, hysteroscopy, diagnostic, d&c", 
+      "obstetrics & gynaecology", 
+      "uterus, hysteroscopy with tissue removal (diagnostic) , uterus/cervix, hysteroscopy, diagnostic, d&c", 
+      "uterus, hysteroscopy with tissue removal (diagnostic)"
+    ]
+  }, 
+  {
+    "remove foreign body, skin": [
+      "skin, removal of foreign body", 
+      "skin and subcutaneous tissue, foreign body (subcutaneous), removal", 
+      "\u5207\u9664\u76ae\u819a\u7570\u7269", 
+      "\u76ae\u819a/\u8edf\u7d44\u7e54", 
+      "general surgery", 
+      "\u76ae\u819a", 
+      "\u4e00\u822c\u624b\u8853", 
+      "skin, removal of foreign body , skin and subcutaneous tissue, foreign body (subcutaneous), removal"
+    ]
+  }, 
+  {
+    "spine decompression": [
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "spine, pressure relieving surgery (multiple levels) , spine, various lesions, decompression, spinal instrumentation, multiple levels", 
+      "spine, various lesions, decompression, spinal instrumentation, multiple levels", 
+      "\u80cc\u810a", 
+      "\u810a\u67f1\u6e1b\u58d3", 
+      "spine, pressure relieving surgery (multiple levels)", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "bone deformities": [
+      "upper limb, surgical correction of bone deformities with plating , bone (upper limb), deformities, osteotomies with plate fixation and with or w/o fluoroscopy and with or without bone graft", 
+      "spine, correction of spine deformity surgery", 
+      "bone (upper limb), deformities, osteotomies with plate fixation and with or w/o fluoroscopy and with or without bone graft", 
+      "lower limb, surgical correction of bone deformities", 
+      "finger, correction of deformaties", 
+      "lower limb, surgical correction of bone deformities , bone (lower limb), deformities, corrective surgery with internal fixation with or w/o fluoroscopy", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "bone (lower limb), deformities, corrective surgery with internal fixation with or w/o fluoroscopy", 
+      "spine, correction of spine deformity surgery , spine, deformities, corrective osteotomy - with / without computer navigation", 
+      "spine, deformities, corrective osteotomy - with / without computer navigation", 
+      "upper limb, surgical correction of bone deformities with plating", 
+      "\u9aa8\u77ef\u578b", 
+      "\u4e0b\u80a2", 
+      "finger, deformities, correction", 
+      "orthopaedics & traumatology", 
+      "finger, correction of deformaties , finger, deformities, correction"
+    ]
+  }, 
+  {
+    "remove colon & rectum": [
+      "colon, removal of part of colon", 
+      "colon, anterior resection (open or laparoscopic)", 
+      "colon, partial removal of sigmoid colon and rectum", 
+      "colectomy", 
+      "rectum, ultra-low anterior resection (total mesorectal excision) with/without pelvic lymph node dissection (plnd)", 
+      "colon, removal of part of colon , colon, various lesions, right/left hemicolectomy (laparoscopic or open)", 
+      "colectomy (laparoscopic)", 
+      "general surgery", 
+      "rectum, removal of sigmoid colon and rectum, with/without excision of lymph nodes , rectum, ultra-low anterior resection (total mesorectal excision) with/without pelvic lymph node dissection (plnd)", 
+      "laparoscopic anterior resection", 
+      "\u7d50\u8178", 
+      "colon, various lesions, right/left hemicolectomy (laparoscopic or open)", 
+      "\u8179\u90e8", 
+      "colon, partial removal of sigmoid colon and rectum , colon, anterior resection (open or laparoscopic)", 
+      "\u4e00\u822c\u624b\u8853", 
+      "rectum, removal of sigmoid colon and rectum, with/without excision of lymph nodes", 
+      "\u5207\u9664\u7d50\u8178,\u76f4\u8178"
+    ]
+  }, 
+  {
+    "remove tissue/tumor": [
+      "hand, removal of unhealthy tissue and repair/reconstruction of structures (complex) , hand, complex injuries, debridement with repair/reconstruction (1-2 tendons involved or 1-2 fractures)", 
+      "skin and mucous membrane lesion, removal and biopsy", 
+      "skin and mucous membrane lesion, removal and biopsy , skin and mucous membrane, various lesions, excision biopsy", 
+      "soft tissue (lower limb), tumors (benign), wide excision biopsy", 
+      "lower back, removal and biopsy of small cyst , sacrum & coccyx, pilonidal sinus/cyst, excision with biopsy", 
+      "face, removal and biopsy of lesion (single)", 
+      "\u4e0b\u8170", 
+      "skin and mucous membrane, various lesions, excision biopsy", 
+      "hand, complex injuries, debridement with repair/reconstruction (1-2 tendons involved or 1-2 fractures)", 
+      "legs, removal of tumour with good margins for biopsy , soft tissue (lower limb), tumors (benign), wide excision biopsy", 
+      "sacrum & coccyx, pilonidal sinus/cyst, excision with biopsy", 
+      "hand, removal of soft tissue tumour (>1.5cm)", 
+      "hand, tumors, excision with dissection of neurovascular bundle", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "hand, removal of unhealthy tissue and repair/reconstruction of structures (complex)", 
+      "soft tissue (lower limb), tumor/tumor-like lesions, marginal excision", 
+      "hand, removal of unhealthy tissue from crush injury (complex)", 
+      "arms, removal of tumour with extensive margins for biopsy , soft tissue (upper limb), tumors (benign), major excision biopsy", 
+      "hand, removal of tumour with involvement of nerves and blood vessels", 
+      "hand, crush injuries (complex), wound debridement", 
+      "face, removal and biopsy of lesion (single) , skin, various lesions of face (single), excision/punch/ shave biopsy", 
+      "parotid, partial removal for tumor , parotid, tumor, superficial parotidectomy", 
+      "soft tissue (upper limb), tumors (benign), major excision biopsy", 
+      "parotid, tumor, superficial parotidectomy", 
+      "\u5207\u9664\u816b\u584a\u548c\u816b\u584a", 
+      "skin, various lesions of face (single), excision/punch/ shave biopsy", 
+      "\u4e00\u822c\u624b\u8853", 
+      "legs, removal of tumour with minimal margins , soft tissue (lower limb), tumor/tumor-like lesions, marginal excision", 
+      "legs, removal of tumour with good margins for biopsy", 
+      "hand, removal of soft tissue tumour (>1.5cm) , hand, soft tissue tumor, excision >1.5cm size", 
+      "general surgery", 
+      "hand, soft tissue tumor, excision >1.5cm size", 
+      "legs, removal of tumour with minimal margins", 
+      "arms, removal of tumour with extensive margins for biopsy", 
+      "lower back, removal and biopsy of small cyst", 
+      "hand, removal of tumour with involvement of nerves and blood vessels , hand, tumors, excision with dissection of neurovascular bundle", 
+      "hand, removal of unhealthy tissue from crush injury (complex) , hand, crush injuries (complex), wound debridement", 
+      "parotid, partial removal for tumor"
+    ]
+  }, 
+  {
+    "remove disc, spine": [
+      "spine, removal of prolapsed disc (single level)", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u690e\u9593\u76e4\u5207\u9664", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "spine, prolapsed disc, discectomy, multiple levels", 
+      "spine, prolapsed disc, laminectomy/fenestration with discectomy (open or mis), single level", 
+      "spine, removal of prolapsed disc (multiple levels)", 
+      "spine, removal of prolapsed disc (multiple levels) , spine, prolapsed disc, discectomy, multiple levels", 
+      "\u80cc\u810a", 
+      "spine, removal of prolapsed disc (single level) , spine, prolapsed disc, discectomy, single level", 
+      "spine, removal of lamina and prolapsed disc (single level)", 
+      "spine, prolapsed disc, discectomy, single level", 
+      "spine, removal of lamina and prolapsed disc (single level) , spine, prolapsed disc, laminectomy/fenestration with discectomy (open or mis), single level", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "remove lung": [
+      "lung, removal of lung (minimally invasive)", 
+      "\u80ba", 
+      "lung, removal of lung (minimally invasive) , lung, various lesions, pneumonectomy/ lobectomy, thoracoscopic or robotic", 
+      "general surgery", 
+      "lung, various lesions, pneumonectomy/ lobectomy, thoracoscopic or robotic", 
+      "\u80f8\u90e8", 
+      "\u5207\u9664\u80ba\u7d44\u7e54", 
+      "\u4e00\u822c\u624b\u8853"
+    ]
+  }, 
+  {
+    "remove cervix tissue": [
+      "cervix, removal of polyp (<2cm, hysteroscopic)", 
+      "cervix, removal of polyp (simple) with biopsy , cervix, polyp, excision/erosion (simple) with biopsy", 
+      "cervix, removal of lump (>3cm, hysteroscopic)", 
+      "cervix, removal of tissue via cone biopsy with/without laser", 
+      "cervix, removal of polyp (complicated) including dilation/ curettage with biopsy", 
+      "obstetrics & gynaecology", 
+      "cervix, removal of tissue via laser vapourisation/excision", 
+      "cervix, removal of polyp (>2cm, hysteroscopic) , cervix, transcervical resection (tcr) polyp (>2cm), hysteroscopic", 
+      "\u5b50\u5bae\u9838", 
+      "cervix, polyp, excision/erosion (simple) with biopsy", 
+      "cervix, transcervical resection (tcr) myoma (<3cm), hysteroscopic", 
+      "cervix, various lesions, colposcopy, laser vapourisation/loop electrosurgical excision procedure/laser excision of transformation zone with biopsy", 
+      "cervix, removal of lump (<2cm, hysteroscopic)", 
+      "cervix, removal of polyp (simple) with biopsy", 
+      "cervix, removal of polyp (<2cm, hysteroscopic) , cervix, transcervical resection (tcr) polyp (<2cm), hysteroscopic", 
+      "cervix, polyp, excision/erosion (complicated) includes d&c with biopsy", 
+      "cervix, removal of lump (>3cm, hysteroscopic) , cervix, transcervical resection (tcr) myoma (>3cm), hystereoscopic", 
+      "\u5207\u9664\u5b50\u5bae\u9838\u7d44\u7e54", 
+      "cervix, transcervical resection (tcr) polyp (<2cm), hysteroscopic", 
+      "cervix, transcervical resection (tcr) myoma (>3cm), hystereoscopic", 
+      "cervix, removal of polyp (complicated) including dilation/ curettage with biopsy , cervix, polyp, excision/erosion (complicated) includes d&c with biopsy", 
+      "cervix, removal of polyp (>2cm, hysteroscopic)", 
+      "cervix, removal of tissue via laser vapourisation/excision , cervix, various lesions, colposcopy, laser vapourisation/loop electrosurgical excision procedure/laser excision of transformation zone with biopsy", 
+      "cervix, removal of tissue via cone biopsy with/without laser , cervix, cervical intraepithelial neoplasia, cone biopsy with/without laser", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "cervix, transcervical resection (tcr) polyp (>2cm), hysteroscopic", 
+      "\u5a66\u7522\u79d1", 
+      "cervix, removal of lump (<2cm, hysteroscopic) , cervix, transcervical resection (tcr) myoma (<3cm), hysteroscopic", 
+      "cervix, cervical intraepithelial neoplasia, cone biopsy with/without laser"
+    ]
+  }, 
+  {
+    "remove uterus": [
+      "uterus, broad ligament tumor, hysterectomy", 
+      "ovary, removal of both ovaries, uterus and fallopian tubes with further cancer staging (complex)", 
+      "\u5375\u5de2", 
+      "uterus, removal of womb via vagina, with/without pelvic floor repair (laparoscopic) , uterus/vagina, laparoscopically assisted vaginal hysterectomy (lavh) with/without pelvic floor repair (pfr)", 
+      "uterus, total removal for endometriosis, with /without removal of ovaries and fallopian tubes", 
+      "uterus, partial removal of uterus for benign tumours", 
+      "obstetrics & gynaecology", 
+      "uterus, removal of uterus (complicated, >12 weeks, minimally invasive) , uterus, hysterectomy, mis (complicated) (>12 weeks)", 
+      "uterus, endometriosis, hysterectomy with/without salpingo-oophorectomy", 
+      "uterus, total removal for benign conditions, with/ without removal of ovaries and fallopian tubes , uterus, benign conditions, total hysterectomy with/without salpingo-oophorectomy", 
+      "uterus, total removal for benign conditions, with/ without removal of ovaries and fallopian tubes", 
+      "uterus, hysterectomy, mis (complicated) (>12 weeks)", 
+      "uterus, total removal for endometriosis, with /without removal of ovaries and fallopian tubes , uterus, endometriosis, hysterectomy with/without salpingo-oophorectomy", 
+      "total hysterectomy", 
+      "uterus, partial removal of uterus for benign tumours , uterus, benign conditions, sub-total hysterectomy with/without salpingo-oophorectomy", 
+      "ovary, removal of both ovaries, uterus and fallopian tubes with further cancer staging (complex) , ovary, malignant tumor/cyst, total hysterectomy bilateral salpingo-oophorectomy with omentectomy, surgical staging with/without lymphadenectomy", 
+      "uterus, hysterectomy, frozen pelvis", 
+      "uterus, removal of uterus for frozen pelvis", 
+      "uterus, removal of uterus (complicated, >12 weeks, minimally invasive)", 
+      "uterus, benign conditions, total hysterectomy with/without salpingo-oophorectomy", 
+      "uterus, malignant condition, extended hysterectomy with/without lymphadenectomy", 
+      "ovary, malignant tumor/cyst, total hysterectomy bilateral salpingo-oophorectomy with omentectomy, surgical staging with/without lymphadenectomy", 
+      "uterus/vagina, laparoscopically assisted vaginal hysterectomy (lavh) with/without pelvic floor repair (pfr)", 
+      "uterus, removal of uterus for frozen pelvis , uterus, hysterectomy, frozen pelvis", 
+      "uterus, removal of uterus for malignancy", 
+      "\u5207\u9664\u5b50\u5bae", 
+      "laparoscopic assisted vaginal hysterectomy (lavh)", 
+      "hysterectomy", 
+      "uterus, removal of uterus for malignancy , uterus, malignant condition, extended hysterectomy with/without lymphadenectomy", 
+      "uterus, removal of uterus for broad ligament tumour", 
+      "uterus, removal of womb via vagina, with/without pelvic floor repair (laparoscopic)", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "uterus, removal of uterus for broad ligament tumour , uterus, broad ligament tumor, hysterectomy", 
+      "\u5a66\u7522\u79d1", 
+      "hysterectomy (laparoscopic)", 
+      "hysterectomy, abdominal", 
+      "uterus, benign conditions, sub-total hysterectomy with/without salpingo-oophorectomy"
+    ]
+  }, 
+  {
+    "remove fibroids": [
+      "myomectomy", 
+      "uterus, removal of fibroids (simple, <5cm)", 
+      "\u5b50\u5bae", 
+      "laparoscopic myomectomy", 
+      "uterus, fibroids, myomectomy (complicated) (>5cm)", 
+      "uterus, removal of fibroids (simple, <5cm) , uterus, fibroids, myomectomy (simple) (<5cm)", 
+      "\u5973\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "uterus, removal of fibroids (complicated, >5cm)", 
+      "uterus, removal of fibroids (complicated, >5cm) , uterus, fibroids, myomectomy (complicated) (>5cm)", 
+      "uterus, fibroids, myomectomy (simple) (<5cm)", 
+      "\u5a66\u7522\u79d1", 
+      "uterus, fibroids, myomectomy, mis (complicated) (>5cm)", 
+      "obstetrics & gynaecology", 
+      "uterus, removal of fibroids (complicated, >5cm, minimally invasive)", 
+      "uterus, removal of fibroids (complicated, >5cm, minimally invasive) , uterus, fibroids, myomectomy, mis (complicated) (>5cm)", 
+      "\u5207\u9664\u5b50\u5bae\u7e96\u7dad\u7624"
+    ]
+  }, 
+  {
+    "heel cord": [
+      "\u8173\u8ddf\u8171\u4fee\u88dc", 
+      "tendon-achilles (lower limb), disruption, repair", 
+      "\u9aa8\u79d1\u548c\u5275\u50b7\u5b78", 
+      "\u9aa8/\u95dc\u7bc0", 
+      "\u8173\u8ddf\u8171", 
+      "achilles tendon, repair of achilles tendon", 
+      "achilles tendon, repair of achilles tendon , tendon-achilles (lower limb), disruption, repair", 
+      "orthopaedics & traumatology"
+    ]
+  }, 
+  {
+    "bile stone": [
+      "\u5167\u93e1", 
+      "endoscopy", 
+      "bile duct, endoscopic removal of stone/ insertion of stent inside biliary duct , bile duct, endoscopic retrograde cholangiopancreatography (ercp) with sphincerotomy /removal of stone/ insertion of biliary stent", 
+      "\u81bd\u77f3", 
+      "\u81bd\u7ba1", 
+      "\u8179\u90e8", 
+      "bile duct, endoscopic removal of stone/ insertion of stent inside biliary duct", 
+      "ercp", 
+      "bile duct, endoscopic retrograde cholangiopancreatography (ercp) with sphincerotomy /removal of stone/ insertion of biliary stent"
+    ]
+  }, 
+  {
+    "colonoscopy": [
+      "colon, colonoscopy (diagnostic), fibreoptic with removal of polyp (single or multiple less than 1cm)", 
+      "colonoscopy (intravenous sedation)", 
+      "colon, colonoscopy (diagnostic), fibreoptic with/without biopsy", 
+      "colon, colonoscopy (diagnostic) with removal of polyps (multiple, >1cm)", 
+      "colonoscopy with polypectomy", 
+      "colonoscopy with polypectomy (monitored anesthesia care)", 
+      "colon, colonoscopy (screening) , colon, colonoscopy (screening), fibreoptic with/without biopsy", 
+      "\u8179\u90e8", 
+      "colon, sigmoidoscopy (diagnostic/ therapeutic) , colon, sigmoid, sigmoidoscopy (flexible), fibreoptic with/without biopsy", 
+      "colonoscopy with or wthout polypectomy (outpatient)", 
+      "colonoscopy (monitored anesthesia care)", 
+      "colon, colonoscopy (diagnostic) with removal of polyps (single/multiple, <1cm) , colon, colonoscopy (diagnostic), fibreoptic with removal of polyp (single or multiple less than 1cm)", 
+      "\u7d50\u8178\u93e1\u6aa2\u67e5", 
+      "colon, colonoscopy (diagnostic), fibreoptic with removal of polyps (multiple more than 1cm)", 
+      "colon, colonoscopy (diagnostic) , colon, colonoscopy (diagnostic), fibreoptic with/without biopsy", 
+      "colonoscopy+/- polypectomy", 
+      "\u5167\u93e1", 
+      "endoscopy", 
+      "colonoscopy", 
+      "\u7d50\u8178", 
+      "colon, colonoscopy (screening), fibreoptic with/without biopsy", 
+      "colon, sigmoidoscopy (diagnostic/ therapeutic)", 
+      "colonoscopy with polypectomy (intravenous sedation)", 
+      "colon, sigmoid, sigmoidoscopy (flexible), fibreoptic with/without biopsy", 
+      "colon, colonoscopy (diagnostic)", 
+      "colonoscopy +/- polypectomy", 
+      "colon, colonoscopy (diagnostic) with removal of polyps (single/multiple, <1cm)", 
+      "colon, colonoscopy (diagnostic) with removal of polyps (multiple, >1cm) , colon, colonoscopy (diagnostic), fibreoptic with removal of polyps (multiple more than 1cm)", 
+      "colon, colonoscopy (screening)", 
+      "colonoscopy+polypectomy"
+    ]
+  }, 
+  {
+    "undescended testis": [
+      "\u6ccc\u5c3f\u79d1\u5b78", 
+      "\u96c4\u6027\u751f\u6b96\u7cfb\u7d71", 
+      "testis, therapeutic surgery for undescended testis (single)", 
+      "urology", 
+      "testis, therapeutic surgery for undescended testis (single) , testis, undescended/ectopic (unilateral), orchidopexy/transplantation with hernia repair", 
+      "\u777e\u4e38", 
+      "orchidopexy", 
+      "testis, undescended/ectopic (unilateral), orchidopexy/transplantation with hernia repair", 
+      "\u672a\u964d\u777e\u4e38"
+    ]
+  }, 
+  {
+    "bronchoscopy": [
+      "lung, bronchoscopy with image-guided biopsy , bronchus/lung, bronchoscopy, targeted transbronchial lung biopsy for focal lesions (imaging-guided)", 
+      "\u652f\u6c23\u7ba1\u93e1\u6aa2\u67e5", 
+      "endoscopy", 
+      "\u5167\u93e1", 
+      "\u80f8\u90e8", 
+      "\u80ba", 
+      "bronchoscopy +/- biopsy", 
+      "bronchoscopy", 
+      "bronchoscopy with or without biopsy", 
+      "broncfioscopy with or wthout biopsy", 
+      "lung, bronchoscopy with image-guided biopsy", 
+      "bronchus/lung, bronchoscopy, targeted transbronchial lung biopsy for focal lesions (imaging-guided)", 
+      "lung, bronchoscopy with washout and biopsy", 
+      "bronchus/lung, bronchoscopy with biopsy, bronchoalveolar lavage", 
+      "lung, bronchoscopy with/without biopsy", 
+      "bronchus/lung, bronchoscopy with/without biopsy", 
+      "lung, bronchoscopy with washout and biopsy , bronchus/lung, bronchoscopy with biopsy, bronchoalveolar lavage", 
+      "\u652f\u6c23\u7ba1\u93e1\u6aa2\u67e5", 
+      "endoscopy", 
+      "\u5167\u93e1", 
+      "\u80f8\u90e8", 
+      "\u80ba", 
+      "bronchoscopy +/- biopsy", 
+      "bronchoscopy", 
+      "bronchoscopy with or without biopsy", 
+      "broncfioscopy with or wthout biopsy", 
+      "lung, bronchoscopy with image-guided biopsy", 
+      "bronchus/lung, bronchoscopy, targeted transbronchial lung biopsy for focal lesions (imaging-guided)", 
+      "lung, bronchoscopy with washout and biopsy", 
+      "bronchus/lung, bronchoscopy with biopsy, bronchoalveolar lavage", 
+      "lung, bronchoscopy with/without biopsy", 
+      "bronchus/lung, bronchoscopy with/without biopsy"
+    ]
+  }, 
+  {
+    "remove eye growth": [
+      "conjunctiva, removal of growth with graft , conjunctiva, pterygium, removal with conjunctival graft", 
+      "\u5207\u9664\u773c\u775b\u7ffc\u72c0\u7d50\u819c\u589e\u751f", 
+      "eye", 
+      "\u773c\u79d1", 
+      "\u773c\u775b", 
+      "\u773c\u775b", 
+      "conjunctiva, removal of growth with graft", 
+      "conjunctiva, pterygium, removal with conjunctival graft"
+    ]
+  }, 
+  {
+    "eyelids botox injection": [
+      "eyelids, botox injections (for eyelid and facial spasms) , eyelids, botox injections for blepharospasm & hemifacial spasm", 
+      "\u773c\u77bc\u8089\u6bd2\u687f\u83cc\u6ce8\u5c04\u6db2", 
+      "eye", 
+      "\u773c\u79d1", 
+      "\u773c\u775b", 
+      "\u773c\u76ae", 
+      "eyelids, botox injections (for eyelid and facial spasms)", 
+      "eyelids, botox injections for blepharospasm & hemifacial spasm"
+    ]
+  }, 
+  {
+    "remove cyst eyelids": [
+      "eyelids, removal of cyst (chalazion) , eyelids, chalazion cyst, excision under general anaesthesia", 
+      "\u5207\u9664\u773c\u77bc\u56ca\u816b", 
+      "eye", 
+      "\u773c\u79d1", 
+      "\u773c\u775b", 
+      "\u773c\u76ae", 
+      "i & c of meibomian cyst. g.a.", 
+      "eyelids, removal of cyst (chalazion)", 
+      "eyelids, chalazion cyst, excision under general anaesthesia", 
+      "i & c of meibomian cyst. g.a.", 
+      "\u5207\u9664\u773c\u77bc\u56ca\u816b", 
+      "eye", 
+      "\u773c\u79d1", 
+      "\u773c\u775b", 
+      "\u773c\u76ae", 
+      "i & c of meibomian cyst. g.a.", 
+      "eyelids, removal of cyst (chalazion)", 
+      "eyelids, chalazion cyst, excision under general anaesthesia"
+    ]
+  }, 
+  {
+    "eyelids stye cut": [
+      "eyelids, stye, incision under general anaesthesia , eyelids, stye, incision under general anaesthesia", 
+      "\u773c\u7621\u5207\u9664", 
+      "eye", 
+      "\u773c\u79d1", 
+      "\u773c\u775b", 
+      "\u773c\u76ae", 
+      "eyelids, stye, incision under general anaesthesia", 
+      "eyelids, stye, incision under general anaesthesia"
+    ]
+  }, 
+  {
+    "remove eyelid tumour": [
+      "removal of lesion/ tumour of eyelid , eyelids, tumor, shaving excision", 
+      "\u5207\u9664\u773c\u77bc\u816b\u7624", 
+      "eye", 
+      "\u773c\u79d1", 
+      "\u773c\u775b", 
+      "\u773c\u76ae", 
+      "removal of lesion/ tumour of eyelid", 
+      "eyelids, tumor, shaving excision"
+    ]
+  }, 
+  {
+    "squint for crossed eyes": [
+      "squint surgery for crossed eyes , eye, squint, operation (one/both eyes - 2 muscles)", 
+      "\u659c\u773c\u66f4\u6b63", 
+      "eye", 
+      "\u773c\u79d1", 
+      "\u773c\u775b", 
+      "\u773c\u775b", 
+      "squint surgery for crossed eyes", 
+      "eye, squint, operation (one/both eyes - 2 muscles)"
+    ]
+  }, 
+  {
+    "injection into eye": [
+      "vitreous, injection into eye (vitreous area) , vitreous, intravitreal injections", 
+      "\u773c\u775b\u73bb\u7483\u9ad4\u8a3b\u5c04", 
+      "eye", 
+      "\u773c\u79d1", 
+      "\u773c\u775b", 
+      "\u73bb\u7483\u9ad4", 
+      "vitreous, injection into eye (vitreous area)", 
+      "vitreous, intravitreal injections"
+    ]
+  }, 
+  {
+    "remove silicone oil": [
+      "vitreous, removal of silicone oil from the eye , vitreous, various lesions, vitrectomy (pars plana/removal of silicone oil)", 
+      "\u5207\u9664\u773c\u775b\u77fd\u6cb9", 
+      "eye", 
+      "\u773c\u79d1", 
+      "\u773c\u775b", 
+      "\u73bb\u7483\u9ad4", 
+      "vitreous, removal of silicone oil from the eye", 
+      "vitreous, various lesions, vitrectomy (pars plana/removal of silicone oil)"
+    ]
+  }
+]

@@ -3,6 +3,8 @@ var express = require('express'),
     bodyParser = require('body-parser');
 var mongodb = require("mongodb");
 var fs = require('fs');
+var request = require('request');
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -71,7 +73,7 @@ app.post("/SearchSurgerySubmitData", function (req, res) {
     let body = req.body.data;
     let surgicaltyp = body.surgery;
     let treatmentyp = body.type;
-    let doctorname=body.doctor;
+    let doctorname = body.doctor;
     let hospitaltype = body.hospital;
     let operationopt = body.operationopt;
     let percentile = body.percentile;
@@ -84,7 +86,7 @@ app.post("/SearchSurgerySubmitData", function (req, res) {
     let anaestheticfees = body.anaestheticfees;
     let myObj = {
         Operation: surgicaltyp, TYPE: treatmentyp, HOSPITAL: hospitaltype, 'operation Options': operationopt, 'REMARKS': originaldescr,
-        'Average  Length of  Stay': lengthofstays, 'Statistics': doctorname, 'Total  Charges': totalfees, 'Doctor\'s  Fees': doctorfees, 'Anaesthetist Fee': anaestheticfees, 'date': recentcases,  website: 'wecarebill website',ward: privateornots
+        'Average  Length of  Stay': lengthofstays, 'Statistics': doctorname, 'Total  Charges': totalfees, 'Doctor\'s  Fees': doctorfees, 'Anaesthetist Fee': anaestheticfees, 'date': recentcases, website: 'wecarebill website', ward: privateornots
     };
     mongodb.MongoClient.connect("mongodb://admin:admin123@ds249025.mlab.com:49025/surgery", function (err, database) {
         var db = database;
@@ -373,41 +375,57 @@ app.post("/getType", function (req, res) {
 })
 
 app.post("/getSurgery", async function (req, res) {
-    if (!diffTime()) {
-        mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
-            var db = database;
-            if (err) {
-                console.log(err);
-            }
-            db.collection("surgery").find().toArray(function (err, result) {
-                fs.writeFileSync(__dirname + "/surgery.json", JSON.stringify(result), "utf8");
-                var surgery = result, hospital = result, speciality = result;
-
-                surgery = surgery.map(item => {
-                    return item.Operation
-                })
-                var destArray = _.uniq(surgery, function (x) {
-                    return x;
-                });
-                res.send(destArray)
-            });
-
-        })
-    } else {
-        fs.readFile(__dirname + "/surgery.json", function (err, data) {
-            var result = JSON.parse(data);
-
-            var surgery = result, hospital = result, speciality = result;
-
-            surgery = surgery.map(item => {
-                return item.Operation
+    await request({
+        url: 'http://medical-api.us-east-2.elasticbeanstalk.com/' + req.body.data.surgery,
+        encoding: 'utf8'
+    },
+        function (error, response, body) {
+          
+            let bodyJ = JSON.parse(body);
+            surgery = bodyJ.map((item, index) => {
+                let itemstring = JSON.stringify(item);
+                let itemvalue=_.uniq(item[Object.keys(item)]);
+                return [Object.keys(item), itemvalue.toString()]
             })
-            var destArray = _.uniq(surgery, function (x) {
-                return x;
-            });
-            res.send(destArray)
-        })
-    }
+            return res.send(surgery); // Print the HTML for the Google homepage.
+        });
+
+
+    // if (!diffTime()) {
+    //     mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    //         var db = database;
+    //         if (err) {
+    //             console.log(err);
+    //         }
+    //         db.collection("surgery").find().toArray(function (err, result) {
+    //             fs.writeFileSync(__dirname + "/surgery.json", JSON.stringify(result), "utf8");
+    //             var surgery = result, hospital = result, speciality = result;
+
+    //             surgery = surgery.map(item => {
+    //                 return item.Operation
+    //             })
+    //             var destArray = _.uniq(surgery, function (x) {
+    //                 return x;
+    //             });
+    //             res.send(destArray)
+    //         });
+
+    //     })
+    // } else {
+    //     fs.readFile(__dirname + "/surgery.json", function (err, data) {
+    //         var result = JSON.parse(data);
+
+    //         var surgery = result, hospital = result, speciality = result;
+
+    //         surgery = surgery.map(item => {
+    //             return item.Operation
+    //         })
+    //         var destArray = _.uniq(surgery, function (x) {
+    //             return x;
+    //         });
+    //         res.send(destArray)
+    //     })
+    // }
 
 })
 app.get('/login', function (req, res) {

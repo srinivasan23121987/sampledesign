@@ -465,7 +465,7 @@
     <div id="SrchHero" class="siteSrchBar banner">
         <div class="static-hph static ">
             <div class="static-hph-hero-srch">
-                <div class="context-tabs-mask col-md-offset-2 col-md-8 style-4">
+                <div class="context-tabs-mask col-md-offset-1 col-md-10 style-4">
                     <h1>How much hospital treatment costed?</h1>
                     <div class="search-bar minimized">
                         <div class="container-form">
@@ -490,7 +490,7 @@
                             </div>
                             <form action="#" method="get" target="_top" class="" id="surgery-form">
 
-                                <input id="SurgerySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                <input onchange="GetSurgeryList(this.value)" id="SurgerySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
                                     placeholder="Part of body, conditions, specialities or surgeries" autocomplete="off">
 
                                 <div class="col-md-12 form-flows">

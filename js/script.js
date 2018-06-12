@@ -187,7 +187,7 @@ jQuery(function ($) {
 	let href = $(location).attr('href').split("/");
 	let urltype = decodeURI(href[4]);
 	let urlvalue = href[3];
-	
+
 	// $(".widthofrectl").click(function () {
 	// 	$(this).parent().parent().parent().parent().parent().parent().find("button.frontback").click();
 
@@ -322,7 +322,7 @@ jQuery(function ($) {
 	});
 	$("input,textarea").on("keyup", function (e) {
 		if (e.which == 13) {
-			
+
 			let widthofrectr = $(this).next().hasClass('widthofrectr');
 			if (widthofrectr) {
 				$(this).next().click();
@@ -670,19 +670,30 @@ jQuery(function ($) {
 	let typeoptions;
 	let typehosp;
 	let typedoc;
-
-	initialLoadAjax("/getSurgery", '', function (data, err) {
+	function GetSurgeryList(value) {
+		console.log(value);
+	}
+	initialLoadAjax("/getSurgery", { surgery: 'a' }, function (data, err) {
+		
 		surgoptions = data;
+		console.log(data)
 		$('input#SurgerySearch').autoComplete({
 			minChars: 0,
 			source: function (term, suggest) {
 				var choices = surgoptions;
 				var matches = [];
-				for (i = 0; i < choices.length; i++)
-					if (~choices[i].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
-				suggest(matches);
-			}, onSelect: function (e, term, item) {
-				if (term)
+				for (i = 0; i < choices.length; i++) {
+
+					if (~choices[i][0].toString().toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
+					suggest(matches);
+				}
+
+			}, renderItem: function (item, search) {
+				return `<div class="autocomplete-suggestion col-md-12" style="white-space:pre-wrap;"  data-item='${item[0]}'><div class='label label-primary' style="padding:2px;">${item[0]}</div><span>:${item[1]}</span></div>`;
+			}
+			, onSelect: function (e, term, item) {
+				$('input#SurgerySearch').val(item.data('item'))
+				if (item.data('item'))
 					$("button#SurgerySearchButton").click();
 			}
 		});
@@ -712,7 +723,7 @@ jQuery(function ($) {
 				});
 				initialLoadAjax("/getDoctor", '', function (data, err) {
 					typedoc = data;
-
+					removeLoader();
 					$('input#HospitalSearch').autoComplete({
 						minChars: 0,
 						source: function (term, suggest) {
@@ -728,7 +739,7 @@ jQuery(function ($) {
 							if (data instanceof Array && data.length > 0) {
 								$("input#SurgerySearch").val(urltype);
 								$("button#SurgerySearchButton").click();
-								removeLoader();
+
 							}
 						});
 					}
