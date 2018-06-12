@@ -684,7 +684,7 @@ jQuery(function ($) {
 				var matches = [];
 				for (i = 0; i < choices.length; i++) {
 
-					if (~choices[i][0].toString().toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
+					if (~choices[i][0].toString().toLowerCase().indexOf(term.toLowerCase()) || ~choices[i][1].toString().toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
 					suggest(matches);
 				}
 
