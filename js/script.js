@@ -473,6 +473,7 @@ jQuery(function ($) {
 					}
 					else if (data instanceof Array && data.length == 1) {
 						$("input.SurgerySearch-1").hide();
+						$("table tr td:eq(1) input").css("padding-left", "51px");
 						$("table tr td:eq(1) div.widthofrectr").show();
 						$("table tr td:eq(1) div.widthofrectl").show();
                        data[0] != "" ? $("span.OperationOption").text(data[0]["operation Options"]) : $("span.OperationOption").text("");
