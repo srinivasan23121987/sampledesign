@@ -17,14 +17,26 @@ function diffTime() {
         var olddate = parseInt((new Date(date).getTime() / 1000).toFixed(0));
         var diffdate = newddate - olddate;
         if (diffdate > 86400) {
-            fs.writeFileSync(__dirname + "/date.txt", datenow, "utf8")
-            return false;
+
+            return {
+                status: false,
+                date: datenow
+            };
+        }
+        else {
+            return {
+                status: true,
+                date: datenow
+            };
         }
     }
     else {
-        fs.writeFileSync(__dirname + "/date.txt", datenow, "utf8")
+        return {
+            status: false,
+            date: datenow
+        };
     }
-    return true;
+
 }
 function toTitleCase(str) {
     return str.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
@@ -45,7 +57,7 @@ app.get('/treatment/:type', function (req, res) {
 })
 app.post('/treatment/:type', function (req, res) {
     let surgicaltyp = req.params.type;
-    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
         var db = database;
         if (err) {
             console.log(err);
@@ -107,7 +119,7 @@ app.post("/SearchSurgeryR", function (req, res) {
     let treatmentyp = body.type;
     let hospitaltype = body.hospital;
     console.log(body);
-    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
         var db = database;
         if (err) {
             console.log(err);
@@ -130,7 +142,7 @@ app.post("/SearchSurgeryH", function (req, res) {
     let surgicaltyp = body.surgery;
     let treatmentyp = body.type;
     console.log(body);
-    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
         var db = database;
         if (err) {
             console.log(err);
@@ -161,7 +173,7 @@ app.post("/SearchSurgeryHDS", function (req, res) {
     let hospitaltype = body.hospital;
     let totalCost = body.percentile;
     console.log(body);
-    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
         var db = database;
         if (err) {
             console.log(err);
@@ -182,7 +194,7 @@ app.post("/SearchSurgeryHDS", function (req, res) {
 })
 app.post("/SearchSurgeryHD", function (req, res) {
     let surgicaltyp = req.body.data;
-    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
         var db = database;
         if (err) {
             console.log(err);
@@ -208,7 +220,7 @@ app.post("/SearchSurgeryHD", function (req, res) {
 app.post("/SearchSurgery", function (req, res) {
 
     let surgicaltyp = req.body.data;
-    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
         var db = database;
         if (err) {
             console.log(err);
@@ -232,7 +244,7 @@ app.post("/SearchSurgery", function (req, res) {
     })
 })
 app.post("/SearchSurgerySpecDoctor", function (req, res) {
-    mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
         var db = database;
         if (err) {
             console.log(err);
@@ -257,16 +269,19 @@ app.post("/SearchSurgerySpecDoctor", function (req, res) {
 })
 
 app.post("/getDoctor", async function (req, res) {
-    if (!diffTime()) {
-        mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+
+    if (!diffTime().status) {
+        mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
             var db = database;
             if (err) {
+                console.log("srini222");
                 console.log(err);
             }
 
+            console.log("srini232");
 
-
-            db.collection("doctor").find().toArray(function (err, result) {
+            db.collection("doctor").find({}).toArray(function (err, result) {
+                fs.writeFileSync(__dirname + "/date.txt", diffTime().date, "utf8");
                 fs.writeFileSync(__dirname + "/doctor.json", JSON.stringify(result), "utf8");
                 var hospital = result;
                 hospital = hospital.map(item => {
@@ -297,8 +312,8 @@ app.post("/getDoctor", async function (req, res) {
 })
 
 app.post("/getHospital", function (req, res) {
-    if (!diffTime()) {
-        mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    if (!diffTime().status) {
+        mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
             var db = database;
             if (err) {
                 console.log(err);
@@ -336,8 +351,8 @@ app.post("/getHospital", function (req, res) {
     }
 })
 app.post("/getType", function (req, res) {
-    if (!diffTime()) {
-        mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    if (!diffTime().status) {
+        mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
             var db = database;
             if (err) {
                 console.log(err);
@@ -380,19 +395,19 @@ app.post("/getSurgery", async function (req, res) {
         encoding: 'utf8'
     },
         function (error, response, body) {
-          
+
             let bodyJ = JSON.parse(body);
             surgery = bodyJ.map((item, index) => {
                 let itemstring = JSON.stringify(item);
-                let itemvalue=_.uniq(item[Object.keys(item)]);
+                let itemvalue = _.uniq(item[Object.keys(item)]);
                 return [Object.keys(item), itemvalue.toString()]
             })
             return res.send(surgery); // Print the HTML for the Google homepage.
         });
 
 
-    // if (!diffTime()) {
-    //     mongodb.MongoClient.connect("mongodb://admin:admin123@ds149335.mlab.com:49335/hospital", function (err, database) {
+    // if (!diffTime().status) {
+    //     mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
     //         var db = database;
     //         if (err) {
     //             console.log(err);

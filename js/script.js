@@ -464,13 +464,18 @@ jQuery(function ($) {
 				initiateAjax("/SearchSurgeryHD", surgerySearchv, function (data, err) {
 
 					if (data instanceof Array && data.length == 0) {
-						$("input.SurgerySearch-1").attr("readonly", "true");
-						$("input.SurgerySearch-1").val("No Operation Option Records found");
+						
+						$("input.SurgerySearch-1").hide();
+						$("span.OperationOption").text("");
+						$("table tr td:eq(1) div.widthofrectr").show();
+						$("table tr td:eq(1) div.widthofrectl").show();
+						$("table tr td:eq(1) input").css("padding-left", "51px");
 					}
 					else if (data instanceof Array && data.length == 1) {
-						$("input.SurgerySearch-1").attr("readonly", "false");
-
-						data[0] != "" ? $("input.SurgerySearch-1").val(data[0]["operation Options"]) : $("input.SurgerySearch-1").val("No Operation Option Records found");
+						$("input.SurgerySearch-1").hide();
+						$("table tr td:eq(1) div.widthofrectr").show();
+						$("table tr td:eq(1) div.widthofrectl").show();
+                       data[0] != "" ? $("span.OperationOption").text(data[0]["operation Options"]) : $("span.OperationOption").text("");
 					}
 					else if (data instanceof Array && data.length > 1) {
 						setTimeout(() => {
@@ -631,9 +636,10 @@ jQuery(function ($) {
 								if (~choices[i].toLowerCase().indexOf(term.toLowerCase())) matches.push(choices[i]);
 							suggest(matches);
 						}, onSelect: function (e, term, item) {
-							if (term)
-								$("button#SurgerySearchButton").click();
-							$("div.autocomplete-suggestions ").hide()
+							if (term) {
+								$("button.backfront").click();
+								$("div.autocomplete-suggestions").hide()
+							}
 						}
 					});
 
@@ -674,7 +680,7 @@ jQuery(function ($) {
 		console.log(value);
 	}
 	initialLoadAjax("/getSurgery", { surgery: 'a' }, function (data, err) {
-		
+
 		surgoptions = data;
 		console.log(data)
 		$('input#SurgerySearch').autoComplete({
@@ -693,8 +699,11 @@ jQuery(function ($) {
 			}
 			, onSelect: function (e, term, item) {
 				$('input#SurgerySearch').val(item.data('item'))
-				if (item.data('item'))
+
+				if (item.data('item')) {
 					$("button#SurgerySearchButton").click();
+					$("div.autocomplete-suggestions ").hide()
+				}
 			}
 		});
 		initialLoadAjax("/getType", '', function (data, err) {
