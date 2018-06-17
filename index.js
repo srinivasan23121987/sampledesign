@@ -172,7 +172,6 @@ app.post("/SearchSurgeryHDS", function (req, res) {
     let treatmentyp = body.type;
     let hospitaltype = body.hospital;
     let totalCost = body.percentile;
-    console.log(body);
     mongodb.MongoClient.connect("mongodb://admin:srini@ec2-18-191-12-108.us-east-2.compute.amazonaws.com/admin", function (err, database) {
         var db = database;
         if (err) {
@@ -211,7 +210,7 @@ app.post("/SearchSurgeryHD", function (req, res) {
             })
 
             var destArray = _.uniqBy(hospital, function (x) {
-                return x["operation Options"] && x["HOSPITAL"];
+                return x["operation Options"];
             });
             res.send(destArray)
         })
