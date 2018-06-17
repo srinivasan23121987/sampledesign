@@ -323,7 +323,6 @@ jQuery(function ($) {
 	});
 	$("input,textarea").on("keyup", function (e) {
 		if (e.which == 13) {
-
 			let widthofrectr = $(this).next().hasClass('widthofrectr');
 			if (widthofrectr) {
 				$(this).next().click();
