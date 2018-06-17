@@ -358,7 +358,7 @@ jQuery(function ($) {
 					$("ul.context-choice-tabs").next().removeClass("active-4");
 					$("ul.context-choice-tabs").next().addClass("active-3");
 					$('input#hospital-1').autoComplete({
-						minChars: 0,
+						minChars: 0, 			cache:false,
 						source: function (term, suggest) {
 							var choices = data;
 							var matches = [];
@@ -367,8 +367,11 @@ jQuery(function ($) {
 							suggest(matches);
 						}, onSelect: function (e, term, item) {
 							if (term)
+							{
 								$("button.backfront").click();
 							$("div.autocomplete-suggestions ").hide()
+							$('input#hospital-1').removeData();
+							}
 						}
 					});
 					if (data.length == 1) {
@@ -384,7 +387,7 @@ jQuery(function ($) {
 			} else if (surgerySearchv && surgicaltype && hospital && (doctor == "" || doctor == null)) {
 				initiateAjax("/SearchSurgerySpecDoctor", { type: surgicaltype }, function (data, err) {
 					$('input#doctor-1').autoComplete({
-						minChars: 0,
+						minChars: 0, 			cache:false,
 						source: function (term, suggest) {
 							var choices = data;
 							var matches = [];
@@ -393,9 +396,12 @@ jQuery(function ($) {
 							suggest(matches);
 						}, onSelect: function (e, term, item) {
 							if (term)
+							{
 								$("button.backfront").click();
 							$("input.SurgerySearch-1").focus();
+							$('input#doctor-1').removeData();
 							$("div.autocomplete-suggestions ").hide()
+							}
 						}
 					});
 					surgerySearch.css({ "border": "1px solid #7f8c8d" });
@@ -484,7 +490,7 @@ jQuery(function ($) {
 						}, 1000)
 
 						$('input.SurgerySearch-1').autoComplete({
-							minChars: 0,
+							minChars: 0, 			cache:false,
 							source: function (term, suggest) {
 								var choices = data;
 								var matches = [];
@@ -505,7 +511,7 @@ jQuery(function ($) {
 								$("table tr td:eq(1) input").css("padding-left", "51px");
 								$("table tr td:eq(1) input").focus();
 								$('input.SurgerySearch-1').hide();
-
+								$('input.SurgerySearch-1').removeData();
 							}
 						});
 
@@ -629,7 +635,7 @@ jQuery(function ($) {
 					$("div.form-flows").show()
 					$("div.form-flows-1").show()
 					$('input#speciality-1').autoComplete({
-						minChars: 0,
+						minChars: 0, 			cache:false,
 						source: function (term, suggest) {
 							var choices = data;
 							var matches = [];
@@ -639,7 +645,8 @@ jQuery(function ($) {
 						}, onSelect: function (e, term, item) {
 							if (term) {
 								$("button.backfront").click();
-								$("div.autocomplete-suggestions").hide()
+								$("div.autocomplete-suggestions").hide();
+								$('input#speciality-1').removeData();
 							}
 						}
 					});
@@ -686,6 +693,7 @@ jQuery(function ($) {
 		console.log(data)
 		$('input#SurgerySearch').autoComplete({
 			minChars: 0,
+			cache:false,
 			source: function (term, suggest) {
 				var choices = surgoptions;
 				var matches = [];
@@ -696,7 +704,7 @@ jQuery(function ($) {
 				}
 
 			}, renderItem: function (item, search) {
-				return `<div class="autocomplete-suggestion col-md-12" style="white-space:pre-wrap;"  data-item='${item[0]}'><div class='label label-primary' style="padding:2px;">${item[0]}</div><span>:${item[1]}</span></div>`;
+				return `<div class="autocomplete-suggestion col-md-12" style="white-space:pre-wrap;"  data-item='${item[0]}'>${item[0]}</div>`;
 			}
 			, onSelect: function (e, term, item) {
 				$('input#SurgerySearch').val(item.data('item'))
@@ -704,13 +712,15 @@ jQuery(function ($) {
 				if (item.data('item')) {
 					$("button#SurgerySearchButton").click();
 					$("div.autocomplete-suggestions ").hide()
+					$('input#SurgerySearch').removeData();
+					
 				}
 			}
 		});
 		initialLoadAjax("/getType", '', function (data, err) {
 			typeoptions = data;
 			$('input#SpecialitySearch').autoComplete({
-				minChars: 0,
+				minChars: 0, 			cache:false,
 				source: function (term, suggest) {
 					var choices = typeoptions;
 					var matches = [];
@@ -722,7 +732,7 @@ jQuery(function ($) {
 			initialLoadAjax("/getHospital", '', function (data, err) {
 				typehosp = data;
 				$('input#HospitalSearch').autoComplete({
-					minChars: 0,
+					minChars: 0, 			cache:false,
 					source: function (term, suggest) {
 						var choices = typehosp;
 						var matches = [];
@@ -735,7 +745,7 @@ jQuery(function ($) {
 					typedoc = data;
 					removeLoader();
 					$('input#HospitalSearch').autoComplete({
-						minChars: 0,
+						minChars: 0, 			cache:false,
 						source: function (term, suggest) {
 							var choices = typedoc;
 							var matches = [];
