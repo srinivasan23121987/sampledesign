@@ -223,6 +223,12 @@ jQuery(function ($) {
 			if (lengthofstays) {
 				HideDivs();
 				initiateAjax("/SearchSurgeryHDS", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital, percentile: percentile }, function (data, err) {
+					if (data[0]["HOSPITAL"] == hospital) {
+						$("p.descriptionText").text(`Please find the statistics of XXX cases for ${operationopt} dated ${recentcases}. The record is remarked with ${data[0]["Orignal description"]}`);
+					} else {
+						$("p.descriptionText").text(`Sorry that we cannot find records for the ${hospital} and ${$("input#doctor-1").val()},[and if operation/operation options also
+						does not matched but typed]`);
+					}
 					$("span.stayslengthfield").text(lengthofstays);
 					$("span.stayslengthfielddb").text(data[0]["Average  Length of  Stay"] ? data[0]["Average  Length of  Stay"] : "NA");
 					$("div.form-flows-5").show();
@@ -239,6 +245,12 @@ jQuery(function ($) {
 			if (totalfees) {
 				HideDivs();
 				initiateAjax("/SearchSurgeryHDS", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital, percentile: percentile }, function (data, err) {
+					if (data[0]["HOSPITAL"] == hospital) {
+						$("p.descriptionText").text(`Please find the statistics of XXX cases for ${operationopt} dated ${recentcases}. The record is remarked with ${data[0]["Orignal description"]}`);
+					} else {
+						$("p.descriptionText").text(`Sorry that we cannot find records for the ${hospital} and ${$("input#doctor-1").val()},[and if operation/operation options also
+						does not matched but typed]`);
+					}
 					$("span.totalbillsfield").text(totalfees);
 					$("span.totalbillsfielddb").text(data[0]["Total  Charges"] ? data[0]["Total  Charges"] : "NA");
 					$("div.form-flows-6").show();
@@ -255,6 +267,12 @@ jQuery(function ($) {
 			if (doctorfees) {
 				HideDivs();
 				initiateAjax("/SearchSurgeryHDS", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital, percentile: percentile }, function (data, err) {
+					if (data[0]["HOSPITAL"] == hospital) {
+						$("p.descriptionText").text(`Please find the statistics of XXX cases for ${operationopt} dated ${recentcases}. The record is remarked with ${data[0]["Orignal description"]}`);
+					} else {
+						$("p.descriptionText").text(`Sorry that we cannot find records for the ${hospital} and ${$("input#doctor-1").val()},[and if operation/operation options also
+						does not matched but typed]`);
+					}
 					$("span.doctorfeesfield").text(doctorfees);
 					$("span.doctorfeesfielddb").text(data[0]["Doctor's  Fees"] ? data[0]["Doctor's  Fees"] : "NA");
 					$("div.form-flows-7").show();
@@ -272,6 +290,12 @@ jQuery(function ($) {
 
 				HideDivs();
 				initiateAjax("/SearchSurgeryHDS", { surgery: surgerySearchv, type: surgicaltype, hospital: hospital, percentile: percentile }, function (data, err) {
+					if (data[0]["HOSPITAL"] == hospital) {
+						$("p.descriptionText").text(`Please find the statistics of XXX cases for ${operationopt} dated ${recentcases}. The record is remarked with ${data[0]["Orignal description"]}`);
+					} else {
+						$("p.descriptionText").text(`Sorry that we cannot find records for the ${hospital} and ${$("input#doctor-1").val()},[and if operation/operation options also
+						does not matched but typed]`);
+					}
 					$("span.anaestheticfeesfield").text(anaestheticfees);
 					$("span.anaestheticfeesfielddb").text(data[0]["Anaesthetist Fee"] ? data[0]["Anaesthetist Fee"] : "NA");
 					$("textarea.originaldescr").val(data[0]["Orignal description"]);

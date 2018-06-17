@@ -490,8 +490,9 @@
                             </div>
                             <form action="#" method="get" target="_top" class="" id="surgery-form">
 
-                                <input onchange="GetSurgeryList(this.value)" id="SurgerySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
-                                    placeholder="Part of body, conditions, specialities or surgeries" autocomplete="off">
+                                <input onchange="GetSurgeryList(this.value)" id="SurgerySearch" style="height:60px;width:100%;" class="loc" type="text" tabindex="0"
+                                    value="" data-srch-type="popular" placeholder="Part of body, conditions, specialities or surgeries"
+                                    autocomplete="off">
 
                                 <div class="col-md-12 form-flows">
                                     <div class="col-md-12 form-flows-1 animated bounceInLeft">
@@ -499,8 +500,8 @@
                                             <i class="glyphicon glyphicon-chevron-left"></i>
 
                                         </button>
-                                        <input id="speciality-1" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value=""
-                                            data-srch-type="popular" placeholder="Part of body, conditions or specialities" autocomplete="off">
+                                        <input id="speciality-1" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
+                                            placeholder="Part of body, conditions or specialities" autocomplete="off">
 
                                         <button type="button" class="backfront" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
@@ -508,7 +509,7 @@
                                         </button>
                                     </div>
                                     <div class="col-md-12 form-flows-2 animated bounceInLeft">
-                                        <button  style="visibility:hidden;" class="frontback" type="button" tabindex="0">
+                                        <button style="visibility:hidden;" class="frontback" type="button" tabindex="0">
                                             <i class="glyphicon glyphicon-chevron-left"></i>
 
                                         </button>
@@ -520,32 +521,36 @@
                                         </button>
                                     </div>
                                     <div class="col-md-12 form-flows-3 animated bounceInLeft">
-                                        <button style="visibility:hidden;"  class="frontback" type="button" tabindex="0">
+                                        <button style="visibility:hidden;" class="frontback" type="button" tabindex="0">
                                             <i class="glyphicon glyphicon-chevron-left"></i>
 
                                         </button>
                                         <input id="doctor-1" style="height:60px;width:100%;" class="loc" type="text" tabindex="0" value="" data-srch-type="popular"
                                             placeholder="Doctor name" autocomplete="off">
-                                        <button  type="button" class="backfront" tabindex="0">
+                                        <button type="button" class="backfront" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button>
                                     </div>
                                     <div class="col-md-12 form-flows-4 animated bounceInLeft">
-                                            <span class="OperationOption"></span>
-                                            <p style="font-style:italic;font-size:11px;" class="descriptionText"></p>
-                                           
-                                        <button class="frontback" type="button" style="visibility:hidden;"  tabindex="0">
+
+
+                                        <button class="frontback" type="button" style="visibility:hidden;" tabindex="0">
                                             <i class="glyphicon glyphicon-chevron-left"></i>
                                         </button>
-                                        <input style="color:#000;height:60px;width:100%;" class="loc SurgerySearch-1" type="text" tabindex="0"
-                                            value="" data-srch-type="popular" placeholder="Operation options" autocomplete="off">
-                                        <button type="button" class="backfronts"  tabindex="0">
+                                        <input style="color:#000;height:60px;width:100%;" class="loc SurgerySearch-1" type="text" tabindex="0" value="" data-srch-type="popular"
+                                            placeholder="Operation options" autocomplete="off">
+                                        <button type="button" class="backfronts" tabindex="0">
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button>
                                         <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
-                                                <p style="font-style:italic;font-size:11px;"><i>Please input your bill information so as to help other patients, our records are displayed as follows.</i></p>
+                                            <span class="OperationOption"></span>
+                                            <p style="font-style:italic;font-size:11px;" class="descriptionText"></p>
+                                            <p style="font-style:italic;font-size:11px;">
+                                                <i>Please input your bill information so as to help other patients, our records
+                                                    are displayed as follows.</i>
+                                            </p>
                                             <select class="percentile col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
                                                 <option value="median">median</option>
                                                 <option value="50th percentile">50th percentile</option>
@@ -582,7 +587,7 @@
                                                         <div class="widthofrectl" style="display:none;">
                                                             <i class="fa fa-chevron-left"></i>
                                                         </div>
-                                                        <input type="text" class="form-control lengthofstays"  placeholder="| in days" />
+                                                        <input type="text" class="form-control lengthofstays" placeholder="| in days" />
                                                         <div class="widthofrectr" style="display:none;">
                                                             <i class="fa fa-chevron-right"></i>
                                                         </div>
@@ -630,8 +635,14 @@
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button> -->
-                                        <span class="OperationOption"></span>
+
                                         <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
+                                            <span class="OperationOption"></span>
+                                            <p style="font-style:italic;font-size:11px;" class="descriptionText"></p>
+                                            <p style="font-style:italic;font-size:11px;">
+                                                <i>Please input your bill information so as to help other patients, our records
+                                                    are displayed as follows.</i>
+                                            </p>
                                             <select class="percentile col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
                                                 <option value="median">median</option>
                                                 <option value="50th percentile">50th percentile</option>
@@ -719,8 +730,14 @@
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button> -->
-                                        <span class="OperationOption"></span>
+
                                         <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
+                                            <span class="OperationOption"></span>
+                                            <p style="font-style:italic;font-size:11px;" class="descriptionText"></p>
+                                            <p style="font-style:italic;font-size:11px;">
+                                                <i>Please input your bill information so as to help other patients, our records
+                                                    are displayed as follows.</i>
+                                            </p>
                                             <select class="percentile col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
                                                 <option value="median">median</option>
                                                 <option value="50th percentile">50th percentile</option>
@@ -808,8 +825,14 @@
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button> -->
-                                        <span class="OperationOption"></span>
+
                                         <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
+                                            <span class="OperationOption"></span>
+                                            <p style="font-style:italic;font-size:11px;" class="descriptionText"></p>
+                                            <p style="font-style:italic;font-size:11px;">
+                                                <i>Please input your bill information so as to help other patients, our records
+                                                    are displayed as follows.</i>
+                                            </p>
                                             <select class="percentile col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
                                                 <option value="median">median</option>
                                                 <option value="50th percentile">50th percentile</option>
@@ -897,8 +920,14 @@
                                             <i class="fa fa-chevron-right"></i>
                                             </span>
                                         </button> -->
-                                        <span class="OperationOption"></span>
+
                                         <div class="col-md-12 col-xs-12" style="margin-bottom:5px;">
+                                            <span class="OperationOption"></span>
+                                            <p style="font-style:italic;font-size:11px;" class="descriptionText"></p>
+                                            <p style="font-style:italic;font-size:11px;">
+                                                <i>Please input your bill information so as to help other patients, our records
+                                                    are displayed as follows.</i>
+                                            </p>
                                             <select class="percentile col-md-2 col-xs-4 col-sm-2 form-control button-view-white" style="margin-bottom:5px;">
                                                 <option value="median">median</option>
                                                 <option value="50th percentile">50th percentile</option>
