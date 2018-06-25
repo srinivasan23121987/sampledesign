@@ -546,7 +546,7 @@ jQuery(function ($) {
 									$("table tr td:eq(1) div.widthofrectl").show();
 									$("table tr td:eq(1) input").css("padding-left", "51px");
 
-									// $('input.SurgerySearch-1').hide();
+									$('input.SurgerySearch-1').hide();
 									$('input.SurgerySearch-1').removeData();
 									$('button.backfronts').hide();
 									$("table tr td:eq(1) input").focus();
